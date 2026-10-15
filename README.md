@@ -1,6 +1,6 @@
 # Centro Médico · Sitio web
 
-Rediseño del sitio de [Centro Médico Monte Grande](https://centromedicomg.com.ar/), hecho con HTML, CSS y JavaScript simples (sin frameworks), siguiendo el **Manual de Marca**.
+Copia funcional del sitio de [Centro Médico Monte Grande](https://centromedicomg.com.ar/), como base para ir mejorándolo paso a paso.
 
 ## Cómo verlo en tu compu
 
@@ -9,36 +9,23 @@ Descargá el repositorio (botón verde **Code → Download ZIP**), descomprimilo
 ## Estructura
 
 ```
-index.html            Inicio
-planes.html           Compará tus planes
-plan-*.html           Una página por plan (Promedam, Plata, Oro, First, Promi, Empresa, Junior)
-centros.html          Centros de atención
-odontologia.html      Odontología
-quienes-somos.html    Quiénes somos
-historia.html         Nuestra historia
-rrhh.html             Trabajá con nosotros
-contacto.html         Contacto
-afiliarse.html        Quiero afiliarme
-404.html              Página de error
-assets/css/styles.css Todos los estilos (colores de marca al principio, en :root)
-assets/js/main.js     Menú, banner automático, filtros y formularios
-assets/fonts/         Tipografías Alike y DM Sans
-assets/img/           Logos e imágenes
-sitio-original/       Copia del sitio anterior, como referencia
+index.html                     Página de inicio
+assets/css/bootstrap.min.css   Bootstrap 5.3.3 (grilla, menú, carrusel)
+assets/css/all.min.css         Íconos Font Awesome 6.4.0
+assets/css/styles.css          Estilos propios del sitio
+assets/js/bootstrap.bundle.min.js
+assets/fonts/                  Alike y DM Sans
+assets/webfonts/               Fuentes de los íconos
+assets/img/                    Logo, banners (slides/) e íconos de servicios (servicios/)
 ```
 
-## Marca
+## Pendiente
 
-| Uso | Color |
-| --- | --- |
-| Primario (títulos, logo, botones) | `#2C5786` |
-| Fondo | `#FAFDFF` |
-| Acento 1 (secciones) | `#6F91B8` |
-| Acento 2 (botones de acento) | `#98C1D4` |
-| Área Mujer (Plan Promi) | `#DB9EB5` / `#C44B76` |
+- Por ahora está solo la página de inicio. Los enlaces a Planes, Centros, Contacto, etc. todavía llevan al sitio publicado.
+- Algunas imágenes de fondo (planes, centros) y el favicon se cargan directo desde centromedicomg.com.ar, porque no vinieron en la descarga.
+- Google Tag Manager y Microsoft Clarity están desactivados en esta copia, así no se mezclan con las estadísticas del sitio real.
 
-Títulos en **Alike** (nunca en mayúsculas), textos en **DM Sans** y botones en **DM Sans Bold**.
+## Ramas
 
-## Formularios
-
-GitHub Pages no tiene servidor, así que los formularios abren **WhatsApp** (+54 9 11 6674-3893) con los datos ya cargados. El de *Trabajá con nosotros* abre el **mail**, para poder adjuntar el CV.
+- `main`: el sitio actual, que vamos mejorando de a poco.
+- `rediseno`: una propuesta de rediseño completo, para tomar ideas.
