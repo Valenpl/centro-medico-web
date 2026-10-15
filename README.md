@@ -9,20 +9,24 @@ Descargá el repositorio (botón verde **Code → Download ZIP**), descomprimilo
 ## Estructura
 
 ```
-index.html                     Página de inicio
+index.html                     Inicio
+afiliarse.html                 Quiero afiliarme
+centros.html                   Centros de atención
+contacto.html                  Contacto
+plan-promedam.html, plan-plata.html, plan-oro.html, plan-first.html
 assets/css/bootstrap.min.css   Bootstrap 5.3.3 (grilla, menú, carrusel)
 assets/css/all.min.css         Íconos Font Awesome 6.4.0
 assets/css/styles.css          Estilos propios del sitio
 assets/js/bootstrap.bundle.min.js
 assets/fonts/                  Alike y DM Sans
 assets/webfonts/               Fuentes de los íconos
-assets/img/                    Logo, banners (slides/) e íconos de servicios (servicios/)
+assets/img/                    Logo, banners (slides/), servicios/ y fotos de centros/
 ```
 
 ## Pendiente
 
-- Por ahora está solo la página de inicio. Los enlaces a Planes, Centros, Contacto, etc. todavía llevan al sitio publicado.
-- Algunas imágenes de fondo (planes, centros) y el favicon se cargan directo desde centromedicomg.com.ar, porque no vinieron en la descarga.
+- Faltan estas páginas: Compará tus planes, Plan Promi, Plan Empresa, Plan Junior, Quiénes somos, Nuestra historia, Recursos Humanos y Odontología. Mientras tanto, sus enlaces llevan al sitio publicado.
+- Las imágenes de fondo de los banners y de algunas secciones, y el favicon, se cargan directo desde centromedicomg.com.ar, porque no vinieron en la descarga.
 - Google Tag Manager y Microsoft Clarity están desactivados en esta copia, así no se mezclan con las estadísticas del sitio real.
 
 ## Ramas
