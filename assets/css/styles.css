@@ -454,3 +454,14 @@ body {font-family: 'DM Sans', sans-serif;}
 @media (max-width: 991px) {
   .row.g-5 {--bs-gutter-x: 1.5rem;}
 }
+
+/* Banners de las páginas internas: texto alineado a la izquierda */
+.banner-titulo, .banner-subtitulo {text-align: left;}
+/* Quiénes somos: los globos se agrandan al pasar el mouse */
+.primer-dia-card-start, .primer-dia-card-center, .primer-dia-card-end {position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;}
+.primer-dia-card-start:hover, .primer-dia-card-center:hover, .primer-dia-card-end:hover {border-radius: 2rem; box-shadow: 0 14px 30px rgba(44, 87, 130, 0.2); transform: scale(1.05); z-index: 2;}
+/* En compu los submenús se manejan solo con el mouse: un clic no deja uno abierto encima del otro */
+@media (min-width: 768px) and (hover: hover) {
+  .navbar .dropdown-menu.show {display: none;}
+  .navbar .dropdown:hover > .dropdown-menu {display: block;}
+}
