@@ -19,13 +19,13 @@ section {padding: 0 1rem;}
 
 .afiliar-section, .primer-dia {background-color: #EAEDF2; color:#2C5782}
 .afiliar-section h4, .primer-dia h4 {font-family: 'Alike-Regular', sans-serif;font-size: 1.6rem}
-.afiliar-section h5 {font-family: 'Alike-Regular', sans-serif;font-size: 1.4rem;}
+.afiliar-section h5 {font-family: 'DM Sans', sans-serif; font-weight: 600;font-size: 1.4rem;}
 .afiliar-section p, .primer-dia p {font-size: 1.2rem}
 .banner-interno {align-items: center;background-size: cover; background-position: right;display: flex;height: 150px;position: relative;}
 .banner-interno::before {background-color: rgba(111, 141, 179, 0.45);content: '';inset: 0;position: absolute;z-index: 0;}
 .banner-interno > * {position: relative;z-index: 1;}
 .banner-titulo {color: #ffffff;font-family: 'Alike-Regular', sans-serif;filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.8));letter-spacing: 1px;text-align: center;}
-.banner-subtitulo {color: #ffffff;font-family: 'Alike-Regular', sans-serif;font-size: 1rem;letter-spacing: 1px;margin: 0; text-align: center;}
+.banner-subtitulo {color: #ffffff;font-family: 'DM Sans', sans-serif;font-size: 1rem;letter-spacing: 1px;margin: 0; text-align: center;}
 .bg-grey {background-color:#EAEDF2!important;} 
 .bg-transparent{background-color: transparent;}
 
@@ -39,7 +39,7 @@ section {padding: 0 1rem;}
   font-size: 14px;
   transition: background 0.2s, color 0.2s;
 }
-.btn-outline-primary-custom:hover {background: #eef3f9;}
+.btn-outline-primary-custom:hover {background: #2C5782 !important; color: #ffffff;}
 .btn-primary-custom {
   background-color: #2C5782;
   color: white;
@@ -85,7 +85,6 @@ section {padding: 0 1rem;}
   background-size: cover;
   background-position: top center;
   background-color: #4E7093;
-  background-image: url('https://centromedicomg.com.ar/assets/img/bg-cmg-home.jpg');
   border-radius: 2rem;
   color: #ffffff;
   display: flex;
@@ -98,7 +97,6 @@ section {padding: 0 1rem;}
 
 .centro-card p {margin-bottom: 0.5rem}
 
-.centro-card-canning {background-image: url('https://centromedicomg.com.ar/assets/img/bg-canning-home.jpg');}
 
 .centro-nombre {
   font-weight: 500;
@@ -185,7 +183,7 @@ letter-spacing: .5px;
 .footer-legal-link:hover {color: #ffffff;}
 .footer-dev-logo {width: 20px}
 .form-control {border-radius: 2rem}
-.historia-cierre h5 {font-family: 'Alike-Regular', sans-serif;font-size: 1.4rem;}
+.historia-cierre h5 {font-family: 'DM Sans', sans-serif; font-weight: 600;font-size: 1.4rem;}
 .institutos .card-body {width: 100%}
 .institutos .card-title {font-size: 1.5rem; height: 40px; line-height: 1.4rem; margin-top:1rem}
 .institutos .card-img-top {border-top-left-radius: 1.5rem; border-top-right-radius: 1.5rem;}
@@ -197,7 +195,6 @@ letter-spacing: .5px;
   background-size: cover;
   background-position: top center;
   background-color: #4E7093;
-  background-image: url('https://centromedicomg.com.ar/assets/img/bg-canning-home.jpg');
   border-radius: 2rem;
   color: #ffffff;
   display: flex;
@@ -332,26 +329,20 @@ letter-spacing: .5px;
 .plan-section {color: #2B577E}
 .plan-section h2 {border-bottom:1px solid #2B577E;font-size: 1.7rem; margin-top:3rem; padding-bottom: 1rem;}
 .planes-btn {font-size: 1.1rem;font-weight: normal;text-transform: uppercase; display: block;}
-.primer-dia h5 {font-family: 'Alike-Regular', sans-serif;font-size: 1.4rem}
+.primer-dia h5 {font-family: 'DM Sans', sans-serif; font-weight: 600;font-size: 1.4rem}
 .primer-dia-card-start {background-color: #AEBFCF; border-radius: 2rem;}
 .primer-dia-card-center {background-color: #C2CEDE; border-radius: 2rem;}
 .primer-dia-card-end {background-color: #CCDAE5; border-radius: 2rem;}
 .redes a {display: inline-block; font-size: 0.9rem}
 .redes i {height: 40px}
 .rrhh-form {background-color: #EAEDF2; padding-top: 3rem}
-.servicio-card {cursor: pointer;}
-.servicio-img-wrap {border-radius: 12px;overflow: hidden;position: relative;}
-.servicio-img-wrap img {height: auto;object-fit: cover;transition: transform 0.4s ease;width: 50%;}
-.servicio-card:hover .servicio-img-wrap img {transform: scale(1.06);}
-.servicio-card:hover .servicio-overlay {background: rgba(26, 60, 94, 0.35);}
-.servicio-label {color: #1a3c5e;font-weight: 600; font-size: 1.2rem;line-height: 1.3;margin-top: 0.75rem;}
 .tabla-cobertura {border-collapse: collapse;}
 .tabla-cobertura thead th {border-top: none;border-bottom: 2px solid #2B577E;border-left: none;border-right: none;color: #2B577E;font-size: 1.3rem;}
 .tabla-cobertura thead th:first-child {border-right: 1px solid #2B577E;}
 .tabla-cobertura tbody td {border-top: none;border-bottom: none;border-left: none;border-right: none;color: #2B577E;}
 .tabla-cobertura tbody td:first-child {border-right: 1px solid #2B577E;}
 .tabla-cobertura tbody tr:hover {background-color: rgba(43, 87, 126, 0.05);}
-.titular-h5 {font-family: 'Alike-Regular', sans-serif;font-size: 1.6rem;text-align: center;}
+.titular-h5 {font-family: 'DM Sans', sans-serif; font-weight: 600;font-size: 1.6rem;text-align: center;}
 .wapp {bottom: 10px; height: 61px; position: fixed; right: 3px; width: 60px;}
 
 @media (min-width: 768px) {
@@ -395,7 +386,6 @@ letter-spacing: .5px;
     );
   }
 
-  .servicio-img-wrap img {height: 180px; width: 90%;}
   .planes-bg {height: 60vh;}
   .planes-bg .container-fluid .col {flex: 1;max-width: unset;}
   .planes-btn {display: inline;}
@@ -412,3 +402,51 @@ header.header-scrolled {box-shadow: 0 4px 16px rgba(44, 87, 130, 0.12);}
 @media (min-width: 992px) {
   .logo-fixed {width: 115px;}
 }
+
+/* Submenús que se abren al pasar el mouse (compu) */
+@media (min-width: 768px) {
+  .navbar .dropdown:hover > .dropdown-menu {display: block; left: 0; margin-top: 0; top: 100%;}
+}
+
+/* Nuestros Servicios con íconos */
+.servicio-card {align-items: center; color: inherit; display: flex; flex-direction: column; text-align: center; text-decoration: none;}
+.servicio-icono {align-items: center; background-color: #EAF2F8; border: 2px solid #98C1D4; border-radius: 50%; color: #2C5786; display: flex; font-size: 2.2rem; height: 96px; justify-content: center; transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; width: 96px;}
+.servicio-card:hover .servicio-icono {background-color: #2C5786; border-color: #2C5786; box-shadow: 0 10px 20px rgba(44, 87, 134, 0.25); color: #ffffff; transform: translateY(-6px);}
+.servicio-label {color: #1a3c5e; font-family: 'DM Sans Semi Bold', sans-serif; font-size: 1rem; line-height: 1.3; margin: 1rem 0 0;}
+@media (min-width: 768px) {
+  .servicio-icono {font-size: 3rem; height: 130px; width: 130px;}
+  .servicio-label {font-size: 1.2rem;}
+}
+
+/* Centros de Atención en la home: foto de cada clínica */
+.centro-card.centro-card-home {height: 100%; padding: 1rem;}
+.centro-foto {aspect-ratio: 16 / 9; border-radius: 1.5rem; object-fit: cover; width: 100%;}
+.centro-info {padding: 1.25rem 0.75rem 0.5rem;}
+.centro-card-home .centro-nombre {color: #ffffff; display: inline-block; font-family: 'DM Sans', sans-serif; font-size: 1.5rem; font-weight: 600; text-decoration: none;}
+.centro-card-home .centro-nombre i {font-size: 1.1rem; margin-left: 0.25rem;}
+.centro-card-home .centro-nombre:hover, .centros .card-title a:hover {text-decoration: underline !important;}
+.centros .card-title i {font-size: 0.9em; margin-left: 0.2rem;}
+
+/* Planes en la home: info que aparece al pasar el mouse */
+.plan-info {color: #ffffff; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; line-height: 1.35; margin: 0.5rem 0 auto; transition: opacity 0.35s ease, transform 0.35s ease;}
+.plan-card:hover {background: rgba(26, 60, 94, 0.55);}
+@media (hover: hover) {
+  .plan-info {opacity: 0; transform: translateY(10px);}
+  .plan-card:hover .plan-info {opacity: 1; transform: none;}
+}
+@media (min-width: 768px) {
+  .plan-info {font-size: 1.05rem;}
+}
+
+/* Con 7 planes, en celular el último ocupa todo el ancho */
+.planes-bg .container-fluid .col:last-child {flex: 0 0 100%; max-width: 100%;}
+@media (min-width: 768px) {
+  .planes-bg .container-fluid .col:last-child {flex: 1; max-width: unset;}
+}
+/* Planes en la home: el oscurecido respeta las esquinas redondeadas y el + queda centrado */
+.planes-bg {overflow: hidden;}
+.planes-bg > .container-fluid {padding-left: 0; padding-right: 0;}
+.plan-btn i {font-size: 0.75rem; line-height: 1;}
+/* Letra principal: DM Sans en toda la página (Alike queda solo para los títulos grandes) */
+@font-face {font-family: 'DM Sans'; src: url('../../assets/fonts/DMSans-SemiBold.ttf'); font-weight: 600 700; font-style: normal;}
+body {font-family: 'DM Sans', sans-serif;}

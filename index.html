@@ -115,7 +115,6 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav gap-2 fw-bold">
-              <li class="nav-item border-bottom"><a class="nav-link" href="index.html">Inicio</a></li>
               <!-- Planes (acordeón) -->
               <li class="nav-item">
                 
@@ -128,7 +127,7 @@
                     <li><a class="dropdown-item" href="plan-first.html">&gt; Plan First</a></li>
                     <li><a class="dropdown-item" href="plan-promi.html">&gt; Plan Promi</a></li>
                     <li><a class="dropdown-item" href="plan-empresa.html">&gt; Plan Empresa</a></li>
-                    <li><a class="dropdown-item" href="plan-empresa.html">&gt; Plan Junior</a></li>
+                    <li><a class="dropdown-item" href="plan-junior.html">&gt; Plan Junior</a></li>
                     <li><a class="dropdown-item" href="planes.html">&gt; Compará tus planes</a></li>
                   </ul>
                 </div>
@@ -208,136 +207,35 @@
 <section class="py-5 servicios-section">
   <div class="container">
     <h2 class="text-center mb-5 servicios-titulo">Nuestros Servicios</h2>
-    
-    <!-- Desktop -->
-    <div class="row g-5 justify-content-center d-none d-md-flex">
-
-      <div class="col-6 col-md-4 col-lg-2 p-1 p-lg-3">
-        
-          <div class="servicio-card text-center">
-            <div class="servicio-img-wrap">
-              <img src="assets/img/servicios/atencion.jpg" alt="Atención personalizada" class="img-fluid">
-              <div class="servicio-overlay"></div>
-            </div>
-            <p class="servicio-label">Atención personalizada</p>
-          </div>
-        
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-2 p-1 p-lg-3">
-        <a href="planes.html" class="text-decoration-none">
-          <div class="servicio-card text-center">
-            <div class="servicio-img-wrap">
-              <img src="assets/img/servicios/cobertura.jpg" alt="Cobertura médica integral" class="img-fluid">
-            </div>
-            <p class="servicio-label">Cobertura médica integral</p>
-          </div>
+    <div class="row g-3 g-md-4 justify-content-center">
+      <div class="col-6 col-md-3 col-lg-2">
+        <a href="contacto.html" class="servicio-card">
+          <span class="servicio-icono"><i class="fas fa-user-doctor"></i></span>
+          <p class="servicio-label">Atención personalizada</p>
         </a>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2 p-1 p-lg-3">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#modalAtencion" class="servicio-card text-center text-decoration-none">
-          <div class="servicio-card text-center">
-            <div class="servicio-img-wrap">
-              <img src="assets/img/servicios/emergencias.jpg" alt="Emergencias 24hs" class="img-fluid">
-              <div class="servicio-overlay"></div>
-            </div>
-            <p class="servicio-label">Emergencias<br>24hs</p>
-          </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <a href="planes.html" class="servicio-card">
+          <span class="servicio-icono"><i class="fas fa-file-shield"></i></span>
+          <p class="servicio-label">Cobertura médica integral</p>
         </a>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2 p-1 p-lg-3">
-        <a href="https://www.universal-assistance.com/ar-es/mi-cobertura" target="_blank" class="text-decoration-none">
-          <div class="servicio-card text-center">
-            <div class="servicio-img-wrap">
-              <img src="assets/img/servicios/asistencia.jpg" alt="Asistencia al viajero" class="img-fluid">
-              <div class="servicio-overlay"></div>
-            </div>
-            <p class="servicio-label">Asistencia<br>al viajero</p>
-          </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalAtencion" class="servicio-card">
+          <span class="servicio-icono"><i class="fas fa-truck-medical"></i></span>
+          <p class="servicio-label">Emergencias 24&nbsp;hs</p>
         </a>
       </div>
-      <!--
-      <div class="col-6 col-md-4 col-lg-2 p-1 p-lg-3">
-        <div class="servicio-card text-center">
-          <div class="servicio-img-wrap">
-            <img src="https://centromedicomg.com.ar/assets/img/servicios/odontologia.jpg" alt="Servicio de odontología propio" class="img-fluid">
-            <div class="servicio-overlay"></div>
-          </div>
-          <p class="servicio-label">Servicio de odontología propio</p>
-        </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <a href="https://www.universal-assistance.com/ar-es/mi-cobertura" target="_blank" rel="noopener" class="servicio-card">
+          <span class="servicio-icono"><i class="fas fa-plane-departure"></i></span>
+          <p class="servicio-label">Asistencia al viajero</p>
+        </a>
       </div>
-      -->
     </div>
-    
-    <!-- Mobile -->
-    <div id="serviciosCarousel" class="carousel slide d-md-none" data-bs-ride="false">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="servicio-card text-center">
-                  <div class="servicio-img-wrap">
-                      <img src="assets/img/servicios/atencion.jpg" alt="Atención personalizada" class="img-fluid">
-                  </div>
-
-                  <p class="servicio-label">
-                      Atención personalizada
-                  </p>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <div class="servicio-card text-center">
-                  <div class="servicio-img-wrap">
-                      <img src="assets/img/servicios/cobertura.jpg" alt="Cobertura médica integral" class="img-fluid">
-                  </div>
-
-                  <p class="servicio-label">
-                      Cobertura médica integral
-                  </p>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <div class="servicio-card text-center">
-                  <div class="servicio-img-wrap">
-                      <img src="assets/img/servicios/emergencias.jpg" alt="Emergencias 24hs" class="img-fluid">
-                  </div>
-
-                  <p class="servicio-label">
-                      Emergencias 24hs
-                  </p>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-              <div class="servicio-card text-center">
-                  <div class="servicio-img-wrap">
-                      <img src="assets/img/servicios/asistencia.jpg" alt="Asistencia al viajero" class="img-fluid">
-                  </div>
-
-                  <p class="servicio-label">
-                      Asistencia al viajero
-                  </p>
-              </div>
-          </div>
-
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
-
-          <span class="carousel-control-prev-icon"></span>
-
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
-
-          <span class="carousel-control-next-icon"></span>
-
-      </button>
-
-  </div>
-
   </div>
 </section>
 <!-- Planes -->
@@ -350,41 +248,55 @@
         <div class="col">
           <div class="plan-card d-flex flex-column justify-content-between border-start-0">
             <p class="plan-nombre">Plan<br><strong>Promedam</strong></p>
-            <a href="plan-promedam.html" class="plan-btn text-decoration-none">+</a>
+            <p class="plan-info">Programa médico ambulatorio sin límite de edad</p>
+            <a href="plan-promedam.html" class="plan-btn text-decoration-none" aria-label="Ver Plan Promedam"><i class="fas fa-plus"></i></a>
           </div>
         </div>
+
         <div class="col">
           <div class="plan-card d-flex flex-column justify-content-between">
             <p class="plan-nombre">Plan<br><strong>Plata</strong></p>
-            <a href="plan-plata.html" class="plan-btn text-decoration-none">+</a>
+            <p class="plan-info">Protección de calidad y accesible para tu día a día</p>
+            <a href="plan-plata.html" class="plan-btn text-decoration-none" aria-label="Ver Plan Plata"><i class="fas fa-plus"></i></a>
           </div>
         </div>
 
         <div class="col">
           <div class="plan-card d-flex flex-column justify-content-between">
             <p class="plan-nombre">Plan<br><strong>Oro</strong></p>
-            <a href="plan-oro.html" class="plan-btn text-decoration-none">+</a>
+            <p class="plan-info">Un plan médico superior con beneficios exclusivos</p>
+            <a href="plan-oro.html" class="plan-btn text-decoration-none" aria-label="Ver Plan Oro"><i class="fas fa-plus"></i></a>
           </div>
         </div>
 
         <div class="col">
           <div class="plan-card d-flex flex-column justify-content-between">
             <p class="plan-nombre">Plan<br><strong>First</strong></p>
-            <a href="plan-first.html" class="plan-btn text-decoration-none">+</a>
+            <p class="plan-info">Nuestra cobertura más exclusiva para tu familia</p>
+            <a href="plan-first.html" class="plan-btn text-decoration-none" aria-label="Ver Plan First"><i class="fas fa-plus"></i></a>
           </div>
         </div>
 
         <div class="col">
           <div class="plan-card d-flex flex-column justify-content-between">
+            <p class="plan-nombre">Plan<br><strong>Junior</strong></p>
+            <p class="plan-info">La cobertura de excelencia que tus hijos merecen</p>
+            <a href="plan-junior.html" class="plan-btn text-decoration-none" aria-label="Ver Plan Junior"><i class="fas fa-plus"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="plan-card d-flex flex-column justify-content-between">
             <p class="plan-nombre">Plan<br><strong>Promi</strong></p>
-            <a href="plan-promi.html" class="plan-btn text-decoration-none">+</a>
+            <p class="plan-info">Programa materno infantil, hasta los 38 años</p>
+            <a href="plan-promi.html" class="plan-btn text-decoration-none" aria-label="Ver Plan Promi"><i class="fas fa-plus"></i></a>
           </div>
         </div>
 
         <div class="col">
           <div class="plan-card d-flex flex-column justify-content-between border-end-0">
             <p class="plan-nombre">Plan<br><strong>Empresa</strong></p>
-            <a href="plan-empresa.html" class="plan-btn text-decoration-none">+</a>
+            <p class="plan-info">El mejor cuidado para la salud de tu equipo</p>
+            <a href="plan-empresa.html" class="plan-btn text-decoration-none" aria-label="Ver Plan Empresa"><i class="fas fa-plus"></i></a>
           </div>
         </div>
 
@@ -393,31 +305,39 @@
   </div>
   <div class="gap-1 mt-5 text-center">
     <a href="planes.html" class="btn-outline-primary-custom rounded-5 planes-btn bg-transparent mb-3 text-decoration-none">Compará los planes</a>
-    <a href="afiliarse.html" class="btn-primary-custom rounded-5 planes-btn mb-3 text-decoration-none">Habla con un asesor</a>
+    <a href="afiliarse.html" class="btn-primary-custom rounded-5 planes-btn mb-3 text-decoration-none">Hablá con un asesor</a>
   </div>
 </section>
 <!-- Centros de Atención -->
 <section class="centros-section py-5">
   <div class="container">
     <h2 class="text-center mb-5">Centros de Atención</h2>
-    <div class="row g-5">
+    <div class="row g-4">
       <div class="col-12 col-md-6">
-        <div class="centro-card">
-          <p class="centro-nombre">Clínica Monte Grande</p>
-          <p>General Rodriguez 158, Monte Grande. <small><a href="https://maps.app.goo.gl/Fv89Wk846vYTe8dV9" class="text-white text-decoration-none" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></small></p>
-          <p><strong>Atención:</strong> 4367:6700</p>
-          <p><strong>Call Center:</strong> 4367:6800</p>
-          <p><strong>Servicios destacados:</strong><br>Guardia Clínica, pediátrica y traumatológica las 24 hs, Emergencias, Terapia Intensiva (adultos y pediátrica) y Neonatología, Hemodinamia, Medicina Nuclear, Resonancia Magnética, Tomografía, Ginecología, Obstetricia y Pediatría.</p>
+        <div class="centro-card centro-card-home">
+          <img src="assets/img/centros/cmg.jpg" class="centro-foto" alt="Clínica Monte Grande">
+          <div class="centro-info">
+            <a href="https://maps.app.goo.gl/Fv89Wk846vYTe8dV9" class="centro-nombre" target="_blank" rel="noopener">Clínica Monte Grande <i class="fas fa-map-marker-alt"></i></a>
+            <p>General Rodríguez 158, Monte Grande</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-plus"></i> <strong>Atención:</strong> 4367-6700</li>
+              <li><i class="fas fa-plus"></i> <strong>Call Center:</strong> 4367-6800</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <div class="centro-card centro-card-canning">
-          <p class="centro-nombre">Canning Health Institute</p>
-          <p>Mariano Castex 1078, Canning. <small><a href="https://maps.app.goo.gl/CVrKPdXWLTeh4YNH6" class="text-white text-decoration-none" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></small></p>
-          <p><strong>Atención:</strong> 11 3751-6900</p>
-          <p><strong>Turnos:</strong> 11 6392-9296</p>
-          <p><strong>Call Center:</strong> 4367-6800</p>
-          <p><strong>Servicios destacados:</strong> Guardia 24 hs, Diagnóstico por imágenes, Medicina del deporte, Estética y Flebología, Unidad de endoscopía, Cirugía ambulatoria y más de 40 consultorios.</p>
+        <div class="centro-card centro-card-home">
+          <img src="assets/img/centros/canning.jpg" class="centro-foto" alt="Canning Health Institute">
+          <div class="centro-info">
+            <a href="https://maps.app.goo.gl/CVrKPdXWLTeh4YNH6" class="centro-nombre" target="_blank" rel="noopener">Canning Health Institute <i class="fas fa-map-marker-alt"></i></a>
+            <p>Mariano Castex 1078, Canning</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-plus"></i> <strong>Atención:</strong> 11 3751-6900</li>
+              <li><i class="fas fa-plus"></i> <strong>Turnos:</strong> 11 6392-9296</li>
+              <li><i class="fas fa-plus"></i> <strong>Call Center:</strong> 4367-6800</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
