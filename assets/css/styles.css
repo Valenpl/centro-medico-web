@@ -450,3 +450,7 @@ header.header-scrolled {box-shadow: 0 4px 16px rgba(44, 87, 130, 0.12);}
 /* Letra principal: DM Sans en toda la página (Alike queda solo para los títulos grandes) */
 @font-face {font-family: 'DM Sans'; src: url('../../assets/fonts/DMSans-SemiBold.ttf'); font-weight: 600 700; font-style: normal;}
 body {font-family: 'DM Sans', sans-serif;}
+/* En celular, el espacio entre tarjetas no hace que la página se mueva de costado */
+@media (max-width: 991px) {
+  .row.g-5 {--bs-gutter-x: 1.5rem;}
+}
