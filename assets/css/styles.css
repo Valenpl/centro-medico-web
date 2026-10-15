@@ -404,3 +404,14 @@ letter-spacing: .5px;
   .primer-dia-card-center {background-color: #C2CEDE; border-radius: 0}
   .primer-dia-card-end {border-radius: 0; border-bottom-right-radius: 2rem; border-top-right-radius: 2rem}
 }
+/* ---------- Menú fijo al scrollear ----------
+   El header (franja de emergencias + menú) queda pegado arriba mientras bajás.
+   Cuando la página ya se scrolleó, el logo se achica para no tapar el contenido
+   (la clase "header-scrolled" la agrega assets/js/header.js). */
+header {position: sticky; top: 0; z-index: 1030; transition: box-shadow 0.3s ease;}
+header.header-scrolled {box-shadow: 0 4px 16px rgba(44, 87, 130, 0.12);}
+.logo-fixed {transition: width 0.3s ease;}
+header.header-scrolled .logo-fixed {width: 90px;}
+@media (min-width: 992px) {
+  header.header-scrolled .logo-fixed {width: 115px;}
+}
