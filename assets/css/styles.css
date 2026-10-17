@@ -262,7 +262,7 @@ letter-spacing: .5px;
   color: #6F8DB3;
 }
 
-.navbar-expand-lg {height: 102px;}
+.navbar-expand-xl {height: 102px;}
 
 .nav-link {color: #2C5782 !important;font-weight: 500;}
 .nav-link:hover {opacity: 0.75;}
@@ -637,3 +637,40 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 .footer-copyright p {font-size: 0.9rem;}
 .btn-wapp {align-items: center; border: 2px solid #25D366; border-radius: 50px !important; display: inline-flex; font-family: 'Hind', sans-serif; font-size: 1.05rem; font-weight: 700; gap: 0.5rem; justify-content: center; line-height: 1.2; padding: 0.65rem 2rem 0.5rem;}
 .btn-wapp:hover {border-color: #1ebe5d; transform: translateY(-2px);}
+
+/* ===== Preguntas frecuentes ===== */
+.faq-section {padding: 3rem 0 4rem;}
+.faq-contenedor {max-width: 860px;}
+.faq-categoria {align-items: center; color: #1a3c5e; display: flex; font-family: 'Hind', sans-serif; font-size: 1.4rem; font-weight: 700; gap: 0.75rem; letter-spacing: 0; margin: 2.5rem 0 1rem;}
+.faq-categoria i {align-items: center; background: #EAF2F8; border-radius: 50%; color: #2C5786; display: inline-flex; font-size: 1rem; height: 2.4rem; justify-content: center; width: 2.4rem;}
+.faq-lista .accordion-item {border: 1px solid #d6e2ec; border-radius: 0.75rem !important; margin-bottom: 0.75rem; overflow: hidden;}
+.faq-lista .accordion-button {color: #1a3c5e; font-family: 'Hind', sans-serif; font-size: 1.1rem; font-weight: 600; padding: 1.1rem 1.25rem 0.9rem;}
+.faq-lista .accordion-button:not(.collapsed) {background: #EAF2F8; box-shadow: none; color: #2C5786;}
+.faq-lista .accordion-button:focus {border-color: #98C1D4; box-shadow: 0 0 0 0.2rem rgba(44, 87, 134, 0.15);}
+.faq-lista .accordion-body {color: #33475b; font-size: 1.05rem; line-height: 1.55;}
+.faq-lista .accordion-body a {color: #2C5786; font-weight: 600;}
+.faq-pendiente {background: #FDF1DC; border-radius: 50px; color: #9A6510; display: inline-block; font-size: 0.85rem; font-weight: 600; padding: 0.3rem 0.8rem 0.2rem;}
+.faq-ayuda {background: #F4F7FB; border-radius: 1rem; margin-top: 3rem; padding: 2rem; text-align: center;}
+.faq-ayuda-titulo {color: #1a3c5e; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.25rem;}
+/* Menú de escritorio desde 1200px (más chico, se usa el menú hamburguesa) */
+.nav-espacio-logo {width: 130px;}
+@media (min-width: 1200px) {
+  #navbarMain .navbar-nav {gap: 1rem !important;}
+  #navbarMain .nav-link {white-space: nowrap;}
+  .navbar-nav .nav-item:not(:last-child)::after {margin-left: 1rem;}
+  header .btn-secondary-nav {min-width: 0; padding: 0.5rem 1.2rem 0.35rem; white-space: nowrap;}
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #navbarMain .navbar-nav {gap: 0.7rem !important;}
+  #navbarMain .nav-link {font-size: 0.95rem;}
+  .navbar-nav .nav-item:not(:last-child)::after {margin-left: 0.7rem;}
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  #navbarMain .navbar-nav {gap: 0.55rem !important;}
+  #navbarMain .nav-link {font-size: 0.9rem;}
+  .navbar-nav .nav-item:not(:last-child)::after {margin-left: 0.55rem;}
+  header .btn-secondary-nav {font-size: 0.88rem; padding: 0.45rem 0.9rem 0.3rem;}
+}
+.offcanvas .navbar-nav .nav-item {display: block;}
+.offcanvas .navbar-nav .nav-item::after {display: none !important;}
+.offcanvas-body .mt-4 {display: flex; flex-direction: column; gap: 0.6rem;}
