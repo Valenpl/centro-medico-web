@@ -635,3 +635,5 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 .centro-foto-texto small {font-size: 0.9rem;}
 .centro-migas {font-size: 1rem;}
 .footer-copyright p {font-size: 0.9rem;}
+.btn-wapp {align-items: center; border: 2px solid #25D366; border-radius: 50px !important; display: inline-flex; font-family: 'Hind', sans-serif; font-size: 1.05rem; font-weight: 700; gap: 0.5rem; justify-content: center; line-height: 1.2; padding: 0.65rem 2rem 0.5rem;}
+.btn-wapp:hover {border-color: #1ebe5d; transform: translateY(-2px);}
