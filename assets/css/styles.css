@@ -674,3 +674,43 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 .offcanvas .navbar-nav .nav-item {display: block;}
 .offcanvas .navbar-nav .nav-item::after {display: none !important;}
 .offcanvas-body .mt-4 {display: flex; flex-direction: column; gap: 0.6rem;}
+/* Mosaico de centros sin bloques vacíos: chicas a los costados, la clínica grande al medio */
+.centros-mosaico {align-items: center;}
+.mosaico-chica {flex: none; height: 340px;}
+@media (max-width: 991px) {
+  .mosaico-chica {height: 240px;}
+}
+@media (max-width: 575px) {
+  .mosaico-chica {height: 220px;}
+}
+/* Animación al bajar */
+.revelar {opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease;}
+.revelar.visible {opacity: 1; transform: none;}
+.numeros-section .col-6:nth-child(2) {transition-delay: 0.1s;}
+.numeros-section .col-6:nth-child(3) {transition-delay: 0.2s;}
+.numeros-section .col-6:nth-child(4) {transition-delay: 0.3s;}
+
+/* Opiniones de Google */
+.opiniones-section {padding: 4rem 0;}
+.opinion-card {background: #ffffff; border: 1px solid #e3eaf1; border-radius: 1.25rem; box-shadow: 0 6px 20px rgba(26, 60, 94, 0.06); display: flex; flex-direction: column; height: 100%; padding: 1.75rem; transition: box-shadow 0.3s ease, transform 0.3s ease;}
+.opinion-card:hover {box-shadow: 0 14px 30px rgba(26, 60, 94, 0.14); transform: translateY(-5px);}
+.opinion-estrellas {color: #F4B400; font-size: 1rem; letter-spacing: 2px; margin-bottom: 1rem;}
+.opinion-texto {color: #33475b; flex: 1; font-size: 1.05rem; font-style: italic; line-height: 1.55;}
+.opinion-pendiente {color: #9A6510;}
+.opinion-autor {align-items: center; display: flex; gap: 0.75rem; margin: 1rem 0 0;}
+.opinion-autor strong {color: #1a3c5e; display: block;}
+.opinion-autor small {color: #6b7c8c; display: block; font-size: 0.85rem;}
+.opinion-inicial {align-items: center; background: #2C5786; border-radius: 50%; color: #ffffff; display: inline-flex; flex: none; font-weight: 700; height: 2.6rem; justify-content: center; width: 2.6rem;}
+
+/* Movimiento al pasar el mouse en tarjetas y fotos */
+.instituto-card, .crecimos-card, .cobertura-card, .primer-dia-card-start, .primer-dia-card-center, .primer-dia-card-end {transition: box-shadow 0.3s ease, transform 0.3s ease;}
+.instituto-card:hover, .crecimos-card:hover, .cobertura-card:hover {box-shadow: 0 14px 30px rgba(26, 60, 94, 0.18); transform: translateY(-6px);}
+.credencial-img {transition: transform 0.5s ease;}
+.credencial-img:hover {transform: scale(1.03) rotate(-1deg);}
+.servicio-card .servicio-icono i {transition: transform 0.3s ease;}
+.servicio-card:hover .servicio-icono i {transform: scale(1.12);}
+.plan-card .plan-nombre {transition: transform 0.35s ease;}
+.plan-card:hover .plan-nombre {transform: translateY(-4px);}
+@media (prefers-reduced-motion: reduce) {
+  .revelar {opacity: 1; transform: none; transition: none;}
+}
