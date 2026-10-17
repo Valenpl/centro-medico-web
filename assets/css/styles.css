@@ -574,3 +574,64 @@ body {font-size: 1.05rem;}
 @media (max-width: 575px) {
   .planm-card {flex-basis: 82%;}
 }
+
+/* ===== Mejoras 17/10 ===== */
+/* Todos los botones con el estilo de "Ver todos los centros" */
+.btn-primary-custom, .btn-outline-primary-custom {align-items: center; border: 2px solid #2C5786; border-radius: 50px !important; display: inline-flex; font-family: 'Hind', sans-serif; font-size: 1.05rem; font-weight: 700; justify-content: center; letter-spacing: 0.2px; line-height: 1.2; padding: 0.65rem 2rem 0.5rem; text-decoration: none; text-transform: none; transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;}
+.btn-primary-custom {background-color: #2C5786; color: #ffffff;}
+.btn-primary-custom:hover {background-color: #1a3c5e; border-color: #1a3c5e; color: #ffffff; opacity: 1; transform: translateY(-2px);}
+.btn-outline-primary-custom {background: #ffffff; color: #2C5786;}
+.btn-outline-primary-custom:hover {background: #2C5786 !important; color: #ffffff; transform: translateY(-2px);}
+.btn-secondary-nav, .planes-btn, .carousel .btn-secondary-nav {height: auto; line-height: 1.2; text-transform: none; width: auto;}
+.planes-btn {display: inline-flex; font-weight: 700;}
+.lh-35 {line-height: 1.2;}
+header .btn-secondary-nav {font-size: 0.95rem; min-width: 140px; padding: 0.5rem 1.4rem 0.35rem;}
+.offcanvas .btn-secondary-nav {width: 100%;}
+.carousel .btn-secondary-nav {font-size: 1.05rem; min-width: 170px;}
+
+/* Tablas de cobertura con etiquetas */
+.cob {border-radius: 50px; display: inline-block; font-size: 0.85rem; font-weight: 600; line-height: 1; margin: 0.1rem 0.15rem 0.1rem 0; padding: 0.4rem 0.75rem 0.3rem; white-space: nowrap;}
+.cob-sc {background: #E2F4EA; color: #1E7A4C;}
+.cob-cc {background: #FDF1DC; color: #9A6510;}
+.cob-st {background: #E6F0F8; color: #2C5786;}
+.cob-ct {background: #EEF0F3; color: #55606D;}
+.cob-nota {color: #55606D; font-size: 0.9rem; white-space: nowrap;}
+.cob-leyenda {background: #F4F7FB; border-radius: 1rem; margin-top: 2rem; padding: 1.5rem 1.75rem;}
+.cob-leyenda-titulo {color: #1a3c5e; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;}
+.cob-leyenda ul {list-style: none; margin: 0; padding: 0;}
+.cob-leyenda li {color: #33475b; margin-bottom: 0.5rem;}
+.cob-leyenda li .cob {margin-right: 0.5rem; min-width: 90px; text-align: center;}
+
+/* Números */
+.numeros-section {background: #2C5786; padding: 3rem 0;}
+.numero {color: #ffffff; font-family: 'Alike-Regular', sans-serif; font-size: 2.8rem; line-height: 1; margin-bottom: 0.5rem;}
+.numero-texto {color: #D6E6F2; font-size: 1.05rem; line-height: 1.3; margin: 0 auto; max-width: 220px;}
+@media (max-width: 575px) {
+  .numero {font-size: 2.2rem;}
+  .numero-texto {font-size: 0.95rem;}
+}
+
+/* Cierre de la home */
+.cierre-section {background: #EAF2F8; padding: 4rem 0;}
+
+/* Pie de página completo */
+.footer-frase {color: #D6E6F2; font-size: 0.95rem; line-height: 1.5; margin: 1rem 0;}
+footer .footer-label {font-size: 0.8rem; margin-bottom: 0.75rem;}
+.footer-links {list-style: none; margin: 0; padding: 0;}
+.footer-links li {color: #ffffff; font-size: 0.95rem; margin-bottom: 0.45rem;}
+.footer-links a {color: #ffffff; text-decoration: none;}
+.footer-links a:hover {color: #a8c8f0; text-decoration: underline;}
+.footer-contacto i {color: #a8c8f0; width: 1.25rem;}
+.footer-emergencias {align-items: center; background: rgba(255, 255, 255, 0.12); border-radius: 0.75rem; color: #ffffff; display: inline-flex; font-size: 1.4rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; padding: 0.6rem 1rem; text-decoration: none;}
+.footer-emergencias:hover {background: rgba(255, 255, 255, 0.2); color: #ffffff;}
+.footer-emergencias i {font-size: 1.5rem;}
+.footer-emergencias small {color: #a8c8f0; display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;}
+footer .footer-legal {color: rgba(255, 255, 255, 0.75); font-size: 0.8rem; margin-top: 2rem;}
+footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
+
+/* Textos chicos un poco más grandes y legibles */
+.seccion-bajada {color: #3d4d5e; font-size: 1.1rem;}
+.plan-info {font-size: 1rem;}
+.centro-foto-texto small {font-size: 0.9rem;}
+.centro-migas {font-size: 1rem;}
+.footer-copyright p {font-size: 0.9rem;}
