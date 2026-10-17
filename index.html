@@ -168,7 +168,6 @@
     <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
     <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
   
   <div class="carousel-inner">
@@ -195,10 +194,6 @@
     <div class="carousel-item">
       <img src="assets/img/slides/3.png" class="d-none d-lg-block w-100" alt="Slide 3">
       <img src="assets/img/slides/3-sm.png" class="d-block d-sm-none w-100" alt="Slide 3">
-    </div>
-    <div class="carousel-item">
-      <a href="https://miportalcm.com.ar/"><img src="assets/img/slides/4.png" class="d-none d-lg-block w-100" alt="Slide 4"></a>
-      <a href="https://miportalcm.com.ar/"><img src="assets/img/slides/4-sm.png" class="d-block d-sm-none w-100" alt="Slide 4"></a>
     </div>
     
   </div>
@@ -308,43 +303,54 @@
     <a href="afiliarse.html" class="btn-primary-custom rounded-5 planes-btn mb-3 text-decoration-none">Hablá con un asesor</a>
   </div>
 </section>
+<!-- Credencial digital -->
+<section class="credencial-section">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-12 col-lg-6 text-center">
+        <img src="assets/img/app-credencial.webp" alt="App de Centro Médico con la credencial digital y la cartilla" class="credencial-img">
+      </div>
+      <div class="col-12 col-lg-6">
+        <h2 class="credencial-titulo">Siempre con vos,<span>Credencial digital</span></h2>
+        <ul class="credencial-lista">
+          <li>Disponible en App Móvil y Sitio Web.</li>
+          <li>Acceso a las credenciales de tu grupo familiar.</li>
+          <li>Si lo preferís, también podés pedir tu credencial física mediante nuestros canales de atención.</li>
+        </ul>
+        <a href="https://miportalcm.com.ar/" target="_blank" rel="noopener" class="btn-pill">Ingresar a Mi Portal</a>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Centros de Atención -->
 <section class="centros-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5">Centros de Atención</h2>
-    <div class="row g-4">
-      <div class="col-12 col-md-6">
-        <div class="centro-card centro-card-home">
-          <img src="assets/img/centros/cmg.jpg" class="centro-foto" alt="Clínica Monte Grande">
-          <div class="centro-info">
-            <a href="https://maps.app.goo.gl/Fv89Wk846vYTe8dV9" class="centro-nombre" target="_blank" rel="noopener">Clínica Monte Grande <i class="fas fa-map-marker-alt"></i></a>
-            <p>General Rodríguez 158, Monte Grande</p>
-            <ul class="list-unstyled mb-0">
-              <li><i class="fas fa-plus"></i> <strong>Atención:</strong> 4367-6700</li>
-              <li><i class="fas fa-plus"></i> <strong>Call Center:</strong> 4367-6800</li>
-            </ul>
-          </div>
-        </div>
+    <h2 class="text-center mb-3">Centros de Atención</h2>
+    <p class="seccion-bajada text-center">Con tu plan accedés a las instituciones más destacadas de la zona, con profesionales de primer nivel e infraestructura moderna para cuidar la salud de tu familia.</p>
+    <div class="centros-mosaico">
+      <div class="mosaico-col mosaico-izq">
+        <span class="mosaico-bloque"></span>
+        <a href="centro-consultorios-norte.html" class="centro-foto-card mosaico-chica">
+          <img src="assets/img/centros/norte.jpg" alt="Consultorios Norte">
+          <span class="centro-foto-texto"><small>Consultorios</small>Consultorios Norte</span>
+        </a>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="centro-card centro-card-home">
-          <img src="assets/img/centros/canning.jpg" class="centro-foto" alt="Canning Health Institute">
-          <div class="centro-info">
-            <a href="https://maps.app.goo.gl/CVrKPdXWLTeh4YNH6" class="centro-nombre" target="_blank" rel="noopener">Canning Health Institute <i class="fas fa-map-marker-alt"></i></a>
-            <p>Mariano Castex 1078, Canning</p>
-            <ul class="list-unstyled mb-0">
-              <li><i class="fas fa-plus"></i> <strong>Atención:</strong> 11 3751-6900</li>
-              <li><i class="fas fa-plus"></i> <strong>Turnos:</strong> 11 6392-9296</li>
-              <li><i class="fas fa-plus"></i> <strong>Call Center:</strong> 4367-6800</li>
-            </ul>
-          </div>
-        </div>
+      <div class="mosaico-col mosaico-centro">
+        <a href="centro-clinica-monte-grande.html" class="centro-foto-card mosaico-grande">
+          <img src="assets/img/centros/cmg.jpg" alt="Clínica Monte Grande">
+          <span class="centro-foto-texto"><small>Clínica</small>Clínica Monte Grande</span>
+        </a>
+      </div>
+      <div class="mosaico-col mosaico-der">
+        <a href="centro-canning-health-institute.html" class="centro-foto-card mosaico-chica">
+          <img src="assets/img/centros/canning.jpg" alt="Canning Health Institute">
+          <span class="centro-foto-texto"><small>Centro de atención</small>Canning Health Institute</span>
+        </a>
+        <span class="mosaico-bloque"></span>
       </div>
     </div>
-    <div class="row">
-      <div class="gap-1 mt-5 text-center">
-        <a href="centros.html" class="btn-outline-primary-custom rounded-5 planes-btn bg-transparent text-decoration-none">Ver más centros de atención</a>
-      </div>
+    <div class="text-center mt-5">
+      <a href="centros.html" class="btn-pill">Ver todos los centros</a>
     </div>
   </div>
 </section>
