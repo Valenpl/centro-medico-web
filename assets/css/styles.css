@@ -674,3 +674,12 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 .offcanvas .navbar-nav .nav-item {display: block;}
 .offcanvas .navbar-nav .nav-item::after {display: none !important;}
 .offcanvas-body .mt-4 {display: flex; flex-direction: column; gap: 0.6rem;}
+/* Mosaico de centros sin bloques vacíos: chicas a los costados, la clínica grande al medio */
+.centros-mosaico {align-items: center;}
+.mosaico-chica {flex: none; height: 340px;}
+@media (max-width: 991px) {
+  .mosaico-chica {height: 240px;}
+}
+@media (max-width: 575px) {
+  .mosaico-chica {height: 220px;}
+}
