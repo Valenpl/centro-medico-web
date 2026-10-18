@@ -1095,3 +1095,33 @@ section.primer-dia {padding-top: 3rem;}
   .centro-detalle-botones a {flex: 1 1 100%; justify-content: center;}
   .centro-navegacion {margin-top: 1.5rem;}
 }
+
+/* Compará los planes en compu: tarjetas más compactas para ver también los botones de abajo */
+@media (min-width: 768px) {
+  .planes-intro h2 {font-size: 1.9rem; margin-bottom: 0 !important;}
+  .planes-intro.mt-5 {margin-top: 2rem !important;}
+  .planm-section {padding-top: 1rem;}
+  .planm-controles {margin-bottom: 0.5rem;}
+  .planm-flecha {height: 38px; width: 38px;}
+  .planm-carrusel {gap: 1.1rem; padding-bottom: 1.25rem;}
+  .planm-card {padding: 1.25rem 1.35rem 1.1rem;}
+  .planm-logo {border-radius: 0.8rem; font-size: 1.2rem; height: 46px; margin-bottom: 0.75rem; width: 46px;}
+  .planm-nombre {font-size: 1.25rem; margin-bottom: 0.35rem;}
+  .planm-texto {font-size: 0.92rem; margin-bottom: 0.8rem; padding-bottom: 0.8rem;}
+  .planm-lista {margin-bottom: 0.9rem;}
+  .planm-lista li {font-size: 0.88rem; margin-bottom: 0.45rem; padding-left: 1.75rem;}
+  .planm-lista li::before {font-size: 0.55rem; height: 1.15rem; width: 1.15rem;}
+  .planm-btn {font-size: 0.95rem;}
+  .planes .historia-cierre .botones-par, .historia-cierre .botones-par.mb-5 {margin-bottom: 2.5rem !important;}
+}
+@media (min-width: 1200px) {
+  .planm-card {flex-basis: calc((100% - 3 * 1.1rem) / 4);}
+}
+@media (min-width: 768px) and (max-width: 1599px) {
+  .planm-card {padding: 1.1rem 1.2rem 1rem;}
+  .planm-logo {height: 40px; margin-bottom: 0.6rem; width: 40px;}
+  .planm-texto {font-size: 0.88rem; line-height: 1.35; margin-bottom: 0.65rem; padding-bottom: 0.65rem;}
+  .planm-lista li {font-size: 0.85rem; line-height: 1.3; margin-bottom: 0.35rem;}
+  .planm-lista {margin-bottom: 0.6rem;}
+  .planm-carrusel {padding-bottom: 1rem;}
+}
