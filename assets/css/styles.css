@@ -726,3 +726,16 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
   .redes .btn-contacto {font-size: 1.05rem; min-width: 0; width: 100%; max-width: 280px;}
   .btn-enviar {min-width: 0; width: 100%; max-width: 280px;}
 }
+
+/* Credencial en celular y tablet: texto más al medio, sin pegarse al borde */
+@media (max-width: 991px) {
+  .credencial-texto {margin: 0 auto; max-width: 520px; padding: 0 1.5rem; text-align: center;}
+  .credencial-lista {display: inline-block; text-align: left;}
+}
+@media (max-width: 575px) {
+  .credencial-section {padding: 3rem 0;}
+  .credencial-texto {padding: 0 2rem;}
+  .credencial-titulo {font-size: 2rem;}
+  .credencial-titulo span {font-size: 2.1rem;}
+  .credencial-lista li {font-size: 1.05rem;}
+}
