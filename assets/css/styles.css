@@ -714,3 +714,15 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 @media (prefers-reduced-motion: reduce) {
   .revelar {opacity: 1; transform: none; transition: none;}
 }
+
+/* ===== Contacto: tarjetas y botones ===== */
+.contacto-card {align-items: center; display: flex; flex-direction: column; padding: 2.5rem 2rem;}
+.contacto-card p:last-of-type {margin-bottom: 1.5rem;}
+.redes .btn-contacto {display: inline-flex; font-size: 1.1rem; gap: 0.6rem; margin-top: auto; max-width: 100%; min-width: 230px; padding: 0.8rem 1.75rem 0.65rem; white-space: nowrap;}
+.redes .btn-contacto i {font-size: 1.15rem; height: auto; margin-top: -0.15rem;}
+.btn-enviar {font-size: 1.1rem; min-width: 220px; padding: 0.8rem 2.5rem 0.65rem;}
+@media (max-width: 575px) {
+  .contacto-card {padding: 2rem 1.5rem;}
+  .redes .btn-contacto {font-size: 1.05rem; min-width: 0; width: 100%; max-width: 280px;}
+  .btn-enviar {min-width: 0; width: 100%; max-width: 280px;}
+}
