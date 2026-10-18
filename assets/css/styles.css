@@ -870,3 +870,14 @@ main > section.primer-dia:last-of-type {margin-bottom: 0 !important;}
 }
 /* Secciones grises: el título no queda pegado arriba */
 section.primer-dia {padding-top: 3rem;}
+
+/* Planes de la home: el + en un círculo parejo (antes se veía ovalado) */
+.plan-btn {box-sizing: border-box; flex: 0 0 auto; height: 34px; min-height: 34px; min-width: 34px; padding: 0; width: 34px;}
+.plan-btn i {font-size: 0.85rem; line-height: 1;}
+.plan-card:hover .plan-btn {background: #ffffff; border-color: #ffffff; color: #2C5786;}
+
+/* Menú del celular: submenús en azul más fuerte, y más intenso al tocarlos */
+#institucionalCollapse a, #planesCollapse a {border-radius: 0.5rem; color: #2C5786; font-weight: 600;}
+#institucionalCollapse a:hover, #institucionalCollapse a:focus, #institucionalCollapse a:active,
+#planesCollapse a:hover, #planesCollapse a:focus, #planesCollapse a:active {background-color: #EAF2F8; color: #1a3c5e;}
+.offcanvas .nav-link[aria-expanded="true"] {color: #1a3c5e; font-weight: 600;}
