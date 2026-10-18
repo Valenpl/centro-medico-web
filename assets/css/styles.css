@@ -714,3 +714,384 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 @media (prefers-reduced-motion: reduce) {
   .revelar {opacity: 1; transform: none; transition: none;}
 }
+
+/* ===== Contacto: tarjetas y botones ===== */
+.contacto-card {align-items: center; display: flex; flex-direction: column; padding: 2.5rem 2rem;}
+.contacto-card p:last-of-type {margin-bottom: 1.5rem;}
+.redes .btn-contacto {display: inline-flex; font-size: 1.1rem; gap: 0.6rem; margin-top: auto; max-width: 100%; min-width: 230px; padding: 0.8rem 1.75rem 0.65rem; white-space: nowrap;}
+.redes .btn-contacto i {font-size: 1.15rem; height: auto; margin-top: -0.15rem;}
+.btn-enviar {font-size: 1.1rem; min-width: 220px; padding: 0.8rem 2.5rem 0.65rem;}
+@media (max-width: 575px) {
+  .contacto-card {padding: 2rem 1.5rem;}
+  .redes .btn-contacto {font-size: 1.05rem; min-width: 0; width: 100%; max-width: 280px;}
+  .btn-enviar {min-width: 0; width: 100%; max-width: 280px;}
+}
+
+/* Credencial en celular y tablet: texto más al medio, sin pegarse al borde */
+@media (max-width: 991px) {
+  .credencial-texto {margin: 1.5rem auto 0; max-width: 520px; padding: 0 1.5rem; text-align: center;}
+  .credencial-lista {display: inline-block; text-align: left;}
+}
+@media (max-width: 575px) {
+  .credencial-section {padding: 3rem 0;}
+  .credencial-texto {padding: 0 2rem;}
+  .credencial-titulo {font-size: 2rem;}
+  .credencial-titulo span {font-size: 2.1rem;}
+  .credencial-lista li {font-size: 1.05rem;}
+}
+
+/* ===== Revisión general 18/10 ===== */
+/* Textos chicos más legibles */
+footer .footer-label {font-size: 0.85rem;}
+footer .footer-legal {font-size: 0.85rem;}
+.footer-emergencias small {font-size: 0.8rem;}
+.centro-navegacion small {font-size: 0.85rem;}
+.beneficio-badge {font-size: 0.75rem;}
+/* Nombres largos de centros que no entran en el celular */
+.centro-detalle-nombre {hyphens: auto; overflow-wrap: break-word;}
+@media (max-width: 575px) {
+  .centro-detalle-nombre {font-size: 1.65rem;}
+}
+@media (max-width: 399px) {
+  .plan-nombre {font-size: 1.45rem;}
+}
+
+/* Banners internos: crecen si el texto no entra (antes se cortaba en el celular) */
+.banner-interno {height: auto; min-height: 150px; padding: 1.5rem 0;}
+.banner-subtitulo {letter-spacing: 0; text-wrap: balance;}
+@media (min-width: 768px) {
+  .banner-interno {min-height: 300px;}
+}
+@media (min-width: 992px) {
+  .banner-interno {min-height: 40vh;}
+}
+
+/* Botones de a dos, con aire entre ellos */
+.hero-botones {display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem;}
+.botones-par {display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; justify-content: center;}
+.botones-par > a {min-width: 210px;}
+
+/* Margen a los costados en celular (algunas secciones lo perdían y el texto quedaba pegado al borde) */
+@media (max-width: 767px) {
+  .centro-detalle, .opiniones-section, .faq-section, .planm-section, .cobertura-salud, .crecimos {padding-left: 1rem; padding-right: 1rem;}
+  footer > .container {padding-left: 1.75rem; padding-right: 1.75rem;}
+}
+
+/* Sin franja blanca entre la última sección gris y el pie */
+main > section.primer-dia:last-of-type {margin-bottom: 0 !important;}
+
+/* Frases de cierre */
+.frase-cierre {margin: 3rem auto; max-width: 36rem; padding: 0 1rem;}
+@media (max-width: 575px) {
+  .frase-cierre br {display: none;}
+}
+
+/* Título y bajada del bloque "Tu salud merece el mejor respaldo" */
+.afiliar-section h4 + p {margin-top: 0.75rem;}
+
+/* Tablets: tarjetas apiladas con todas las esquinas redondeadas */
+@media (min-width: 768px) and (max-width: 991px) {
+  .primer-dia-card-start, .primer-dia-card-center, .primer-dia-card-end {border-radius: 2rem;}
+}
+
+/* Home, planes en tablet: de a 3 por fila en vez de 7 apretados */
+@media (min-width: 768px) and (max-width: 991px) {
+  .planes-bg {height: auto;}
+  .planes-bg .container-fluid .col {flex: 0 0 33.333%; max-width: 33.333%;}
+  .planes-bg .container-fluid .col:last-child {flex: 0 0 100%; max-width: 100%;}
+  .plan-card {height: 240px;}
+}
+
+/* Fotos recortadas que se salían de la tarjeta en tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cobertura-img-float {display: none;}
+}
+
+/* Fondo mitad blanco / mitad gris: liso cuando las tarjetas se apilan */
+@media (max-width: 991px) {
+  .crecimos {background: #EAEDF2;}
+}
+@media (max-width: 767px) {
+  .cobertura-salud {background: #ffffff;}
+}
+
+/* Listas con tilde: la segunda línea queda alineada con el texto */
+.cobertura-card li, .cobertura-salud li {padding-left: 1.75rem; position: relative;}
+.cobertura-card li > .fa-check, .cobertura-salud li > .fa-check {left: 0; position: absolute; top: 0.3em;}
+
+/* Preguntas frecuentes en tablet: mismo margen que el resto */
+@media (max-width: 991px) {
+  .faq-contenedor {max-width: 720px;}
+}
+
+/* Planes: carrusel de a 2 tarjetas en tablet y sombra sin cortar */
+.planm-section {padding-bottom: 1.5rem;}
+.planm-carrusel {padding-bottom: 2rem;}
+@media (min-width: 768px) and (max-width: 991px) {
+  .planm-card {flex-basis: calc((100% - 1.5rem) / 2);}
+}
+
+/* Tablas de cobertura más prolijas */
+.tabla-cobertura tbody td {border-bottom: 1px solid #e3e9f0;}
+.tabla-cobertura tbody td:first-child {border-right-color: #c9d6e2;}
+.tabla-cobertura tbody td[colspan] {border-right: none;}
+.tabla-cobertura .fila-subtitulo {font-style: italic; font-weight: 600;}
+.tabla-cobertura .cob {min-width: 84px; text-align: center;}
+@media (max-width: 575px) {
+  .tabla-cobertura {table-layout: fixed;}
+  .tabla-cobertura td {overflow-wrap: anywhere;}
+  .tabla-cobertura .cob-nota {white-space: normal;}
+  .tabla-cobertura .cob {min-width: 0;}
+}
+
+/* Odontología: borde de color recto */
+.cobertura-box {border-left: none; box-shadow: inset 8px 0 0 #1d4f88, 0 10px 30px rgba(0, 0, 0, .08);}
+
+/* Tarjetas de contacto: títulos en azul */
+.redes p.fw-bold {color: #1a3c5e;}
+
+/* Centros: mapa con fondo mientras carga, y anterior / siguiente con más aire */
+.centro-detalle-mapa {background: #EAF2F8;}
+.centro-navegacion {gap: 1.5rem;}
+@media (max-width: 575px) {
+  .centro-navegacion a {align-items: flex-start;}
+}
+
+/* Pie: "Valores Coseguros" no se corta */
+.footer-legal-link {white-space: nowrap;}
+
+/* Planes Junior: botones "Ver más" a la misma altura */
+.crecimos-card .card-body > a:last-child {align-self: center; margin-top: auto;}
+
+/* Celular: texto del banner y botones de la portada alineados con el borde */
+@media (max-width: 767px) {
+  .banner-interno .container {padding-left: 1.25rem; padding-right: 1.25rem;}
+  #miCarousel .carousel-caption {left: 0.75rem; right: 0.75rem;}
+}
+/* Secciones grises: el título no queda pegado arriba */
+section.primer-dia {padding-top: 3rem;}
+
+/* Planes de la home: el + en un círculo parejo (antes se veía ovalado) */
+.plan-btn {box-sizing: border-box; flex: 0 0 auto; height: 34px; min-height: 34px; min-width: 34px; padding: 0; width: 34px;}
+.plan-btn i {font-size: 0.85rem; line-height: 1;}
+.plan-card:hover .plan-btn {background: #ffffff; border-color: #ffffff; color: #2C5786;}
+
+/* Menú del celular: submenús en azul más fuerte, y más intenso al tocarlos */
+#institucionalCollapse a, #planesCollapse a {border-radius: 0.5rem; color: #2C5786; font-weight: 600;}
+#institucionalCollapse a:hover, #institucionalCollapse a:focus, #institucionalCollapse a:active,
+#planesCollapse a:hover, #planesCollapse a:focus, #planesCollapse a:active {background-color: #EAF2F8; color: #1a3c5e;}
+.offcanvas .nav-link[aria-expanded="true"] {color: #1a3c5e; font-weight: 600;}
+
+/* Odontología: especialistas de a 2 en celular y tablet, con fotos más chicas */
+.especialistas .card-img-top {aspect-ratio: 4 / 5; object-fit: cover; object-position: top;}
+@media (max-width: 767px) {
+  .especialistas .card-body {padding: 0.75rem 0.25rem 0.5rem;}
+  .especialistas .card-title {font-size: 1rem; line-height: 1.25; margin-bottom: 0.4rem;}
+  .especialistas p {font-size: 0.9rem; line-height: 1.35; margin-bottom: 0;}
+}
+
+/* Menú del celular y tablet: letra más chica y opciones en negrita */
+.offcanvas .nav-link {font-size: 0.95rem; font-weight: 700; padding-bottom: 0.55rem; padding-top: 0.65rem;}
+.offcanvas .dropdown-item {font-size: 0.9rem; padding-bottom: 0.4rem; padding-top: 0.45rem;}
+@media (min-width: 768px) {
+  .offcanvas .nav-link {font-size: 1rem;}
+  .offcanvas .dropdown-item {font-size: 0.95rem;}
+}
+
+/* Planes de la home en celular: la tarjeta crece con el texto, así el + no pisa la línea */
+@media (max-width: 767px) {
+  .plan-card {height: auto; min-height: 200px; padding-bottom: 1rem;}
+  .plan-card .plan-btn {margin-top: 0.75rem;}
+}
+
+/* Letra de todo el sitio un poco más chica en celular y tablet */
+@media (max-width: 991px) {
+  html {font-size: 15.5px;}
+}
+@media (max-width: 767px) {
+  html {font-size: 15px;}
+  body {font-size: 1rem;}
+  .institutos p, .institutos ul, .centros p, .centros ul {font-size: 1rem;}
+  .cobertura-box p {font-size: 1rem; line-height: 1.6;}
+  .afiliar-section p, .primer-dia p {font-size: 1.05rem;}
+  .seccion-bajada {font-size: 1.05rem;}
+  .modal-atencion-titulo {font-size: 1.15rem;}
+  .modal-atencion-numero {font-size: 1.5rem;}
+}
+
+/* Compará los planes: pista para deslizar (solo en celular) */
+.planm-pista {display: none;}
+@media (max-width: 767px) {
+  .planes-intro h2 {font-size: 1.45rem; margin-bottom: 0 !important;}
+  .planm-section {padding-top: 1rem;}
+  .planm-controles {align-items: center; justify-content: space-between; margin-bottom: 0.5rem;}
+  .planm-pista {color: #55606D; display: block; font-size: 0.9rem; margin: 0 auto 0 0;}
+  .planm-flecha {height: 36px; width: 36px;}
+  .planm-flecha + .planm-flecha {margin-left: 0.5rem;}
+  .planm-carrusel {gap: 0.9rem; padding-bottom: 1.25rem;}
+  .planm-card {flex-basis: 80%; padding: 1.1rem 1.1rem 1rem;}
+  .planm-logo {border-radius: 0.75rem; font-size: 1.15rem; height: 42px; margin-bottom: 0.6rem; width: 42px;}
+  .planm-nombre {font-size: 1.2rem; margin-bottom: 0.3rem;}
+  .planm-texto {font-size: 0.9rem; margin-bottom: 0.75rem; padding-bottom: 0.75rem;}
+  .planm-lista {margin-bottom: 0.9rem;}
+  .planm-lista li {font-size: 0.87rem; margin-bottom: 0.45rem; padding-left: 1.7rem;}
+  .planm-lista li::before {font-size: 0.55rem; height: 1.1rem; width: 1.1rem;}
+}
+
+/* ===== Home en celular: más compacta ===== */
+@media (max-width: 767px) {
+  /* Servicios: los 4 en una fila, círculos más chicos */
+  .servicios-section {padding-bottom: 2rem !important; padding-top: 2rem !important;}
+  .servicios-titulo {margin-bottom: 1.5rem !important;}
+  .servicio-icono {font-size: 1.4rem; height: 62px; width: 62px;}
+  .servicio-label {font-size: 0.8rem; line-height: 1.2; margin-top: 0.5rem;}
+  /* Números */
+  .numeros-section {padding: 2rem 0;}
+  .numero {font-size: 1.9rem;}
+  .numero-texto {font-size: 0.9rem;}
+  /* Planes: tarjetas más bajas */
+  .plan-card {height: 100%; min-height: 0; padding: 0.9rem 0.85rem 0.75rem;}
+  .centros-section {padding-bottom: 2rem !important; padding-top: 2rem !important;}
+  .plan-nombre {font-size: 1.25rem;}
+  .plan-info {font-size: 0.82rem; margin-top: 0.35rem;}
+  .plan-card .plan-btn {height: 30px; margin-top: 0.5rem; min-height: 30px; min-width: 30px; width: 30px;}
+  /* Credencial: foto más chica */
+  .credencial-section {padding: 2.5rem 0;}
+  .credencial-img {width: 230px;}
+  .credencial-titulo {font-size: 1.7rem; margin-bottom: 1rem;}
+  .credencial-titulo span {font-size: 1.8rem;}
+  .credencial-lista li {font-size: 0.95rem; margin-bottom: 0.6rem;}
+  .credencial-lista {margin-bottom: 1.5rem;}
+  /* Centros: la clínica grande arriba y los otros dos de a dos */
+  .centros-mosaico {gap: 0.75rem; grid-template-columns: 1fr 1fr;}
+  .mosaico-centro {grid-column: 1 / -1; order: -1;}
+  .mosaico-grande {height: 200px;}
+  .mosaico-grande .centro-foto-texto {font-size: 1.25rem;}
+  .mosaico-chica {height: 150px;}
+  .mosaico-chica .centro-foto-texto {font-size: 0.95rem;}
+  .mosaico-chica .centro-foto-texto small {font-size: 0.75rem;}
+  /* Opiniones: se deslizan de costado en vez de apilarse */
+  .opiniones-section {padding: 2.5rem 1rem;}
+  .opiniones-fila {flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.75rem; scroll-snap-type: x mandatory; --bs-gutter-x: 0.9rem;}
+  .opiniones-fila > [class*="col-"] {flex: 0 0 85%; scroll-snap-align: start;}
+  .opinion-card {padding: 1.25rem;}
+  .opinion-texto {font-size: 0.95rem;}
+  /* Cierre */
+  .cierre-section {padding: 2.5rem 0;}
+}
+
+/* ===== Páginas de planes y pie en celular: más compactos ===== */
+@media (max-width: 767px) {
+  /* Banners internos más bajos */
+  .banner-interno {min-height: 120px; padding: 1rem 0;}
+  .banner-titulo {font-size: 1.75rem; margin-bottom: 0.25rem;}
+  .banner-subtitulo {font-size: 0.92rem;}
+  /* Introducción del plan */
+  .plan-section {padding-bottom: 1.5rem !important; padding-top: 1.5rem !important;}
+  .plan-section h2 {font-size: 1.35rem; padding-bottom: 0.5rem;}
+  /* Tabla de cobertura: cada fila en una línea */
+  .tabla-cobertura {margin-top: 0.75rem !important;}
+  .tabla-cobertura thead th:first-child {width: 40%;}
+  .tabla-cobertura thead th {font-size: 1.05rem; padding: 0.45rem 0.5rem;}
+  .tabla-cobertura td {font-size: 0.9rem; padding: 0.45rem 0.5rem;}
+  .tabla-cobertura .cob {font-size: 0.72rem; margin: 0.05rem 0.1rem 0.05rem 0; padding: 0.3rem 0.5rem 0.22rem;}
+  .tabla-cobertura .cob-nota {display: block; font-size: 0.8rem;}
+  .tabla-cobertura td.bg-grey {font-size: 0.85rem; padding: 0.4rem 0.5rem;}
+  /* Referencias de las etiquetas */
+  .cob-leyenda {margin-top: 1rem; padding: 0.9rem 1rem;}
+  .cob-leyenda-titulo {font-size: 0.95rem; margin-bottom: 0.5rem;}
+  .cob-leyenda li {font-size: 0.85rem; margin-bottom: 0.35rem;}
+  .cob-leyenda li .cob {min-width: 76px;}
+  /* Cierre "Tu salud merece el mejor respaldo": botones lado a lado */
+  .afiliar-section.py-5 {padding-bottom: 2rem !important; padding-top: 2rem !important;}
+  .afiliar-section h4 {font-size: 1.3rem;}
+  .botones-par.mt-5 {margin-top: 1.25rem !important;}
+  .afiliar-section .botones-par {flex-wrap: nowrap; padding: 0 0.5rem;}
+  .afiliar-section .botones-par > a {flex: 1 1 0; font-size: 0.92rem; min-width: 0; padding-left: 0.75rem; padding-right: 0.75rem;}
+  /* Plan Junior: sin las fotos de las tarjetas y formulario más compacto */
+  .plan-section + .crecimos .card-img-top {display: none;}
+  .crecimos .card-body {padding: 1.25rem;}
+  .crecimos-card ul.mb-5 {margin-bottom: 1rem !important;}
+  .crecimos .row.g-5 {--bs-gutter-y: 1rem;}
+  /* Plan Promi: menos espacio antes de la tarjeta */
+  .plan-section + .cobertura-salud {padding-top: 0;}
+  /* Botón flotante de WhatsApp un poco más chico */
+  .wapp {bottom: 12px; height: 50px; right: 8px; width: 50px;}
+  .wapp img {height: auto; width: 100%;}
+  /* Pie: sin las listas de links (ya están en el menú) y más compacto */
+  footer .col-6.col-lg-2 {display: none;}
+  footer.pt-5 {padding-top: 1.75rem !important;}
+  footer .row.g-4 {--bs-gutter-y: 1rem;}
+  .footer-logo {max-height: 56px; width: auto;}
+  .footer-frase {margin: 0.6rem 0;}
+  footer .footer-legal {margin-top: 1.25rem;}
+  .footer-contacto a {display: inline-block; padding: 0.2rem 0;}
+}
+
+/* ===== Resto de las páginas en celular: más compactas ===== */
+@media (max-width: 767px) {
+  .banner-interno {min-height: 105px; padding: 0.85rem 0;}
+  .banner-titulo {font-size: 1.6rem;}
+  .afiliar-section.mt-5 {margin-top: 1.5rem !important;}
+  .afiliar-section h2 {font-size: 1.45rem; margin-bottom: 0.75rem !important;}
+  .afiliar-section h2 br, .primer-dia p br.d-md-inline {display: none;}
+  .frase-cierre {font-size: 1.15rem; margin: 1.5rem auto;}
+  /* Tarjetas de contacto (Contacto y Afiliarme) */
+  .redes .contacto-card {padding: 1.1rem 1rem;}
+  .redes .contacto-card p.fw-bold br {display: none;}
+  .redes .contacto-card .fs-2 {font-size: 1.2rem !important; height: auto; margin-right: 0.4rem;}
+  .redes .contacto-card p.fw-bold {margin-bottom: 0.4rem;}
+  .redes .primer-dia-card-start p:nth-of-type(2), .redes .primer-dia-card-center p:nth-of-type(2) {display: none;}
+  .redes .contacto-card p:last-of-type {margin-bottom: 0.9rem;}
+  /* Formularios */
+  section.primer-dia.py-5 {margin-bottom: 1.5rem !important; margin-top: 1.5rem !important; padding-bottom: 1.5rem !important; padding-top: 1.5rem !important;}
+  section.primer-dia.px-3 {padding-left: 0.75rem !important; padding-right: 0.75rem !important;}
+  form.p-3 {border-radius: 1.25rem; padding: 1rem !important;}
+  form .row {--bs-gutter-y: 0.6rem;}
+  .form-label {font-size: 0.95rem; margin-bottom: 0.2rem;}
+  .form-control {padding: 0.45rem 0.9rem;}
+  form textarea.form-control {height: 90px;}
+  /* Recursos humanos, Quiénes somos, Odontología: tarjetas */
+  .cobertura-salud {padding-bottom: 1.5rem; padding-top: 1.5rem;}
+  .cobertura-salud h2 {font-size: 1.2rem;}
+  .cobertura-card .p-4, .primer-dia .p-4 {padding: 1.25rem !important;}
+  .primer-dia p.mb-5 {margin-bottom: 1.25rem !important;}
+  .primer-dia .row.g-3 {--bs-gutter-y: 0.6rem;}
+  .primer-dia .beneficio-badge {display: none;}
+  .cobertura-box {padding: 1.25rem;}
+  .cobertura-box h2 {font-size: 1.5rem; margin-bottom: 0.75rem !important;}
+  .especialistas .card-img-top {aspect-ratio: 1 / 1;}
+  /* Historia */
+  .crecimos {padding: 1.5rem 1rem;}
+  .crecimos .row {--bs-gutter-y: 1rem;}
+  .crecimos .card-img-top {aspect-ratio: 16 / 7; object-fit: cover;}
+  .crecimos h5 {margin-bottom: 0.6rem;}
+  .crecimos .card-text {font-size: 0.95rem; line-height: 1.5;}
+  /* Preguntas frecuentes */
+  .faq-section {padding-top: 1.5rem;}
+  .faq-categoria {font-size: 1.2rem; margin: 1.5rem 0 0.6rem;}
+  .faq-categoria i {height: 2rem; width: 2rem;}
+  .faq-lista .accordion-button {font-size: 1rem; padding: 0.75rem 1rem 0.6rem;}
+  .faq-lista .accordion-item {margin-bottom: 0.5rem;}
+  .faq-ayuda {margin-top: 1.5rem; padding: 1.25rem;}
+  /* Centros: de a dos, el primero grande */
+  .centros-grilla {gap: 0.75rem;}
+  .centro-grilla-card {aspect-ratio: 1 / 1; flex-basis: calc((100% - 0.75rem) / 2);}
+  .centros-listado .centro-grilla-card:first-child {aspect-ratio: 16 / 9; flex-basis: 100%;}
+  .centro-grilla-card .centro-foto-texto {bottom: 0.6rem; font-size: 1rem; left: 0.7rem; right: 0.7rem;}
+  .centro-grilla-card .centro-foto-texto small {font-size: 0.72rem;}
+  .centro-grilla-card .centro-foto-texto {hyphens: auto; overflow-wrap: break-word;}
+  .centros-listado-titulo {font-size: 1.25rem; margin: 1.5rem 0 0.75rem;}
+  /* Página de cada centro: datos primero, sin mapa (está "Cómo llegar") */
+  .centro-migas, .centro-detalle-mapa {display: none;}
+  .centro-detalle .row > .col-12:first-child {order: 2;}
+  .centro-detalle-foto {aspect-ratio: 2 / 1; object-fit: cover;}
+  .centro-detalle {padding: 1.25rem 1rem 2rem;}
+  .centro-detalle-info {padding: 1.25rem;}
+  .centro-detalle-nombre {display: none;}
+  .centro-detalle-info > .centro-detalle-sub:first-of-type {margin-top: 0;}
+  .centro-detalle-sub {margin: 0.75rem 0 0.35rem;}
+  .centro-detalle-botones {margin-top: 1rem;}
+  .centro-detalle-botones a {flex: 1 1 100%; justify-content: center;}
+  .centro-navegacion {margin-top: 1.5rem;}
+}
