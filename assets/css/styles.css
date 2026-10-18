@@ -889,3 +889,11 @@ section.primer-dia {padding-top: 3rem;}
   .especialistas .card-title {font-size: 1rem; line-height: 1.25; margin-bottom: 0.4rem;}
   .especialistas p {font-size: 0.9rem; line-height: 1.35; margin-bottom: 0;}
 }
+
+/* Menú del celular y tablet: letra más chica y opciones en negrita */
+.offcanvas .nav-link {font-size: 0.95rem; font-weight: 700; padding-bottom: 0.55rem; padding-top: 0.65rem;}
+.offcanvas .dropdown-item {font-size: 0.9rem; padding-bottom: 0.4rem; padding-top: 0.45rem;}
+@media (min-width: 768px) {
+  .offcanvas .nav-link {font-size: 1rem;}
+  .offcanvas .dropdown-item {font-size: 0.95rem;}
+}
