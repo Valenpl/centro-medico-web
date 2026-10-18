@@ -729,7 +729,7 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
 
 /* Credencial en celular y tablet: texto más al medio, sin pegarse al borde */
 @media (max-width: 991px) {
-  .credencial-texto {margin: 0 auto; max-width: 520px; padding: 0 1.5rem; text-align: center;}
+  .credencial-texto {margin: 1.5rem auto 0; max-width: 520px; padding: 0 1.5rem; text-align: center;}
   .credencial-lista {display: inline-block; text-align: left;}
 }
 @media (max-width: 575px) {
@@ -739,3 +739,134 @@ footer .footer-legal-link {color: rgba(255, 255, 255, 0.85);}
   .credencial-titulo span {font-size: 2.1rem;}
   .credencial-lista li {font-size: 1.05rem;}
 }
+
+/* ===== Revisión general 18/10 ===== */
+/* Textos chicos más legibles */
+footer .footer-label {font-size: 0.85rem;}
+footer .footer-legal {font-size: 0.85rem;}
+.footer-emergencias small {font-size: 0.8rem;}
+.centro-navegacion small {font-size: 0.85rem;}
+.beneficio-badge {font-size: 0.75rem;}
+/* Nombres largos de centros que no entran en el celular */
+.centro-detalle-nombre {hyphens: auto; overflow-wrap: break-word;}
+@media (max-width: 575px) {
+  .centro-detalle-nombre {font-size: 1.65rem;}
+}
+@media (max-width: 399px) {
+  .plan-nombre {font-size: 1.45rem;}
+}
+
+/* Banners internos: crecen si el texto no entra (antes se cortaba en el celular) */
+.banner-interno {height: auto; min-height: 150px; padding: 1.5rem 0;}
+.banner-subtitulo {letter-spacing: 0; text-wrap: balance;}
+@media (min-width: 768px) {
+  .banner-interno {min-height: 300px;}
+}
+@media (min-width: 992px) {
+  .banner-interno {min-height: 40vh;}
+}
+
+/* Botones de a dos, con aire entre ellos */
+.hero-botones {display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem;}
+.botones-par {display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; justify-content: center;}
+.botones-par > a {min-width: 210px;}
+
+/* Margen a los costados en celular (algunas secciones lo perdían y el texto quedaba pegado al borde) */
+@media (max-width: 767px) {
+  .centro-detalle, .opiniones-section, .faq-section, .planm-section, .cobertura-salud, .crecimos {padding-left: 1rem; padding-right: 1rem;}
+  footer > .container {padding-left: 1.75rem; padding-right: 1.75rem;}
+}
+
+/* Sin franja blanca entre la última sección gris y el pie */
+main > section.primer-dia:last-of-type {margin-bottom: 0 !important;}
+
+/* Frases de cierre */
+.frase-cierre {margin: 3rem auto; max-width: 36rem; padding: 0 1rem;}
+@media (max-width: 575px) {
+  .frase-cierre br {display: none;}
+}
+
+/* Título y bajada del bloque "Tu salud merece el mejor respaldo" */
+.afiliar-section h4 + p {margin-top: 0.75rem;}
+
+/* Tablets: tarjetas apiladas con todas las esquinas redondeadas */
+@media (min-width: 768px) and (max-width: 991px) {
+  .primer-dia-card-start, .primer-dia-card-center, .primer-dia-card-end {border-radius: 2rem;}
+}
+
+/* Home, planes en tablet: de a 3 por fila en vez de 7 apretados */
+@media (min-width: 768px) and (max-width: 991px) {
+  .planes-bg {height: auto;}
+  .planes-bg .container-fluid .col {flex: 0 0 33.333%; max-width: 33.333%;}
+  .planes-bg .container-fluid .col:last-child {flex: 0 0 100%; max-width: 100%;}
+  .plan-card {height: 240px;}
+}
+
+/* Fotos recortadas que se salían de la tarjeta en tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cobertura-img-float {display: none;}
+}
+
+/* Fondo mitad blanco / mitad gris: liso cuando las tarjetas se apilan */
+@media (max-width: 991px) {
+  .crecimos {background: #EAEDF2;}
+}
+@media (max-width: 767px) {
+  .cobertura-salud {background: #ffffff;}
+}
+
+/* Listas con tilde: la segunda línea queda alineada con el texto */
+.cobertura-card li, .cobertura-salud li {padding-left: 1.75rem; position: relative;}
+.cobertura-card li > .fa-check, .cobertura-salud li > .fa-check {left: 0; position: absolute; top: 0.3em;}
+
+/* Preguntas frecuentes en tablet: mismo margen que el resto */
+@media (max-width: 991px) {
+  .faq-contenedor {max-width: 720px;}
+}
+
+/* Planes: carrusel de a 2 tarjetas en tablet y sombra sin cortar */
+.planm-section {padding-bottom: 1.5rem;}
+.planm-carrusel {padding-bottom: 2rem;}
+@media (min-width: 768px) and (max-width: 991px) {
+  .planm-card {flex-basis: calc((100% - 1.5rem) / 2);}
+}
+
+/* Tablas de cobertura más prolijas */
+.tabla-cobertura tbody td {border-bottom: 1px solid #e3e9f0;}
+.tabla-cobertura tbody td:first-child {border-right-color: #c9d6e2;}
+.tabla-cobertura tbody td[colspan] {border-right: none;}
+.tabla-cobertura .fila-subtitulo {font-style: italic; font-weight: 600;}
+.tabla-cobertura .cob {min-width: 84px; text-align: center;}
+@media (max-width: 575px) {
+  .tabla-cobertura {table-layout: fixed;}
+  .tabla-cobertura td {overflow-wrap: anywhere;}
+  .tabla-cobertura .cob-nota {white-space: normal;}
+  .tabla-cobertura .cob {min-width: 0;}
+}
+
+/* Odontología: borde de color recto */
+.cobertura-box {border-left: none; box-shadow: inset 8px 0 0 #1d4f88, 0 10px 30px rgba(0, 0, 0, .08);}
+
+/* Tarjetas de contacto: títulos en azul */
+.redes p.fw-bold {color: #1a3c5e;}
+
+/* Centros: mapa con fondo mientras carga, y anterior / siguiente con más aire */
+.centro-detalle-mapa {background: #EAF2F8;}
+.centro-navegacion {gap: 1.5rem;}
+@media (max-width: 575px) {
+  .centro-navegacion a {align-items: flex-start;}
+}
+
+/* Pie: "Valores Coseguros" no se corta */
+.footer-legal-link {white-space: nowrap;}
+
+/* Planes Junior: botones "Ver más" a la misma altura */
+.crecimos-card .card-body > a:last-child {align-self: center; margin-top: auto;}
+
+/* Celular: texto del banner y botones de la portada alineados con el borde */
+@media (max-width: 767px) {
+  .banner-interno .container {padding-left: 1.25rem; padding-right: 1.25rem;}
+  #miCarousel .carousel-caption {left: 0.75rem; right: 0.75rem;}
+}
+/* Secciones grises: el título no queda pegado arriba */
+section.primer-dia {padding-top: 3rem;}
