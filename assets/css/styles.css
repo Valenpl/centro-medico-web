@@ -918,3 +918,180 @@ section.primer-dia {padding-top: 3rem;}
   .modal-atencion-titulo {font-size: 1.15rem;}
   .modal-atencion-numero {font-size: 1.5rem;}
 }
+
+/* Compará los planes: pista para deslizar (solo en celular) */
+.planm-pista {display: none;}
+@media (max-width: 767px) {
+  .planes-intro h2 {font-size: 1.45rem; margin-bottom: 0 !important;}
+  .planm-section {padding-top: 1rem;}
+  .planm-controles {align-items: center; justify-content: space-between; margin-bottom: 0.5rem;}
+  .planm-pista {color: #55606D; display: block; font-size: 0.9rem; margin: 0 auto 0 0;}
+  .planm-flecha {height: 36px; width: 36px;}
+  .planm-flecha + .planm-flecha {margin-left: 0.5rem;}
+  .planm-carrusel {gap: 0.9rem; padding-bottom: 1.25rem;}
+  .planm-card {flex-basis: 80%; padding: 1.1rem 1.1rem 1rem;}
+  .planm-logo {border-radius: 0.75rem; font-size: 1.15rem; height: 42px; margin-bottom: 0.6rem; width: 42px;}
+  .planm-nombre {font-size: 1.2rem; margin-bottom: 0.3rem;}
+  .planm-texto {font-size: 0.9rem; margin-bottom: 0.75rem; padding-bottom: 0.75rem;}
+  .planm-lista {margin-bottom: 0.9rem;}
+  .planm-lista li {font-size: 0.87rem; margin-bottom: 0.45rem; padding-left: 1.7rem;}
+  .planm-lista li::before {font-size: 0.55rem; height: 1.1rem; width: 1.1rem;}
+}
+
+/* ===== Home en celular: más compacta ===== */
+@media (max-width: 767px) {
+  /* Servicios: los 4 en una fila, círculos más chicos */
+  .servicios-section {padding-bottom: 2rem !important; padding-top: 2rem !important;}
+  .servicios-titulo {margin-bottom: 1.5rem !important;}
+  .servicio-icono {font-size: 1.4rem; height: 62px; width: 62px;}
+  .servicio-label {font-size: 0.8rem; line-height: 1.2; margin-top: 0.5rem;}
+  /* Números */
+  .numeros-section {padding: 2rem 0;}
+  .numero {font-size: 1.9rem;}
+  .numero-texto {font-size: 0.9rem;}
+  /* Planes: tarjetas más bajas */
+  .plan-card {height: 100%; min-height: 0; padding: 0.9rem 0.85rem 0.75rem;}
+  .centros-section {padding-bottom: 2rem !important; padding-top: 2rem !important;}
+  .plan-nombre {font-size: 1.25rem;}
+  .plan-info {font-size: 0.82rem; margin-top: 0.35rem;}
+  .plan-card .plan-btn {height: 30px; margin-top: 0.5rem; min-height: 30px; min-width: 30px; width: 30px;}
+  /* Credencial: foto más chica */
+  .credencial-section {padding: 2.5rem 0;}
+  .credencial-img {width: 230px;}
+  .credencial-titulo {font-size: 1.7rem; margin-bottom: 1rem;}
+  .credencial-titulo span {font-size: 1.8rem;}
+  .credencial-lista li {font-size: 0.95rem; margin-bottom: 0.6rem;}
+  .credencial-lista {margin-bottom: 1.5rem;}
+  /* Centros: la clínica grande arriba y los otros dos de a dos */
+  .centros-mosaico {gap: 0.75rem; grid-template-columns: 1fr 1fr;}
+  .mosaico-centro {grid-column: 1 / -1; order: -1;}
+  .mosaico-grande {height: 200px;}
+  .mosaico-grande .centro-foto-texto {font-size: 1.25rem;}
+  .mosaico-chica {height: 150px;}
+  .mosaico-chica .centro-foto-texto {font-size: 0.95rem;}
+  .mosaico-chica .centro-foto-texto small {font-size: 0.75rem;}
+  /* Opiniones: se deslizan de costado en vez de apilarse */
+  .opiniones-section {padding: 2.5rem 1rem;}
+  .opiniones-fila {flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.75rem; scroll-snap-type: x mandatory; --bs-gutter-x: 0.9rem;}
+  .opiniones-fila > [class*="col-"] {flex: 0 0 85%; scroll-snap-align: start;}
+  .opinion-card {padding: 1.25rem;}
+  .opinion-texto {font-size: 0.95rem;}
+  /* Cierre */
+  .cierre-section {padding: 2.5rem 0;}
+}
+
+/* ===== Páginas de planes y pie en celular: más compactos ===== */
+@media (max-width: 767px) {
+  /* Banners internos más bajos */
+  .banner-interno {min-height: 120px; padding: 1rem 0;}
+  .banner-titulo {font-size: 1.75rem; margin-bottom: 0.25rem;}
+  .banner-subtitulo {font-size: 0.92rem;}
+  /* Introducción del plan */
+  .plan-section {padding-bottom: 1.5rem !important; padding-top: 1.5rem !important;}
+  .plan-section h2 {font-size: 1.35rem; padding-bottom: 0.5rem;}
+  /* Tabla de cobertura: cada fila en una línea */
+  .tabla-cobertura {margin-top: 0.75rem !important;}
+  .tabla-cobertura thead th:first-child {width: 40%;}
+  .tabla-cobertura thead th {font-size: 1.05rem; padding: 0.45rem 0.5rem;}
+  .tabla-cobertura td {font-size: 0.9rem; padding: 0.45rem 0.5rem;}
+  .tabla-cobertura .cob {font-size: 0.72rem; margin: 0.05rem 0.1rem 0.05rem 0; padding: 0.3rem 0.5rem 0.22rem;}
+  .tabla-cobertura .cob-nota {display: block; font-size: 0.8rem;}
+  .tabla-cobertura td.bg-grey {font-size: 0.85rem; padding: 0.4rem 0.5rem;}
+  /* Referencias de las etiquetas */
+  .cob-leyenda {margin-top: 1rem; padding: 0.9rem 1rem;}
+  .cob-leyenda-titulo {font-size: 0.95rem; margin-bottom: 0.5rem;}
+  .cob-leyenda li {font-size: 0.85rem; margin-bottom: 0.35rem;}
+  .cob-leyenda li .cob {min-width: 76px;}
+  /* Cierre "Tu salud merece el mejor respaldo": botones lado a lado */
+  .afiliar-section.py-5 {padding-bottom: 2rem !important; padding-top: 2rem !important;}
+  .afiliar-section h4 {font-size: 1.3rem;}
+  .botones-par.mt-5 {margin-top: 1.25rem !important;}
+  .afiliar-section .botones-par {flex-wrap: nowrap; padding: 0 0.5rem;}
+  .afiliar-section .botones-par > a {flex: 1 1 0; font-size: 0.92rem; min-width: 0; padding-left: 0.75rem; padding-right: 0.75rem;}
+  /* Plan Junior: sin las fotos de las tarjetas y formulario más compacto */
+  .plan-section + .crecimos .card-img-top {display: none;}
+  .crecimos .card-body {padding: 1.25rem;}
+  .crecimos-card ul.mb-5 {margin-bottom: 1rem !important;}
+  .crecimos .row.g-5 {--bs-gutter-y: 1rem;}
+  /* Plan Promi: menos espacio antes de la tarjeta */
+  .plan-section + .cobertura-salud {padding-top: 0;}
+  /* Botón flotante de WhatsApp un poco más chico */
+  .wapp {bottom: 12px; height: 50px; right: 8px; width: 50px;}
+  .wapp img {height: auto; width: 100%;}
+  /* Pie: sin las listas de links (ya están en el menú) y más compacto */
+  footer .col-6.col-lg-2 {display: none;}
+  footer.pt-5 {padding-top: 1.75rem !important;}
+  footer .row.g-4 {--bs-gutter-y: 1rem;}
+  .footer-logo {max-height: 56px; width: auto;}
+  .footer-frase {margin: 0.6rem 0;}
+  footer .footer-legal {margin-top: 1.25rem;}
+  .footer-contacto a {display: inline-block; padding: 0.2rem 0;}
+}
+
+/* ===== Resto de las páginas en celular: más compactas ===== */
+@media (max-width: 767px) {
+  .banner-interno {min-height: 105px; padding: 0.85rem 0;}
+  .banner-titulo {font-size: 1.6rem;}
+  .afiliar-section.mt-5 {margin-top: 1.5rem !important;}
+  .afiliar-section h2 {font-size: 1.45rem; margin-bottom: 0.75rem !important;}
+  .afiliar-section h2 br, .primer-dia p br.d-md-inline {display: none;}
+  .frase-cierre {font-size: 1.15rem; margin: 1.5rem auto;}
+  /* Tarjetas de contacto (Contacto y Afiliarme) */
+  .redes .contacto-card {padding: 1.1rem 1rem;}
+  .redes .contacto-card p.fw-bold br {display: none;}
+  .redes .contacto-card .fs-2 {font-size: 1.2rem !important; height: auto; margin-right: 0.4rem;}
+  .redes .contacto-card p.fw-bold {margin-bottom: 0.4rem;}
+  .redes .primer-dia-card-start p:nth-of-type(2), .redes .primer-dia-card-center p:nth-of-type(2) {display: none;}
+  .redes .contacto-card p:last-of-type {margin-bottom: 0.9rem;}
+  /* Formularios */
+  section.primer-dia.py-5 {margin-bottom: 1.5rem !important; margin-top: 1.5rem !important; padding-bottom: 1.5rem !important; padding-top: 1.5rem !important;}
+  section.primer-dia.px-3 {padding-left: 0.75rem !important; padding-right: 0.75rem !important;}
+  form.p-3 {border-radius: 1.25rem; padding: 1rem !important;}
+  form .row {--bs-gutter-y: 0.6rem;}
+  .form-label {font-size: 0.95rem; margin-bottom: 0.2rem;}
+  .form-control {padding: 0.45rem 0.9rem;}
+  form textarea.form-control {height: 90px;}
+  /* Recursos humanos, Quiénes somos, Odontología: tarjetas */
+  .cobertura-salud {padding-bottom: 1.5rem; padding-top: 1.5rem;}
+  .cobertura-salud h2 {font-size: 1.2rem;}
+  .cobertura-card .p-4, .primer-dia .p-4 {padding: 1.25rem !important;}
+  .primer-dia p.mb-5 {margin-bottom: 1.25rem !important;}
+  .primer-dia .row.g-3 {--bs-gutter-y: 0.6rem;}
+  .primer-dia .beneficio-badge {display: none;}
+  .cobertura-box {padding: 1.25rem;}
+  .cobertura-box h2 {font-size: 1.5rem; margin-bottom: 0.75rem !important;}
+  .especialistas .card-img-top {aspect-ratio: 1 / 1;}
+  /* Historia */
+  .crecimos {padding: 1.5rem 1rem;}
+  .crecimos .row {--bs-gutter-y: 1rem;}
+  .crecimos .card-img-top {aspect-ratio: 16 / 7; object-fit: cover;}
+  .crecimos h5 {margin-bottom: 0.6rem;}
+  .crecimos .card-text {font-size: 0.95rem; line-height: 1.5;}
+  /* Preguntas frecuentes */
+  .faq-section {padding-top: 1.5rem;}
+  .faq-categoria {font-size: 1.2rem; margin: 1.5rem 0 0.6rem;}
+  .faq-categoria i {height: 2rem; width: 2rem;}
+  .faq-lista .accordion-button {font-size: 1rem; padding: 0.75rem 1rem 0.6rem;}
+  .faq-lista .accordion-item {margin-bottom: 0.5rem;}
+  .faq-ayuda {margin-top: 1.5rem; padding: 1.25rem;}
+  /* Centros: de a dos, el primero grande */
+  .centros-grilla {gap: 0.75rem;}
+  .centro-grilla-card {aspect-ratio: 1 / 1; flex-basis: calc((100% - 0.75rem) / 2);}
+  .centros-listado .centro-grilla-card:first-child {aspect-ratio: 16 / 9; flex-basis: 100%;}
+  .centro-grilla-card .centro-foto-texto {bottom: 0.6rem; font-size: 1rem; left: 0.7rem; right: 0.7rem;}
+  .centro-grilla-card .centro-foto-texto small {font-size: 0.72rem;}
+  .centro-grilla-card .centro-foto-texto {hyphens: auto; overflow-wrap: break-word;}
+  .centros-listado-titulo {font-size: 1.25rem; margin: 1.5rem 0 0.75rem;}
+  /* Página de cada centro: datos primero, sin mapa (está "Cómo llegar") */
+  .centro-migas, .centro-detalle-mapa {display: none;}
+  .centro-detalle .row > .col-12:first-child {order: 2;}
+  .centro-detalle-foto {aspect-ratio: 2 / 1; object-fit: cover;}
+  .centro-detalle {padding: 1.25rem 1rem 2rem;}
+  .centro-detalle-info {padding: 1.25rem;}
+  .centro-detalle-nombre {display: none;}
+  .centro-detalle-info > .centro-detalle-sub:first-of-type {margin-top: 0;}
+  .centro-detalle-sub {margin: 0.75rem 0 0.35rem;}
+  .centro-detalle-botones {margin-top: 1rem;}
+  .centro-detalle-botones a {flex: 1 1 100%; justify-content: center;}
+  .centro-navegacion {margin-top: 1.5rem;}
+}
