@@ -881,3 +881,11 @@ section.primer-dia {padding-top: 3rem;}
 #institucionalCollapse a:hover, #institucionalCollapse a:focus, #institucionalCollapse a:active,
 #planesCollapse a:hover, #planesCollapse a:focus, #planesCollapse a:active {background-color: #EAF2F8; color: #1a3c5e;}
 .offcanvas .nav-link[aria-expanded="true"] {color: #1a3c5e; font-weight: 600;}
+
+/* Odontología: especialistas de a 2 en celular y tablet, con fotos más chicas */
+.especialistas .card-img-top {aspect-ratio: 4 / 5; object-fit: cover; object-position: top;}
+@media (max-width: 767px) {
+  .especialistas .card-body {padding: 0.75rem 0.25rem 0.5rem;}
+  .especialistas .card-title {font-size: 1rem; line-height: 1.25; margin-bottom: 0.4rem;}
+  .especialistas p {font-size: 0.9rem; line-height: 1.35; margin-bottom: 0;}
+}
