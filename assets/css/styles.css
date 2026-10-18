@@ -897,3 +897,24 @@ section.primer-dia {padding-top: 3rem;}
   .offcanvas .nav-link {font-size: 1rem;}
   .offcanvas .dropdown-item {font-size: 0.95rem;}
 }
+
+/* Planes de la home en celular: la tarjeta crece con el texto, así el + no pisa la línea */
+@media (max-width: 767px) {
+  .plan-card {height: auto; min-height: 200px; padding-bottom: 1rem;}
+  .plan-card .plan-btn {margin-top: 0.75rem;}
+}
+
+/* Letra de todo el sitio un poco más chica en celular y tablet */
+@media (max-width: 991px) {
+  html {font-size: 15.5px;}
+}
+@media (max-width: 767px) {
+  html {font-size: 15px;}
+  body {font-size: 1rem;}
+  .institutos p, .institutos ul, .centros p, .centros ul {font-size: 1rem;}
+  .cobertura-box p {font-size: 1rem; line-height: 1.6;}
+  .afiliar-section p, .primer-dia p {font-size: 1.05rem;}
+  .seccion-bajada {font-size: 1.05rem;}
+  .modal-atencion-titulo {font-size: 1.15rem;}
+  .modal-atencion-numero {font-size: 1.5rem;}
+}
