@@ -3,12 +3,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cómo leer la tabla de tu plan: Sin cargo, Con cargo y Sin tope | Centro Médico Monte Grande</title>
-  <meta name="description" content="Qué quiere decir cada etiqueta de la tabla de cobertura y cómo saber cuánto vas a pagar.">
+  <meta name="description" content="Qué quiere decir cada palabra de la tabla de cobertura y cómo saber cuánto vas a pagar.">
   <!-- Vista previa al compartir el link (WhatsApp, Facebook). Cuando el sitio pase a centromedicomg.com.ar, cambiar la dirección en og:url y og:image. -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Centro Médico Monte Grande">
   <meta property="og:title" content="Cómo leer la tabla de tu plan: Sin cargo, Con cargo y Sin tope | Centro Médico Monte Grande">
-  <meta property="og:description" content="Qué quiere decir cada etiqueta de la tabla de cobertura y cómo saber cuánto vas a pagar.">
+  <meta property="og:description" content="Qué quiere decir cada palabra de la tabla de cobertura y cómo saber cuánto vas a pagar.">
   <meta property="og:url" content="https://valenpl.github.io/centro-medico-web/blog-sin-cargo-con-cargo-sin-tope.html">
   <meta property="og:image" content="https://valenpl.github.io/centro-medico-web/assets/img/compartir.jpg">
   <meta property="og:image:width" content="1200">
@@ -181,18 +181,36 @@
 <article class="nota">
   <div class="container nota-contenedor">
     <a href="blog.html" class="nota-volver"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver al blog</a>
-    <span class="blog-cat">Tu plan</span>
-    <p class="nota-bajada">Qué quiere decir cada etiqueta de la tabla de cobertura y cómo saber cuánto vas a pagar.</p>
+    <p class="nota-meta"><span class="blog-cat">Tu plan</span> · 2 min de lectura</p>
+    <p class="nota-bajada">Qué quiere decir cada palabra de la tabla de cobertura y cómo saber cuánto vas a pagar.</p>
 
-<p>En la página de cada plan hay una tabla con todo lo que cubre: consultas, estudios, internación y más. Al lado de cada prestación vas a ver unas palabras en color. Te explicamos qué significa cada una.</p>
-<h2>Sin cargo</h2>
-<p><span class="cob cob-sc">Sin cargo</span> quiere decir que esa prestación no tiene costo extra: no pagás nada al momento de atenderte.</p>
-<h2>Con cargo</h2>
-<p><span class="cob cob-cc">Con cargo</span> quiere decir que esa prestación tiene un coseguro, que es un monto que pagás cuando te atendés. Los valores están en la planilla de <a href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf" target="_blank" rel="noopener">Valores Coseguros</a>.</p>
-<h2>Sin tope</h2>
-<p><span class="cob cob-st">Sin tope</span> quiere decir que no hay un límite en la cantidad de veces que podés usar esa prestación. Cuando sí hay un límite, la tabla lo aclara al lado, por ejemplo "1 por año".</p>
+<p>En la página de cada plan hay una tabla con todo lo que cubre: consultas, estudios, internación y más. Al lado de cada prestación hay dos datos: <strong>si pagás algo</strong> (en color) y <strong>cuántas veces la podés usar</strong> (abajo, en gris). Así se ve:</p>
+<div class="nota-ejemplo">
+  <table class="table tabla-cobertura">
+    <thead><tr><th width="50%">Prestación</th><th>Cobertura</th></tr></thead>
+    <tbody>
+      <tr><td>Consultas en el Plan Oro</td><td><span class="cob cob-sc">Sin cargo</span> <span class="cob cob-st">Sin tope</span></td></tr>
+      <tr><td>Consultas en el Plan Plata</td><td><span class="cob cob-cc">Con cargo</span> <span class="cob cob-st">Sin tope</span></td></tr>
+      <tr><td>Mamografía en el Plan Plata</td><td><span class="cob cob-cc">Con cargo</span> <span class="cob cob-ct">Con tope</span> <span class="cob-nota">1 por año</span></td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>¿Pagás algo?</h2>
+<dl class="nota-def">
+  <dt><span class="cob cob-sc">Sin cargo</span></dt>
+  <dd>No pagás nada al momento de atenderte.</dd>
+  <dt><span class="cob cob-cc">Con cargo</span></dt>
+  <dd>Pagás un coseguro, que es un monto fijo cada vez que te atendés. Los valores están en la planilla de <a href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf" target="_blank" rel="noopener">Valores Coseguros</a>.</dd>
+</dl>
+<h2>¿Cuántas veces la podés usar?</h2>
+<dl class="nota-def">
+  <dt>Sin tope</dt>
+  <dd>Todas las veces que necesites, sin límite.</dd>
+  <dt>Con tope</dt>
+  <dd>Hay un límite, y la tabla lo aclara abajo. Por ejemplo, “1 por año”.</dd>
+</dl>
 <h2>Un ejemplo</h2>
-<p>Si en tu plan una consulta dice <strong>Sin cargo · Sin tope</strong>, podés hacer todas las consultas que necesites sin pagar nada extra.</p>
+<p>Si en tu plan una consulta dice <strong>Sin cargo</strong> y <strong>Sin tope</strong>, podés hacer todas las consultas que necesites sin pagar nada extra.</p>
 <div class="nota-recuadro"><p><strong>¿Tenés dudas con tu plan?</strong> Llamá al Call Center al <a href="tel:43676800">4367-6800</a> o escribinos por <a href="https://wa.me/541166743893" target="_blank" rel="noopener">WhatsApp</a>. Te ayudamos a entender tu cobertura.</p></div>
 <p><a href="planes.html" class="btn-primary-custom nota-btn">Ver los planes</a></p>
 
@@ -202,8 +220,19 @@
 <section class="blog-section blog-mas">
   <div class="container">
     <h2 class="text-center mb-4">Seguí leyendo</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-md-6 col-lg-5">
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <a class="blog-card" href="blog-como-elegir-tu-plan.html">
+          <img src="assets/img/blog/elegir-plan.webp" class="blog-card-foto" alt="" loading="lazy">
+          <div class="blog-card-cuerpo">
+            <span class="blog-cat">Tu plan</span>
+            <h3 class="blog-card-titulo">Cómo elegir tu plan de salud: una guía simple</h3>
+            <p>No hay un plan “mejor” que otro: hay uno que se adapta mejor a tu vida. Estas cinco preguntas te ayudan a encontrarlo.</p>
+            <span class="blog-leer">Leer nota <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
         <a class="blog-card" href="blog-credencial-digital.html">
           <img src="assets/img/app-credencial.webp" alt="" loading="lazy">
           <div class="blog-card-cuerpo">
@@ -214,9 +243,9 @@
           </div>
         </a>
       </div>
-      <div class="col-12 col-md-6 col-lg-5">
+      <div class="col-12 col-md-6 col-lg-4">
         <a class="blog-card" href="blog-guardia-o-consultorio.html">
-          <img src="assets/img/servicios/emergencias.webp" alt="" loading="lazy">
+          <img src="assets/img/blog/guardia.webp" class="blog-card-foto" alt="" loading="lazy">
           <div class="blog-card-cuerpo">
             <span class="blog-cat">Tu salud</span>
             <h3 class="blog-card-titulo">¿Guardia, consultorio o emergencia? A dónde ir en cada caso</h3>

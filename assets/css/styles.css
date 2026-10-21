@@ -1554,3 +1554,41 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .cmp-otros {grid-template-columns: 1fr;}
   .cmp-para {font-size: 0.78rem;}
 }
+
+/* ===== Notas del blog más fáciles de leer (22/10) ===== */
+.blog-cat {background: none; border-radius: 0; padding: 0;}
+.blog-card img.blog-card-foto {object-fit: cover; padding: 0;}
+.nota-meta {color: #5b6673; font-size: 1rem; margin: 0;}
+.blog-card img {max-height: 240px;}
+.nota .nota-bajada {color: #1a3c5e; font-size: 1.35rem; line-height: 1.5;}
+.nota a:not(.btn-primary-custom):not(.nota-volver) {color: #2C5786;}
+.nota-ejemplo .cob-st, .nota-ejemplo .cob-ct {display: block; font-size: 0.9rem;}
+.nota .nota-meta {font-size: 1rem;}
+.nota-meta .blog-cat {font-size: 0.9rem;}
+.nota ul {margin-bottom: 1rem; padding-left: 1.4rem;}
+.nota ul li {margin-bottom: 0.35rem;}
+.nota-pasos li::marker {color: #2C5786; font-weight: 700;}
+.nota-ejemplo {margin: 1.5rem 0 0.5rem;}
+.nota-ejemplo .tabla-cobertura {margin: 0;}
+.nota-ejemplo .tabla-cobertura td {font-size: 1.05rem;}
+.nota-def {margin: 0 0 0.5rem;}
+.nota-def dt {color: #1a3c5e; font-size: 1.15rem; font-weight: 700; margin-top: 0.9rem;}
+.nota-def dd {color: #2b3a4a; font-size: 1.15rem; line-height: 1.7; margin: 0.1rem 0 0;}
+.nota-resumen {border: 1px solid #c9d6e2; border-radius: 0.75rem; margin: 2.25rem 0; padding: 1.25rem 1.5rem 0.5rem;}
+.nota .nota-resumen h2 {font-size: 1.5rem; margin: 0 0 0.75rem;}
+.nota-caso {border-left: 6px solid #2C5786; margin: 2rem 0; padding: 0.1rem 0 0.1rem 1.25rem;}
+.nota .nota-caso h2 {margin-top: 0;}
+.nota-caso p {margin-bottom: 0.5rem;}
+.nota-caso ul {margin-bottom: 0.75rem;}
+.nota-caso-emergencia {border-left-color: #B3261E;}
+.nota-caso-emergencia h2 {color: #B3261E;}
+.nota-caso-guardia {border-left-color: #A35F00;}
+.nota-caso-guardia h2 {color: #8A5000;}
+.nota .nota-caso-accion {color: #1a3c5e; font-weight: 700;}
+@media (max-width: 767px) {
+  .nota-def dt, .nota-def dd {font-size: 1.05rem;}
+  .nota .nota-resumen h2 {font-size: 1.3rem;}
+  .nota-resumen {padding: 1rem 1.1rem 0.25rem;}
+  .nota-caso {padding-left: 1rem;}
+  .nota .nota-bajada {font-size: 1.15rem;}
+}
