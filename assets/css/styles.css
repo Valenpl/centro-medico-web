@@ -1285,3 +1285,19 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .centro-destacado-botones {margin-top: 0.75rem;}
   .centro-destacado-botones .btn-pill {flex: 1; padding-left: 1rem; padding-right: 1rem;}
 }
+
+/* ===== Quiénes somos con la historia adentro, fondos que alternan (corrección 14) ===== */
+.nosotros-historia {background: #1a3c5e url('../img/curvas-blancas.svg') right top / auto 70% no-repeat; color: #ffffff; padding: 4.5rem 0 1rem;}
+.nosotros-historia-volanta {color: #98C1D4; font-family: 'Hind', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 0.5rem; text-align: center; text-transform: uppercase;}
+.nosotros-historia-titulo {color: #ffffff; font-size: clamp(2rem, 3.4vw, 2.8rem); letter-spacing: 0; margin-bottom: 1rem; text-align: center;}
+.nosotros-historia-bajada {color: #EAF2F8; font-size: 1.2rem; margin: 0 auto 1rem; max-width: 40rem; text-align: center;}
+.nosotros-historia .crecimos {background: linear-gradient(to bottom, #1a3c5e 45%, #EAEDF2 45%); padding-top: 2rem;}
+.nosotros-historia .crecimos-card {border: none; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);}
+.nosotros-historia + .primer-dia {margin-top: 0; padding-top: 3rem;}
+@media (max-width: 767px) {
+  .nosotros-historia {padding: 2.5rem 0 0.5rem;}
+  .nosotros-historia-bajada {font-size: 1.05rem; padding: 0 1rem;}
+  .nosotros-historia .crecimos {background: linear-gradient(to bottom, #1a3c5e 60px, #EAEDF2 60px); padding-top: 1rem;}
+  .nosotros-historia .card-img-top {display: none;}
+  .nosotros-historia .crecimos-card {border-top: 8px solid #4E7093;}
+}
