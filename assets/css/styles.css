@@ -1205,12 +1205,12 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 
 /* Accesos fijos debajo del banner, estilo Medifé */
 .accesos-banner {display: grid; grid-template-columns: 1fr 1fr;}
-.acceso-banner {align-items: center; background: #1a3c5e; color: #ffffff; display: flex; font-family: 'Hind', sans-serif; font-size: 1.35rem; font-weight: 700; gap: 0.75rem; justify-content: center; letter-spacing: 0.5px; min-height: 100px; padding: 1rem; text-align: center; text-decoration: none; text-transform: uppercase; transition: background 0.25s ease;}
+.acceso-banner {align-items: center; background: #6F8DB3; color: #ffffff; display: flex; font-family: 'Hind', sans-serif; font-size: 1.35rem; font-weight: 700; gap: 0.75rem; justify-content: center; letter-spacing: 0.5px; min-height: 100px; padding: 1rem; text-align: center; text-decoration: none; text-transform: uppercase; transition: background 0.25s ease;}
 .acceso-banner + .acceso-banner {border-left: 1px solid rgba(255, 255, 255, 0.3);}
 .acceso-banner i {font-size: 1.3rem; opacity: 0.85;}
-.acceso-banner:hover, .acceso-banner:focus-visible {background: #4E7093; color: #ffffff;}
+.acceso-banner:hover, .acceso-banner:focus-visible {background: #9DB4D2; color: #1a3c5e;}
 @media (max-width: 767px) {
-  .acceso-banner {flex-direction: column; font-size: 1rem; gap: 0.35rem; letter-spacing: 0.3px; min-height: 76px; padding: 0.75rem 0.5rem;}
+  .acceso-banner {font-size: 1rem; gap: 0.35rem; letter-spacing: 0.3px; min-height: 76px; padding: 0.75rem 0.5rem;}
   .acceso-banner i {font-size: 1.15rem;}
 }
 
