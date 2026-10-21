@@ -1493,6 +1493,7 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 .cob-st, .cob-ct {background: none; color: #5b6673; display: block; font-size: 0.9rem; font-weight: 400; margin-top: 0.15rem;}
 .cob-leyenda li .cob {display: inline; min-width: 0; text-align: left;}
 .tabla-cobertura .cob {min-width: 0; text-align: left;}
+.nota .cob {display: inline; font-size: inherit; margin: 0;}
 .tabla-cobertura .cob-nota {display: block; font-size: 0.9rem; margin-top: 0.1rem;}
 
 /* Filtros como pestañas subrayadas */
