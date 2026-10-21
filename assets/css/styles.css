@@ -1484,45 +1484,71 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .nota-bajada {font-size: 1.15rem;}
 }
 
-/* ===== Comparación de planes ===== */
-.cmp-section {background: #EAF2F8; padding: 4rem 0; scroll-margin-top: 120px;}
-.cmp-selectores {display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin: 0 auto 1.5rem; max-width: 900px;}
-.cmp-elegir label {color: #1a3c5e; display: block; font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem;}
-.cmp-select {border: 2px solid #4E7093; border-radius: 0.8rem; color: #1a3c5e; font-size: 1.15rem; font-weight: 600; min-height: 54px;}
-.cmp-select:focus {border-color: #2C5786; box-shadow: 0 0 0 3px rgba(44, 87, 134, 0.25);}
-.cmp-leyenda {display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; list-style: none; margin: 0 0 1.75rem; padding: 0;}
-.cmp-leyenda li {color: #3d4d5e; font-size: 1rem;}
-.cmp-temas {margin: 0 auto; max-width: 1000px;}
-.cmp-temas .accordion-item {border: none; border-radius: 1rem !important; box-shadow: 0 4px 16px rgba(26, 60, 94, 0.08); margin-bottom: 0.9rem; overflow: hidden;}
-.cmp-temas .accordion-button {color: #1a3c5e; font-family: 'Hind', sans-serif; font-size: 1.3rem; font-weight: 700; gap: 0.9rem; padding: 1.1rem 1.4rem;}
-.cmp-temas .accordion-button i {color: #4E7093; font-size: 1.3rem; text-align: center; width: 1.6rem;}
-.cmp-temas .accordion-button:not(.collapsed) {background: #1a3c5e; color: #ffffff;}
-.cmp-temas .accordion-button:not(.collapsed) i {color: #98C1D4;}
-.cmp-temas .accordion-button:not(.collapsed)::after {filter: brightness(0) invert(1);}
-.cmp-temas .accordion-body {padding: 0;}
-.cmp-tabla {border-collapse: collapse; font-size: 1.1rem; table-layout: fixed; width: 100%;}
-.cmp-tabla thead th {background: #F4F8FB; color: #2C5786; font-size: 1.05rem; font-weight: 700; padding: 0.8rem 1rem; text-transform: uppercase;}
+
+/* ===== Planes con un aire menos "de plantilla" (22/10) ===== */
+/* Cobertura: palabras en color en vez de pastillas; el tope va abajo, en chico */
+.cob {background: none; border-radius: 0; font-size: 1rem; font-weight: 700; margin: 0; padding: 0;}
+.cob-sc {background: none; color: #1E7A4C;}
+.cob-cc {background: none; color: #A35F00;}
+.cob-st, .cob-ct {background: none; color: #5b6673; display: block; font-size: 0.9rem; font-weight: 400; margin-top: 0.15rem;}
+.cob-leyenda li .cob {display: inline; min-width: 0; text-align: left;}
+.tabla-cobertura .cob {min-width: 0; text-align: left;}
+.tabla-cobertura .cob-nota {display: block; font-size: 0.9rem; margin-top: 0.1rem;}
+
+/* Filtros como pestañas subrayadas */
+.planf-pregunta {text-align: left;}
+.planf-filtros {border-bottom: 1px solid #cfdbe6; gap: 0 1.75rem; justify-content: flex-start; max-width: none;}
+.planf-chip {background: none; border: none; border-bottom: 3px solid transparent; border-radius: 0; color: #4a5d70; margin-bottom: -1px; min-height: 48px; padding: 0.6rem 0 0.45rem;}
+.planf-chip:hover {background: none; color: #1a3c5e;}
+.planf-chip[aria-pressed="true"] {background: none; border-bottom-color: #1a3c5e; color: #1a3c5e;}
+.planf-estado {text-align: left;}
+
+/* Tarjetas: foto grande, poco texto */
+.planf-lista {display: grid; gap: 2rem 1.75rem; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none;}
+.planf-card {align-items: stretch; background: none; border: none; border-radius: 0; box-shadow: none; display: flex; flex-direction: column; gap: 0; padding: 0;}
+.planf-foto {aspect-ratio: 461 / 250; border-radius: 4px; height: auto; min-height: 0; width: 100%;}
+.planf-cuerpo {padding-top: 1rem;}
+.planf-nombre {font-size: 28px;}
+.planf-etiqueta {background: none; border-radius: 0; color: #4E7093; font-size: 0.9rem; letter-spacing: 0.06em; margin-bottom: 0.4rem; padding: 0; text-transform: uppercase;}
+.planf-texto {margin-bottom: 0.5rem;}
+.planf-link {color: #2C5786; font-weight: 700; margin-top: auto; text-decoration: underline; text-underline-offset: 4px;}
+.planf-link:hover {color: #1a3c5e;}
+
+/* Comparación: una sola tabla, como la de las prepagas */
+.cmp-section {background: #ffffff; border-top: 1px solid #e3eaf1; padding: 3.5rem 0; scroll-margin-top: 120px;}
+.cmp-intro {color: #33475b; font-size: 1.05rem; max-width: 820px;}
+.cmp-scroll {border: 1px solid #d5e0ea; margin-top: 1.5rem; overflow-x: auto;}
+.cmp-tabla {border-collapse: collapse; font-size: 1.05rem; min-width: 820px; table-layout: fixed; width: 100%;}
+.cmp-tabla thead th:first-child {width: 24%;}
+.cmp-tabla th, .cmp-tabla td {border-bottom: 1px solid #e3eaf1; padding: 0.7rem 0.9rem; text-align: left; vertical-align: top;}
+.cmp-tabla thead th {background: #1a3c5e; color: #ffffff; font-size: 1.1rem; position: sticky; top: 0;}
+.cmp-tabla thead th a {color: #ffffff; text-decoration: none;}
+.cmp-tabla thead th a:hover {text-decoration: underline;}
 .cmp-tabla tbody th {color: #1a3c5e; font-weight: 600;}
-.cmp-tabla th, .cmp-tabla td {border-bottom: 1px solid #E1EAF2; padding: 0.85rem 1rem; text-align: left; vertical-align: top;}
-.cmp-tabla tbody tr:last-child th, .cmp-tabla tbody tr:last-child td {border-bottom: none;}
-.cmp-tabla td .cob-nota {display: block; margin-top: 0.3rem; white-space: normal;}
-.cmp-nofigura {color: #7a8796; font-size: 0.95rem; font-style: italic;}
-.cmp-confirmar {background: #FFF4D6; border-radius: 50px; color: #7A5A00; display: inline-block; font-size: 0.85rem; font-weight: 600; padding: 0.35rem 0.75rem;}
-.cmp-links {display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin: 2rem 0 1.25rem;}
-.cmp-links .btn-primary-custom {text-decoration: none;}
-.cmp-aclaracion {color: #3d4d5e; font-size: 1rem; margin: 0 auto; max-width: 760px; text-align: center;}
+.cmp-tabla tbody th, .cmp-tabla thead th:first-child {background-clip: padding-box; left: 0; position: sticky; z-index: 1;}
+.cmp-tabla tbody th {background: #ffffff;}
+.cmp-tabla tr.cmp-tema th {background: #EAF2F8; color: #1a3c5e; font-size: 0.95rem; letter-spacing: 0.06em; position: static; text-transform: uppercase;}
+.cmp-tabla td .cob-nota {display: block; white-space: normal;}
+.cmp-nofigura {color: #8a96a3;}
+.cmp-confirmar {color: #7A5A00; font-style: italic;}
+.cmp-aclaracion {color: #3d4d5e; margin-top: 1.25rem;}
+@media (max-width: 991px) {
+  .planf-lista {grid-template-columns: repeat(2, minmax(0, 1fr));}
+}
 @media (max-width: 767px) {
-  .cmp-section {padding: 2.75rem 0;}
-  .cmp-selectores {grid-template-columns: 1fr 1fr;}
-  .cmp-solo-compu {display: none;}
-  .cmp-select {font-size: 1rem;}
-  .cmp-temas .accordion-button {font-size: 1.1rem; padding: 1rem;}
-  .cmp-tabla {font-size: 1rem;}
-  .cmp-tabla thead th:first-child {display: none;}
-  .cmp-tabla thead th {font-size: 0.95rem; padding: 0.6rem 0.75rem; width: 50%;}
-  .cmp-tabla tbody tr {display: grid; grid-template-columns: 1fr 1fr;}
-  .cmp-tabla tbody th {background: #F4F8FB; border-bottom: none; grid-column: 1 / -1; padding: 0.6rem 0.75rem 0.4rem;}
-  .cmp-tabla td {padding: 0.6rem 0.75rem 0.8rem;}
-  .cmp-tabla thead tr {display: grid; grid-template-columns: 1fr 1fr;}
-  .cmp-tabla thead th {width: auto;}
+  .planf-filtros {flex-wrap: nowrap; gap: 0 1.25rem; overflow-x: auto;}
+  .planf-chip {flex-shrink: 0; min-height: 44px; padding: 0.5rem 0 0.4rem;}
+  .planf-lista {gap: 1.75rem; grid-template-columns: 1fr;}
+  .planf-card {display: flex; padding: 0;}
+  .planf-cuerpo {display: block;}
+  .planf-foto {height: auto; width: 100%;}
+  .planf-nombre {font-size: 24px;}
+  .planf-texto {margin: 0 0 0.4rem;}
+  .planf-link {width: auto;}
+  .tabla-cobertura .cob {font-size: 0.95rem; margin: 0; padding: 0;}
+  .tabla-cobertura .cob-st, .tabla-cobertura .cob-ct, .tabla-cobertura .cob-nota {font-size: 0.85rem;}
+  .cmp-section {padding: 2.5rem 0;}
+  .cmp-tabla {font-size: 0.95rem; min-width: 680px;}
+  .cmp-tabla thead th:first-child {width: 130px;}
+  .cmp-tabla th, .cmp-tabla td {padding: 0.6rem 0.7rem;}
 }
