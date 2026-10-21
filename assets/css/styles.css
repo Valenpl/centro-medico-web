@@ -1540,3 +1540,17 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 .offcanvas .nav-link[data-bs-toggle="collapse"] {align-items: center; display: flex; justify-content: space-between;}
 .offcanvas .nav-link[data-bs-toggle="collapse"]::after {color: #2C5786; content: '\f078'; font-family: 'Font Awesome 6 Free'; font-size: 0.85rem; font-weight: 900; margin-left: 0.75rem; transition: transform 0.25s ease;}
 .offcanvas .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]::after {transform: rotate(180deg);}
+
+/* Comparación: para quién es cada plan, y Junior / Promi aparte */
+.cmp-para {color: #c9dbea; display: block; font-size: 0.92rem; font-weight: 400; line-height: 1.3; margin-top: 0.2rem;}
+.cmp-otros-titulo {color: #1a3c5e; font-size: 1.1rem; font-weight: 700; margin: 2rem 0 0.75rem;}
+.cmp-otros {display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr));}
+.cmp-otro {border: 1px solid #d5e0ea; border-left: 4px solid #2C5786; color: #33475b; display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.2rem; text-decoration: none; transition: background 0.2s ease;}
+.cmp-otro:hover {background: #F4F8FB; color: #33475b;}
+.cmp-otro strong {color: #1a3c5e; font-size: 1.25rem;}
+.cmp-otro-para {color: #2C5786; font-weight: 700;}
+.cmp-otro-link {color: #2C5786; font-weight: 700; margin-top: 0.35rem; text-decoration: underline; text-underline-offset: 3px;}
+@media (max-width: 767px) {
+  .cmp-otros {grid-template-columns: 1fr;}
+  .cmp-para {font-size: 0.78rem;}
+}
