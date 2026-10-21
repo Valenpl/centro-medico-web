@@ -1234,3 +1234,54 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   #navbarMain .nav-link {font-size: 1rem;}
   header .btn-secondary-nav {font-size: 1rem; padding: 0.65rem 1.2rem 0.5rem;}
 }
+
+/* ===== Credencial digital con más presencia (corrección 4) ===== */
+.credencial-section {padding: 5rem 0;}
+.credencial-img {width: 560px;}
+.credencial-texto {background: #1a3c5e url('../img/curvas-blancas.svg') right bottom / auto 100% no-repeat; border-radius: 2rem; box-shadow: 0 18px 40px rgba(26, 60, 94, 0.25); color: #ffffff; padding: 3rem;}
+.credencial-titulo {color: #ffffff; font-size: 2.6rem; letter-spacing: 0;}
+.credencial-titulo span {color: #98C1D4; font-size: 3rem;}
+.credencial-lista li {color: #EAF2F8; font-size: 1.2rem;}
+.credencial-lista li::before {background: #98C1D4;}
+.credencial-texto .btn-pill {background: #ffffff; border-color: #ffffff; color: #1a3c5e; font-size: 1.15rem; min-height: 52px; padding: 0.8rem 2.2rem 0.65rem;}
+.credencial-texto .btn-pill:hover, .credencial-texto .btn-pill:focus-visible {background: #98C1D4 !important; border-color: #98C1D4; color: #1a3c5e !important;}
+@media (max-width: 991px) {
+  .credencial-section {padding: 3rem 0;}
+  .credencial-img {width: 420px;}
+  .credencial-texto {margin-top: 0; max-width: 560px; padding: 2.25rem 1.75rem;}
+}
+@media (max-width: 767px) {
+  .credencial-section {padding: 2rem 0;}
+  .credencial-img {width: 300px;}
+  .credencial-texto {border-radius: 1.5rem; padding: 1.75rem 1.25rem;}
+  .credencial-titulo {font-size: 1.8rem;}
+  .credencial-titulo span {font-size: 2rem;}
+  .credencial-lista li {font-size: 1rem;}
+  .credencial-texto .btn-pill {font-size: 1.05rem; min-height: 48px; width: 100%;}
+}
+
+/* ===== Clínica Monte Grande y Canning destacadas en la home (corrección 5) ===== */
+.centro-destacado {background: #ffffff; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(26, 60, 94, 0.12); display: flex; flex-direction: column; height: 100%; overflow: hidden;}
+.centro-destacado-foto {display: block; height: 300px; overflow: hidden; position: relative;}
+.centro-destacado-foto img {height: 100%; object-fit: cover; transition: transform 0.5s ease; width: 100%;}
+.centro-destacado-foto:hover img {transform: scale(1.04);}
+.centro-destacado-tipo {background: #1a3c5e; border-radius: 50px; color: #ffffff; font-family: 'Hind', sans-serif; font-size: 0.95rem; font-weight: 600; left: 1.25rem; padding: 0.4rem 1rem 0.25rem; position: absolute; top: 1.25rem;}
+.centro-destacado-cuerpo {display: flex; flex: 1; flex-direction: column; padding: 1.75rem 2rem 2rem;}
+.centro-destacado-nombre {font-family: 'Alike-Regular', serif; font-size: 2rem; font-weight: normal; letter-spacing: 0; margin-bottom: 1rem;}
+.centro-destacado-nombre a {color: #1a3c5e; text-decoration: none;}
+.centro-destacado-dato {align-items: flex-start; color: #33475b; display: flex; font-size: 1.1rem; gap: 0.7rem; margin-bottom: 0.5rem;}
+.centro-destacado-dato i {color: #4E7093; margin-top: 0.3rem; width: 1rem;}
+.centro-destacado-dato a {color: #1a3c5e; font-weight: 700; text-decoration: none; white-space: nowrap;}
+.centro-destacado-servicios {border-top: 1px solid #E3EAF2; list-style: none; margin: 1rem 0 1.5rem; padding: 1rem 0 0;}
+.centro-destacado-servicios li {color: #33475b; font-size: 1.05rem; margin-bottom: 0.45rem; padding-left: 1.6rem; position: relative;}
+.centro-destacado-servicios li::before {color: #4E7093; content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-size: 0.85rem; font-weight: 900; left: 0; position: absolute; top: 0.15rem;}
+.centro-destacado-botones {display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: auto;}
+@media (max-width: 767px) {
+  .centro-destacado-foto {height: 170px;}
+  .centro-destacado-cuerpo {padding: 1.25rem 1.25rem 1.5rem;}
+  .centro-destacado-nombre {font-size: 1.5rem; margin-bottom: 0.6rem;}
+  .centro-destacado-dato {font-size: 1rem;}
+  .centro-destacado-servicios {display: none;}
+  .centro-destacado-botones {margin-top: 0.75rem;}
+  .centro-destacado-botones .btn-pill {flex: 1; padding-left: 1rem; padding-right: 1rem;}
+}
