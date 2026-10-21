@@ -89,13 +89,14 @@
                 <li><a class="dropdown-item" href="plan-promi.html">Plan Promi</a></li>
                 <li><a class="dropdown-item" href="plan-empresa.html">Plan Empresa</a></li>
                 <li><a class="dropdown-item" href="plan-junior.html">Plan Junior</a></li>
-                <li><a class="dropdown-item" href="planes.html">Compará tus planes</a></li>
+                <li><a class="dropdown-item" href="planes.html#comparar">Compará tus planes</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle-split" href="quienes-somos.html">Institucional</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
                 <li><a class="dropdown-item" href="rrhh.html">Recursos humanos</a></li>
               </ul>
             </li>
@@ -132,7 +133,7 @@
                     <li><a class="dropdown-item" href="plan-promi.html">&gt; Plan Promi</a></li>
                     <li><a class="dropdown-item" href="plan-empresa.html">&gt; Plan Empresa</a></li>
                     <li><a class="dropdown-item" href="plan-junior.html">&gt; Plan Junior</a></li>
-                    <li><a class="dropdown-item" href="planes.html">&gt; Compará tus planes</a></li>
+                    <li><a class="dropdown-item" href="planes.html#comparar">&gt; Compará tus planes</a></li>
                   </ul>
                 </div>
               </li>
@@ -143,6 +144,7 @@
                 <div class="collapse" id="institucionalCollapse">
                   <ul class="list-unstyled ps-3">
                     <li><a class="dropdown-item" href="quienes-somos.html">&gt; Quiénes somos</a></li>
+                    <li><a class="dropdown-item" href="blog.html">&gt; Blog</a></li>
                     <li><a class="dropdown-item" href="rrhh.html">&gt; Recursos humanos</a></li>
                   </ul>
                 </div>
@@ -323,6 +325,36 @@
     });
   })();
 </script>
+<section class="cmp-section" id="comparar" aria-labelledby="cmpTitulo">
+  <div class="container" id="comparador">
+    <h2 id="cmpTitulo" class="text-center mb-3">Compará los planes</h2>
+    <p class="seccion-bajada text-center">Elegí los planes que querés comparar y tocá cada tema para ver qué cubre cada uno.</p>
+    <div class="cmp-selectores">
+      <div class="cmp-elegir">
+        <label for="cmpPlan1">Plan 1</label>
+        <select id="cmpPlan1" class="form-select cmp-select"><option value="promedam">Plan Promedam</option><option value="plata" selected>Plan Plata</option><option value="oro">Plan Oro</option><option value="first">Plan First</option><option value="empresa">Plan Empresa</option></select>
+      </div>
+      <div class="cmp-elegir">
+        <label for="cmpPlan2">Plan 2</label>
+        <select id="cmpPlan2" class="form-select cmp-select"><option value="promedam">Plan Promedam</option><option value="plata">Plan Plata</option><option value="oro" selected>Plan Oro</option><option value="first">Plan First</option><option value="empresa">Plan Empresa</option></select>
+      </div>
+      <div class="cmp-elegir cmp-solo-compu">
+        <label for="cmpPlan3">Plan 3</label>
+        <select id="cmpPlan3" class="form-select cmp-select"><option value="promedam">Plan Promedam</option><option value="plata">Plan Plata</option><option value="oro">Plan Oro</option><option value="first" selected>Plan First</option><option value="empresa">Plan Empresa</option></select>
+      </div>
+    </div>
+    <ul class="cmp-leyenda">
+      <li><span class="cob cob-sc">Sin cargo</span> no pagás nada extra</li>
+      <li><span class="cob cob-cc">Con cargo</span> pagás un coseguro</li>
+      <li><span class="cob cob-st">Sin tope</span> sin límite de veces</li>
+      <li><span class="cob cob-ct">Con tope</span> tiene un límite</li>
+    </ul>
+    <div class="accordion cmp-temas"></div>
+    <div class="cmp-links"></div>
+    <p class="cmp-aclaracion">Plan Junior y Plan Promi tienen su propia página: <a href="plan-junior.html">Plan Junior</a> (para chicos) y <a href="plan-promi.html">Plan Promi</a> (embarazo). Los valores de los coseguros están en <a href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf" target="_blank" rel="noopener">Valores Coseguros</a>. Ante cualquier duda, un asesor te ayuda por <a href="https://wa.me/541166743893" target="_blank" rel="noopener">WhatsApp</a>.</p>
+  </div>
+</section>
+
 <section class="historia-cierre">
   <div class="container">
     <div class="text-center">
@@ -371,6 +403,7 @@
           <p class="footer-label">Institucional</p>
           <ul class="footer-links">
             <li><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="quienes-somos.html#historia">Nuestra historia</a></li>
             <li><a href="centros.html">Centros de atención</a></li>
             <li><a href="odontologia.html">Odontología</a></li>
@@ -434,6 +467,6 @@
     </div>
   </div>
   
-  <script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/header.js">"></script><script src="assets/js/animaciones.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/header.js">"></script><script src="assets/js/animaciones.js"></script><script src="assets/js/comparar.js"></script>
 
 </body></html>
