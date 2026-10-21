@@ -1535,3 +1535,8 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .cmp-tabla .cob-st, .cmp-tabla .cob-ct, .cmp-tabla .cob-nota {font-size: 0.8rem;}
   .cmp-tema button {padding: 0.6rem 0.6rem;}
 }
+
+/* Menú de celular: flechita en las opciones que se despliegan */
+.offcanvas .nav-link[data-bs-toggle="collapse"] {align-items: center; display: flex; justify-content: space-between;}
+.offcanvas .nav-link[data-bs-toggle="collapse"]::after {color: #2C5786; content: '\f078'; font-family: 'Font Awesome 6 Free'; font-size: 0.85rem; font-weight: 900; margin-left: 0.75rem; transition: transform 0.25s ease;}
+.offcanvas .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]::after {transform: rotate(180deg);}
