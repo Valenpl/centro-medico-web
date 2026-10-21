@@ -197,114 +197,145 @@
   </div>
 </section>
 
-<section class="planm-section">
+<section class="planf-section" aria-labelledby="planfPregunta">
   <div class="container">
-    <div class="planm-controles">
-      <p class="planm-pista">Deslizá para ver los 7 planes</p>
-      <button type="button" class="planm-flecha" data-dir="-1" aria-label="Planes anteriores"><i class="fas fa-arrow-left"></i></button>
-      <button type="button" class="planm-flecha" data-dir="1" aria-label="Más planes"><i class="fas fa-arrow-right"></i></button>
+    <p class="planf-pregunta" id="planfPregunta">¿Para quién buscás cobertura?</p>
+    <div class="planf-filtros" role="group" aria-labelledby="planfPregunta">
+      <button type="button" class="planf-chip" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button type="button" class="planf-chip" data-filtro="para-mi" aria-pressed="false">Para mí</button>
+      <button type="button" class="planf-chip" data-filtro="familia" aria-pressed="false">Mi familia</button>
+      <button type="button" class="planf-chip" data-filtro="hijos" aria-pressed="false">Mis hijos</button>
+      <button type="button" class="planf-chip" data-filtro="embarazada" aria-pressed="false">Estoy embarazada</button>
+      <button type="button" class="planf-chip" data-filtro="sin-limite" aria-pressed="false">Sin límite de edad</button>
+      <button type="button" class="planf-chip" data-filtro="empresa" aria-pressed="false">Mi empresa</button>
     </div>
-    <div class="planm-carrusel" id="planesCarrusel">
-      <a href="plan-promedam.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #98C1D4;"><i class="fas fa-stethoscope"></i></span>
-        <h3 class="planm-nombre">PROMEDAM</h3>
-        <p class="planm-texto">Cobertura ambulatoria con consultas, guardia, servicio de emergencias y descuentos en farmacia.</p>
-        <ul class="planm-lista">
+    <p class="planf-estado" id="planfEstado" aria-live="polite">Mostrando los 7 planes</p>
+    <ul class="planf-lista">
+      <li class="planf-card" data-segmentos="para-mi sin-limite">
+        <img src="assets/img/planes/promedam.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan Promedam</h3>
+          <span class="planf-etiqueta">Sin límite de edad</span>
+          <p class="planf-texto">Cobertura ambulatoria con consultas, guardia, servicio de emergencias y descuentos en farmacia.</p>
+          <ul class="planf-beneficios">
             <li>Cobertura exclusivamente ambulatoria (sin internación)</li>
             <li>Guardia y médicos especialistas con bono de costo mínimo</li>
             <li>Médico de cabecera clínico y pediátrico</li>
-            <li>Estudios médicos y odontología con copago</li>
-            <li>Descuentos en farmacias "Punto de Salud"</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-      <a href="plan-plata.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #AEB8C4;"><i class="fas fa-heart-pulse"></i></span>
-        <h3 class="planm-nombre">PLATA</h3>
-        <p class="planm-texto">Protección de calidad y accesible para acompañarte de cerca en tu día a día.</p>
-        <ul class="planm-lista">
+          </ul>
+        </div>
+        <a href="plan-promedam.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan Promedam">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+      <li class="planf-card" data-segmentos="para-mi familia">
+        <img src="assets/img/planes/plata.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan Plata</h3>
+          <span class="planf-etiqueta">Accesible para tu día a día</span>
+          <p class="planf-texto">Protección de calidad y accesible para acompañarte de cerca en tu día a día.</p>
+          <ul class="planf-beneficios">
             <li>Internación en habitación compartida</li>
             <li>Cobertura nacional por emergencias en viajes por Argentina</li>
             <li>Médico de cabecera clínico y pediátrico</li>
-            <li>Odontología y médico a domicilio para urgencias</li>
-            <li>Descuentos en farmacias "Punto de Salud"</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-      <a href="plan-oro.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #D9B86A;"><i class="fas fa-star"></i></span>
-        <h3 class="planm-nombre">ORO</h3>
-        <p class="planm-texto">El respaldo ideal para cuidar a quienes más querés, con el confort y la seguridad que buscan.</p>
-        <ul class="planm-lista">
+          </ul>
+        </div>
+        <a href="plan-plata.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan Plata">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+      <li class="planf-card" data-segmentos="para-mi familia">
+        <img src="assets/img/planes/oro.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan Oro</h3>
+          <span class="planf-etiqueta">Beneficios exclusivos</span>
+          <p class="planf-texto">El respaldo ideal para cuidar a quienes más querés, con el confort y la seguridad que buscan.</p>
+          <ul class="planf-beneficios">
             <li>Internación en habitación individual</li>
             <li>Consultas sin bono en clínica médica, pediatría y ginecología</li>
             <li>Un estudio médico simple anual sin costo extra</li>
-            <li>Médico a domicilio y descuentos en "Punto de Salud"</li>
-            <li>Cobertura nacional para tus viajes por el país</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-      <a href="plan-first.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #2C5786;"><i class="fas fa-crown"></i></span>
-        <h3 class="planm-nombre">FIRST</h3>
-        <p class="planm-texto">La tranquilidad de darle a tu familia nuestra cobertura más exclusiva, sin preocuparte por nada.</p>
-        <ul class="planm-lista">
+          </ul>
+        </div>
+        <a href="plan-oro.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan Oro">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+      <li class="planf-card" data-segmentos="para-mi familia">
+        <img src="assets/img/planes/first.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan First</h3>
+          <span class="planf-etiqueta">Nuestra cobertura más exclusiva</span>
+          <p class="planf-texto">La tranquilidad de darle a tu familia nuestra cobertura más exclusiva, sin preocuparte por nada.</p>
+          <ul class="planf-beneficios">
             <li>Internación en habitación individual de máximo confort</li>
             <li>Consultas clínicas, pediátricas y ginecológicas sin bono</li>
-            <li>Estudios médicos simples cubiertos, sin costo extra</li>
             <li>Cobertura nacional integral con Universal Assistance</li>
-            <li>Médico a domicilio y descuentos en "Punto de Salud"</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-      <a href="plan-junior.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #7FB3E0;"><i class="fas fa-child"></i></span>
-        <h3 class="planm-nombre">JUNIOR</h3>
-        <p class="planm-texto">La cobertura de excelencia que tus hijos merecen, con afiliación independiente solo para menores.</p>
-        <ul class="planm-lista">
-            <li>Pensado exclusivamente para los más chicos</li>
-            <li>Red de profesionales y beneficios de los planes Oro y Plata</li>
-            <li>Afiliación independiente, solo para menores</li>
-            <li>Cuida el equilibrio de la economía familiar</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-      <a href="plan-promi.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #E3A9B8;"><i class="fas fa-person-breastfeeding"></i></span>
-        <h3 class="planm-nombre">PROMI</h3>
-        <p class="planm-texto">Un acompañamiento cálido y seguro para que disfrutes tu embarazo con total tranquilidad.</p>
-        <ul class="planm-lista">
+          </ul>
+        </div>
+        <a href="plan-first.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan First">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+      <li class="planf-card" data-segmentos="embarazada">
+        <img src="assets/img/planes/promi.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan Promi</h3>
+          <span class="planf-etiqueta">Materno infantil, hasta los 38 años</span>
+          <p class="planf-texto">Un acompañamiento cálido y seguro para que disfrutes tu embarazo con total tranquilidad.</p>
+          <ul class="planf-beneficios">
             <li>Cobertura integral para el embarazo y el nacimiento</li>
             <li>Internación en habitación individual</li>
             <li>Neonatología hasta el tercer día del bebé</li>
-            <li>Guardia las 24 horas</li>
-            <li>Descuentos en farmacias "Punto de Salud"</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-      <a href="plan-empresa.html" class="planm-card">
-        <span class="planm-logo" style="background-color: #6F91B8;"><i class="fas fa-briefcase"></i></span>
-        <h3 class="planm-nombre">EMPRESA</h3>
-        <p class="planm-texto">El mejor cuidado para la salud de tu equipo, porque sabemos que son el motor de tu empresa.</p>
-        <ul class="planm-lista">
+          </ul>
+        </div>
+        <a href="plan-promi.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan Promi">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+      <li class="planf-card" data-segmentos="hijos">
+        <img src="assets/img/plan-junior/junior-plata.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan Junior</h3>
+          <span class="planf-etiqueta">Solo para menores</span>
+          <p class="planf-texto">La cobertura de excelencia que tus hijos merecen, con afiliación independiente solo para menores.</p>
+          <ul class="planf-beneficios">
+            <li>Pensado exclusivamente para los más chicos</li>
+            <li>Red de profesionales y beneficios de los planes Oro y Plata</li>
+            <li>Cuida el equilibrio de la economía familiar</li>
+          </ul>
+        </div>
+        <a href="plan-junior.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan Junior">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+      <li class="planf-card" data-segmentos="empresa">
+        <img src="assets/img/planes/empresa.jpg" alt="" class="planf-foto" loading="lazy" width="461" height="250">
+        <div class="planf-cuerpo">
+          <h3 class="planf-nombre">Plan Empresa</h3>
+          <span class="planf-etiqueta">Planes a medida</span>
+          <p class="planf-texto">El mejor cuidado para la salud de tu equipo, porque sabemos que son el motor de tu empresa.</p>
+          <ul class="planf-beneficios">
             <li>Planes a medida para tu empresa</li>
             <li>Asesoramiento personalizado</li>
             <li>Cobertura para todo tu equipo</li>
-        </ul>
-        <span class="planm-btn">Ver plan <i class="fas fa-arrow-right"></i></span>
-      </a>
-    </div>
+          </ul>
+        </div>
+        <a href="plan-empresa.html" class="btn-primary-custom planf-btn" aria-label="Ver Plan Empresa">Ver plan <i class="fas fa-arrow-right ms-2" aria-hidden="true"></i></a>
+      </li>
+    </ul>
   </div>
 </section>
 <script>
-  // Flechas del carrusel de planes: corren una tarjeta para cada lado
-  document.querySelectorAll('.planm-flecha').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var c = document.getElementById('planesCarrusel');
-      var paso = c.querySelector('.planm-card').offsetWidth + 24;
-      c.scrollBy({ left: paso * Number(b.dataset.dir), behavior: 'smooth' });
+  // Filtros de planes: muestran solo los planes que corresponden a cada situación
+  (function () {
+    var chips = document.querySelectorAll('.planf-chip');
+    var cards = document.querySelectorAll('.planf-card');
+    var estado = document.getElementById('planfEstado');
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var filtro = chip.dataset.filtro;
+        var visibles = 0;
+        chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+        cards.forEach(function (card) {
+          var ok = filtro === 'todos' || card.dataset.segmentos.split(' ').indexOf(filtro) !== -1;
+          card.hidden = !ok;
+          if (ok) visibles++;
+        });
+        if (filtro === 'todos') {
+          estado.textContent = 'Mostrando los 7 planes';
+        } else {
+          estado.textContent = (visibles === 1 ? 'Mostrando 1 plan' : 'Mostrando ' + visibles + ' planes') + ' para «' + chip.textContent + '»';
+        }
+      });
     });
-  });
+  })();
 </script>
 <section class="historia-cierre">
   <div class="container">
