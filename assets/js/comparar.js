@@ -5,26 +5,31 @@
  "planes": [
   {
    "id": "promedam",
+   "para": "Para vos · sin límite de edad",
    "nombre": "Promedam",
    "url": "plan-promedam.html"
   },
   {
    "id": "plata",
+   "para": "Para vos y tu familia · accesible",
    "nombre": "Plata",
    "url": "plan-plata.html"
   },
   {
    "id": "oro",
+   "para": "Para vos y tu familia · beneficios exclusivos",
    "nombre": "Oro",
    "url": "plan-oro.html"
   },
   {
    "id": "first",
+   "para": "Para vos y tu familia · la más completa",
    "nombre": "First",
    "url": "plan-first.html"
   },
   {
    "id": "empresa",
+   "para": "Para empresas y sus equipos",
    "nombre": "Empresa",
    "url": "plan-empresa.html"
   }
@@ -427,7 +432,7 @@
   function dibujar() {
     var planes = elegidos();
     var html = '<thead><tr><th scope="col"><span class="visually-hidden">Prestación</span></th>';
-    planes.forEach(function (p) { html += '<th scope="col"><a href="' + p.url + '">' + p.nombre + '</a></th>'; });
+    planes.forEach(function (p) { html += '<th scope="col"><a href="' + p.url + '">' + p.nombre + '</a><span class="cmp-para">' + p.para + '</span></th>'; });
     html += '</tr></thead>';
     DATOS.temas.forEach(function (t, i) {
       var abierto = !!abiertos[i];
