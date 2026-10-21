@@ -181,27 +181,69 @@
   </header>
   
   <main>
-<div class="banner-interno" style="background-image: url('https://centromedicomg.com.ar/assets/img/banners/empresa.jpg');">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 col-md-6">
-        <h1 class="banner-titulo">Plan Empresa</h1>
-        <p class="banner-subtitulo">El mejor cuidado para la salud de tu equipo, porque sabemos que son el motor de tu empresa</p>
+<div class="banner-interno banner-plan" style="background-image: url('https://centromedicomg.com.ar/assets/img/banners/empresa.jpg');">
+  <div class="container">
+    <div class="banner-plan-texto">
+      <h1 class="banner-titulo">Plan Empresa</h1>
+      <p class="banner-subtitulo">El mejor cuidado para la salud de tu equipo, porque sabemos que son el motor de tu empresa</p>
+      <ul class="banner-plan-datos">
+        <li><i class="fas fa-stethoscope" aria-hidden="true"></i>Consultas ambulatorias sin cargo</li>
+        <li><i class="fas fa-user-doctor" aria-hidden="true"></i>Libre elección de profesionales</li>
+        <li><i class="fas fa-prescription-bottle-medical" aria-hidden="true"></i>Hasta 40% en farmacias adheridas</li>
+      </ul>
+      <div class="banner-plan-botones">
+        <a href="afiliarse.html" class="btn-primary-custom">Quiero este plan</a>
+        <a href="tel:43676800" class="btn-outline-primary-custom banner-plan-tel" aria-label="Llamar al Call Center, 4367-6800"><i class="fas fa-phone" aria-hidden="true"></i><span class="banner-plan-tel-txt">Llamar al</span>4367-6800</a>
       </div>
     </div>
   </div>
 </div>
 
+<section class="empresa-intro">
+  <div class="container">
+    <div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-12 col-lg-5">
+        <p class="empresa-etiqueta"><i class="fas fa-briefcase" aria-hidden="true"></i>Para empresas</p>
+        <h2 class="empresa-titulo">Cuidá la salud de tu equipo</h2>
+        <p class="empresa-texto">El Plan Empresa es para las empresas que quieren darle a su gente el mejor cuidado, porque sabemos que tu equipo es el motor de tu empresa.</p>
+        <div class="empresa-botones">
+          <a href="https://wa.me/541166743893?text=Hola%2C%20quiero%20pedir%20una%20propuesta%20del%20Plan%20Empresa%20para%20mi%20empresa." target="_blank" rel="noopener" class="btn-primary-custom"><i class="fab fa-whatsapp" aria-hidden="true"></i>Pedir propuesta para mi empresa</a>
+          <a href="contacto.html" class="empresa-link">O escribinos desde Contacto</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="empresa-beneficios">
+          <div class="empresa-beneficio">
+            <span class="empresa-icono"><i class="fas fa-stethoscope" aria-hidden="true"></i></span>
+            <h3>Consultas sin cargo</h3>
+            <p>Consultas ambulatorias y de guardia sin cargo y sin tope.</p>
+          </div>
+          <div class="empresa-beneficio">
+            <span class="empresa-icono"><i class="fas fa-hospital" aria-hidden="true"></i></span>
+            <h3>Nuestros centros</h3>
+            <p>Atención exclusiva en Clínica Monte Grande, Canning Health Institute y nuestros consultorios, con libre elección de profesionales.</p>
+          </div>
+          <div class="empresa-beneficio">
+            <span class="empresa-icono"><i class="fas fa-brain" aria-hidden="true"></i></span>
+            <h3>Salud mental</h3>
+            <p>Atención en Psiquiatría, Psicología y Psicopedagogía.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="py-5 plan-section">
   <div class="container">
-    <ul>
-      <li>Consultas ambulatorias sin cargo.</li>
-      <li>Atención exclusiva en Clínica Monte Grande, Canning Health Institute y en nuestros consultorios (con libre elección de profesionales).</li>
-      <li>Atención Psiquiatría, Psicología y Psicopedagogía.</li>
-    </ul>
-
     <h2>Información detallada</h2>
+    <p class="coberturas-ayuda">Todas las prestaciones del plan, con lo que cubre cada una.</p>
 
+    <button class="btn-outline-primary-custom coberturas-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coberturasEmpresa" aria-expanded="false" aria-controls="coberturasEmpresa">
+      <span class="coberturas-ver">Ver todas las coberturas</span><span class="coberturas-ocultar">Ocultar coberturas</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse" id="coberturasEmpresa">
     <div class="table-responsive">
       <table class="table tabla-cobertura mt-4">
         <thead>
@@ -384,6 +426,7 @@
         <li><span class="cob cob-st">Sin tope</span> Lo podés usar las veces que lo necesites.</li>
         <li><span class="cob cob-ct">Con tope</span> Tiene un límite de usos, que aparece al lado.</li>
       </ul>
+    </div>
     </div>
 
   </div>

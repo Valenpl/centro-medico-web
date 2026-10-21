@@ -1280,3 +1280,117 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .nosotros-historia .card-img-top {display: none;}
   .nosotros-historia .crecimos-card {border-top: 8px solid #4E7093;}
 }
+
+/* ===== Banners de planes, Empresa y Promi (correcciones 10 y 12) ===== */
+/* Banner de cada plan: más alto, degradé oscuro a la izquierda para leer bien el texto blanco */
+.banner-interno.banner-plan {align-items: center; background-color: #4E7093; background-position: center right; min-height: 380px; overflow: hidden; padding: 2.5rem 0;}
+.banner-plan::before {background: linear-gradient(90deg, rgba(26, 60, 94, 0.92) 0%, rgba(26, 60, 94, 0.82) 40%, rgba(26, 60, 94, 0.35) 70%, rgba(26, 60, 94, 0) 100%);}
+/* Curvas del logo, suaves, sobre el lado derecho */
+.banner-plan::after {background: url('../img/curvas-blancas.svg') right bottom / cover no-repeat; content: ''; inset: 0 0 0 35%; opacity: 0.9; pointer-events: none; position: absolute; z-index: 0;}
+.banner-plan .container {position: relative; z-index: 1;}
+.banner-plan-texto {max-width: 800px;}
+.banner-plan .banner-titulo {color: #ffffff; filter: none; font-family: 'Alike-Regular', serif; font-size: 3.5rem; font-weight: normal; letter-spacing: 0; line-height: 1.1; margin: 0 0 0.6rem; text-align: left; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);}
+.banner-plan .banner-subtitulo {color: #ffffff; font-family: 'Hind', sans-serif; font-size: 1.375rem; font-weight: 400; letter-spacing: 0; line-height: 1.4; margin: 0 0 1.4rem; text-align: left; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);}
+/* Datos clave del plan */
+.banner-plan-datos {display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; margin: 0 0 1.75rem; padding: 0;}
+.banner-plan-datos li {align-items: center; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 50px; color: #ffffff; display: inline-flex; font-family: 'Hind', sans-serif; font-size: 1.1rem; font-weight: 600; gap: 0.5rem; line-height: 1.2; padding: 0.5rem 1rem 0.4rem;}
+.banner-plan-datos li i {color: #EAF2F8; font-size: 0.95em;}
+/* Botones del banner */
+.banner-plan-botones {display: flex; flex-wrap: wrap; gap: 0.75rem 1rem;}
+.banner-plan-botones a {font-size: 1.1rem; gap: 0.5rem; min-height: 50px; padding: 0.7rem 1.8rem 0.55rem;}
+.banner-plan-botones .btn-primary-custom {background-color: #2C5786; border-color: #ffffff;}
+.banner-plan-botones .btn-primary-custom:hover, .banner-plan-botones .btn-primary-custom:focus-visible {background-color: #ffffff; border-color: #ffffff; color: #1a3c5e;}
+.banner-plan-botones .banner-plan-tel {background: transparent; border-color: #ffffff; color: #ffffff;}
+.banner-plan-botones .banner-plan-tel:hover, .banner-plan-botones .banner-plan-tel:focus-visible {background: #ffffff !important; border-color: #ffffff; color: #1a3c5e;}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-interno.banner-plan {min-height: 340px;}
+  .banner-plan .banner-titulo {font-size: 2.9rem;}
+  .banner-plan .banner-subtitulo {font-size: 1.25rem;}
+}
+/* Celular: banner compacto */
+@media (max-width: 767px) {
+  .banner-interno.banner-plan {background-position: center; min-height: 0; padding: 1.25rem 0 1.4rem;}
+  .banner-plan::before {background: linear-gradient(90deg, rgba(26, 60, 94, 0.92) 0%, rgba(26, 60, 94, 0.8) 60%, rgba(26, 60, 94, 0.55) 100%);}
+  .banner-plan::after {inset: 0 0 0 45%; opacity: 0.7;}
+  .banner-plan .container {padding-left: 1.25rem; padding-right: 1.25rem;}
+  .banner-plan .banner-titulo {font-size: 1.9rem; margin-bottom: 0.3rem;}
+  .banner-plan .banner-subtitulo {font-size: 1.1rem; line-height: 1.35; margin-bottom: 0.8rem;}
+  .banner-plan-datos {gap: 0.4rem; margin-bottom: 1rem;}
+  .banner-plan-datos li {font-size: 1.07rem; padding: 0.35rem 0.75rem 0.28rem;}
+  .banner-plan-botones {flex-wrap: nowrap; gap: 0.5rem;}
+  .banner-plan-botones a {flex: 1 1 auto; font-size: 1.07rem; min-height: 48px; min-width: 0; padding: 0.55rem 1rem 0.45rem; text-align: center; white-space: nowrap;}
+  .banner-plan-botones .btn-primary-custom {flex-grow: 1.4;}
+  /* En celular el botón de llamar muestra solo el ícono y el número */
+  .banner-plan-tel-txt {display: none;}
+}
+@media (max-width: 339px) {
+  .banner-plan-botones {flex-wrap: wrap;}
+  .banner-plan-botones a {flex-basis: 100%;}
+}
+
+/* Plan Empresa: bloque para empresas */
+.empresa-intro {background: #EAF2F8; padding: 3.5rem 1rem;}
+.empresa-etiqueta {align-items: center; color: #2C5786; display: inline-flex; font-family: 'Hind', sans-serif; font-size: 1.05rem; font-weight: 700; gap: 0.5rem; letter-spacing: 0.5px; margin-bottom: 0.5rem; text-transform: uppercase;}
+.empresa-titulo {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 2.4rem; font-weight: normal; letter-spacing: 0; line-height: 1.15; margin-bottom: 1rem;}
+.empresa-texto {color: #1a3c5e; font-size: 1.2rem; line-height: 1.55; margin-bottom: 1.5rem;}
+.empresa-botones {align-items: center; display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem;}
+.empresa-botones .btn-primary-custom {font-size: 1.1rem; gap: 0.55rem; min-height: 50px; padding: 0.7rem 1.8rem 0.55rem;}
+.empresa-botones .btn-primary-custom i {font-size: 1.25em;}
+.empresa-link {color: #2C5786; font-size: 1.05rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px;}
+.empresa-link:hover {color: #1a3c5e;}
+.empresa-beneficios {display: grid; gap: 1rem; grid-template-columns: 1fr;}
+.empresa-beneficio {align-items: center; background: #ffffff; border-radius: 1.25rem; box-shadow: 0 6px 18px rgba(26, 60, 94, 0.08); column-gap: 1.25rem; display: grid; grid-template-columns: 60px 1fr; padding: 1.25rem 1.5rem;}
+.empresa-icono {align-items: center; background: #2C5786; border-radius: 50%; color: #ffffff; display: inline-flex; font-size: 1.4rem; grid-row: span 2; height: 60px; justify-content: center; width: 60px;}
+.empresa-beneficio h3 {color: #1a3c5e; font-family: 'Hind', sans-serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem;}
+.empresa-beneficio p {color: #2B577E; font-size: 1.1rem; line-height: 1.45; margin: 0;}
+/* Tabla de coberturas plegable */
+.coberturas-ayuda {font-size: 1.1rem; margin: 1rem 0;}
+.coberturas-toggle {gap: 0.6rem; min-height: 50px;}
+.coberturas-toggle i {transition: transform 0.25s ease;}
+.coberturas-toggle:not(.collapsed) i {transform: rotate(180deg);}
+.coberturas-toggle .coberturas-ocultar, .coberturas-toggle:not(.collapsed) .coberturas-ver {display: none;}
+.coberturas-toggle:not(.collapsed) .coberturas-ocultar {display: inline;}
+#coberturasEmpresa > .table-responsive {margin-top: 0.5rem;}
+.empresa-intro + .plan-section h2 {margin-top: 0;}
+@media (max-width: 991px) {
+  .empresa-beneficio {align-items: start; column-gap: 1rem; grid-template-columns: 52px 1fr; padding: 1.1rem 1.1rem;}
+  .empresa-icono {font-size: 1.25rem; height: 52px; width: 52px;}
+}
+@media (max-width: 767px) {
+  .empresa-intro {padding: 1.75rem 1rem;}
+  .empresa-titulo {font-size: 1.7rem; margin-bottom: 0.6rem;}
+  .empresa-texto {font-size: 1.1rem; margin-bottom: 1rem;}
+  .empresa-botones .btn-primary-custom {font-size: 1.07rem; justify-content: center; padding-left: 1rem; padding-right: 1rem; width: 100%;}
+  .empresa-link {font-size: 1.07rem;}
+  .empresa-beneficio h3 {font-size: 1.15rem;}
+  .empresa-beneficio p {font-size: 1.07rem;}
+  .coberturas-ayuda {font-size: 1.07rem; margin: 0.75rem 0;}
+  .coberturas-toggle {justify-content: center; width: 100%;}
+}
+
+/* Plan Promi: las tres etapas */
+.promi-etapas {padding: 1rem 1rem 3rem;}
+.promi-etapas-titulo {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 2rem; letter-spacing: 0; margin-bottom: 2rem; text-align: center;}
+.promi-pasos {display: grid; gap: 1.5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; position: relative;}
+.promi-pasos::before {background: #6F8DB3; content: ''; height: 3px; left: 16.66%; position: absolute; right: 16.66%; top: 34px; z-index: 0;}
+.promi-paso {background: #EAF2F8; border-radius: 1.5rem; padding: 0 1.5rem 1.5rem; position: relative; text-align: center; z-index: 1;}
+.promi-paso-num {align-items: center; background: #2C5786; border: 5px solid #ffffff; border-radius: 50%; color: #ffffff; display: inline-flex; font-size: 1.6rem; height: 70px; justify-content: center; margin-bottom: 0.75rem; width: 70px;}
+.promi-paso h3 {align-items: center; color: #1a3c5e; display: flex; font-family: 'Hind', sans-serif; font-size: 1.35rem; font-weight: 700; gap: 0.5rem; justify-content: center; margin-bottom: 0.6rem;}
+.promi-paso-n {align-items: center; background: #1a3c5e; border-radius: 50%; color: #ffffff; display: inline-flex; font-size: 0.95rem; height: 28px; justify-content: center; padding-top: 2px; width: 28px;}
+.promi-paso ul {color: #2B577E; font-size: 1.1rem; line-height: 1.45; list-style: none; margin: 0; padding: 0;}
+.promi-paso ul li + li {margin-top: 0.5rem;}
+.promi-cta {margin-top: 2rem; text-align: center;}
+.promi-cta .btn-primary-custom {font-size: 1.15rem; min-height: 52px; padding: 0.75rem 2rem 0.6rem;}
+@media (max-width: 767px) {
+  .promi-etapas {padding: 0 1rem 1.75rem;}
+  .promi-etapas-titulo {font-size: 1.45rem; margin-bottom: 1rem;}
+  .promi-pasos {gap: 0.75rem; grid-template-columns: 1fr;}
+  .promi-pasos::before {bottom: 1.5rem; height: auto; left: 33px; right: auto; top: 1.5rem; width: 3px;}
+  .promi-paso {align-items: start; background: transparent; column-gap: 0.9rem; display: grid; grid-template-columns: 56px 1fr; padding: 0; text-align: left;}
+  .promi-paso-num {border-width: 4px; font-size: 1.25rem; grid-row: span 2; height: 56px; margin: 0 0 0 5px; width: 56px;}
+  .promi-paso h3 {font-size: 1.15rem; justify-content: flex-start; margin: 0.6rem 0 0.25rem;}
+  .promi-paso-n {font-size: 0.85rem; height: 24px; width: 24px;}
+  .promi-paso ul {font-size: 1.07rem;}
+  .promi-cta {margin-top: 1.25rem;}
+  .promi-cta .btn-primary-custom {font-size: 1.07rem; padding-left: 1rem; padding-right: 1rem; width: 100%;}
+}
