@@ -414,46 +414,46 @@
   var raiz = document.getElementById('comparador');
   if (!raiz) return;
   var selects = raiz.querySelectorAll('.cmp-select');
-  var temasBox = raiz.querySelector('.cmp-temas');
-  var NOFIGURA = '<span class="cmp-nofigura">No figura en la tabla del plan</span>';
+  var tabla = raiz.querySelector('.cmp-tabla');
+  var abiertos = {0: true};
 
+  // Hasta 3 planes, sin repetir
   function elegidos() {
     var ids = [];
-    selects.forEach(function (s) {
-      if (s.offsetParent !== null && s.value && ids.indexOf(s.value) === -1) ids.push(s.value);
-    });
+    selects.forEach(function (s) { if (s.value && ids.indexOf(s.value) === -1) ids.push(s.value); });
     return ids.map(function (id) { return DATOS.planes.filter(function (p) { return p.id === id; })[0]; });
   }
 
   function dibujar() {
     var planes = elegidos();
-    var abiertos = [];
-    temasBox.querySelectorAll('.accordion-collapse.show').forEach(function (c) { abiertos.push(c.id); });
-    var html = '';
+    var html = '<thead><tr><th scope="col"><span class="visually-hidden">Prestación</span></th>';
+    planes.forEach(function (p) { html += '<th scope="col"><a href="' + p.url + '">' + p.nombre + '</a></th>'; });
+    html += '</tr></thead>';
     DATOS.temas.forEach(function (t, i) {
-      var id = 'cmpTema' + i;
-      var abierto = abiertos.length ? abiertos.indexOf(id) !== -1 : i === 0;
-      html += '<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button' + (abierto ? '' : ' collapsed') +
-        '" type="button" data-bs-toggle="collapse" data-bs-target="#' + id + '" aria-expanded="' + abierto + '" aria-controls="' + id + '">' +
-        '<i class="fas ' + t.icono + '" aria-hidden="true"></i>' + t.nombre + '</button></h3>' +
-        '<div id="' + id + '" class="accordion-collapse collapse' + (abierto ? ' show' : '') + '"><div class="accordion-body">' +
-        '<table class="cmp-tabla cmp-' + planes.length + '"><thead><tr><th scope="col">Qué cubre</th>';
-      planes.forEach(function (p) { html += '<th scope="col">' + p.nombre + '</th>'; });
-      html += '</tr></thead><tbody>';
+      var abierto = !!abiertos[i];
+      html += '<tbody><tr class="cmp-tema"><th colspan="' + (planes.length + 1) + '" scope="colgroup">' +
+        '<button type="button" data-tema="' + i + '" aria-expanded="' + abierto + '">' + t.nombre +
+        '<i class="fas fa-chevron-down" aria-hidden="true"></i></button></th></tr>';
       t.filas.forEach(function (f) {
-        html += '<tr><th scope="row">' + f.p + '</th>';
-        planes.forEach(function (p) { html += '<td data-plan="' + p.nombre + '">' + (f.c[p.id] || NOFIGURA) + '</td>'; });
+        html += '<tr' + (abierto ? '' : ' hidden') + '><th scope="row">' + f.p + '</th>';
+        planes.forEach(function (p) { html += '<td>' + (f.c[p.id] || '<span class="cmp-nofigura">—</span>') + '</td>'; });
         html += '</tr>';
       });
-      html += '</tbody></table></div></div></div>';
+      html += '</tbody>';
     });
-    var pie = '<div class="cmp-links">';
-    planes.forEach(function (p) { pie += '<a class="btn-primary-custom" href="' + p.url + '">Ver Plan ' + p.nombre + '</a>'; });
-    temasBox.innerHTML = html;
-    raiz.querySelector('.cmp-links').outerHTML = pie + '</div>';
+    tabla.className = 'cmp-tabla cmp-' + planes.length;
+    tabla.innerHTML = html;
   }
+
+  tabla.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-tema]');
+    if (!b) return;
+    var i = +b.dataset.tema;
+    abiertos[i] = !abiertos[i];
+    b.setAttribute('aria-expanded', abiertos[i]);
+    var fila = b.closest('tr').nextElementSibling;
+    while (fila) { fila.hidden = !abiertos[i]; fila = fila.nextElementSibling; }
+  });
   selects.forEach(function (s) { s.addEventListener('change', dibujar); });
-  var ancho = window.matchMedia('(min-width: 768px)');
-  if (ancho.addEventListener) ancho.addEventListener('change', dibujar);
   dibujar();
 })();

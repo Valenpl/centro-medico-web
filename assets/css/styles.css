@@ -1484,45 +1484,54 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .nota-bajada {font-size: 1.15rem;}
 }
 
-/* ===== Comparación de planes ===== */
-.cmp-section {background: #EAF2F8; padding: 4rem 0; scroll-margin-top: 120px;}
-.cmp-selectores {display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin: 0 auto 1.5rem; max-width: 900px;}
-.cmp-elegir label {color: #1a3c5e; display: block; font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem;}
-.cmp-select {border: 2px solid #4E7093; border-radius: 0.8rem; color: #1a3c5e; font-size: 1.15rem; font-weight: 600; min-height: 54px;}
-.cmp-select:focus {border-color: #2C5786; box-shadow: 0 0 0 3px rgba(44, 87, 134, 0.25);}
-.cmp-leyenda {display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; list-style: none; margin: 0 0 1.75rem; padding: 0;}
-.cmp-leyenda li {color: #3d4d5e; font-size: 1rem;}
-.cmp-temas {margin: 0 auto; max-width: 1000px;}
-.cmp-temas .accordion-item {border: none; border-radius: 1rem !important; box-shadow: 0 4px 16px rgba(26, 60, 94, 0.08); margin-bottom: 0.9rem; overflow: hidden;}
-.cmp-temas .accordion-button {color: #1a3c5e; font-family: 'Hind', sans-serif; font-size: 1.3rem; font-weight: 700; gap: 0.9rem; padding: 1.1rem 1.4rem;}
-.cmp-temas .accordion-button i {color: #4E7093; font-size: 1.3rem; text-align: center; width: 1.6rem;}
-.cmp-temas .accordion-button:not(.collapsed) {background: #1a3c5e; color: #ffffff;}
-.cmp-temas .accordion-button:not(.collapsed) i {color: #98C1D4;}
-.cmp-temas .accordion-button:not(.collapsed)::after {filter: brightness(0) invert(1);}
-.cmp-temas .accordion-body {padding: 0;}
-.cmp-tabla {border-collapse: collapse; font-size: 1.1rem; table-layout: fixed; width: 100%;}
-.cmp-tabla thead th {background: #F4F8FB; color: #2C5786; font-size: 1.05rem; font-weight: 700; padding: 0.8rem 1rem; text-transform: uppercase;}
+
+/* ===== Planes con un aire menos "de plantilla" (22/10) ===== */
+/* Cobertura: palabras en color en vez de pastillas; el tope va abajo, en chico */
+.cob {background: none; border-radius: 0; font-size: 1rem; font-weight: 700; margin: 0; padding: 0;}
+.cob-sc {background: none; color: #1E7A4C;}
+.cob-cc {background: none; color: #A35F00;}
+.cob-st, .cob-ct {background: none; color: #5b6673; display: block; font-size: 0.9rem; font-weight: 400; margin-top: 0.15rem;}
+.cob-leyenda li .cob {display: inline; min-width: 0; text-align: left;}
+.tabla-cobertura .cob {min-width: 0; text-align: left;}
+.nota .cob {display: inline; font-size: inherit; margin: 0;}
+.tabla-cobertura .cob-nota {display: block; font-size: 0.9rem; margin-top: 0.1rem;}
+
+/* Comparación: tabla por temas que se abren y cierran, hasta 3 planes */
+.cmp-section {background: #ffffff; border-top: 1px solid #e3eaf1; padding: 3.5rem 0; scroll-margin-top: 120px;}
+.cmp-claves {color: #33475b; font-size: 1.05rem; margin: 0 0 1.5rem; padding-left: 1.2rem;}
+.cmp-claves li {margin-bottom: 0.3rem;}
+.cmp-paso {color: #1a3c5e; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;}
+.cmp-selectores {display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 260px)); margin-bottom: 1.5rem;}
+.cmp-elegir label {color: #4a5d70; display: block; font-size: 0.95rem; margin-bottom: 0.25rem;}
+.cmp-select {border: 1px solid #8fa6bd; border-radius: 4px; color: #1a3c5e; font-size: 1.1rem; font-weight: 600; min-height: 50px;}
+.cmp-select:focus {border-color: #2C5786; box-shadow: 0 0 0 3px rgba(44, 87, 134, 0.2);}
+.cmp-scroll {border: 1px solid #d5e0ea; overflow-x: auto;}
+.cmp-tabla {border-collapse: collapse; font-size: 1.05rem; table-layout: fixed; width: 100%;}
+.cmp-tabla thead th:first-child {width: 28%;}
+.cmp-tabla th, .cmp-tabla td {border-bottom: 1px solid #e3eaf1; padding: 0.7rem 0.9rem; text-align: left; vertical-align: top;}
+.cmp-tabla thead th {background: #1a3c5e; color: #ffffff; font-size: 1.1rem;}
+.cmp-tabla thead th a {color: #ffffff; text-decoration: none;}
+.cmp-tabla thead th a:hover {text-decoration: underline;}
 .cmp-tabla tbody th {color: #1a3c5e; font-weight: 600;}
-.cmp-tabla th, .cmp-tabla td {border-bottom: 1px solid #E1EAF2; padding: 0.85rem 1rem; text-align: left; vertical-align: top;}
-.cmp-tabla tbody tr:last-child th, .cmp-tabla tbody tr:last-child td {border-bottom: none;}
-.cmp-tabla td .cob-nota {display: block; margin-top: 0.3rem; white-space: normal;}
-.cmp-nofigura {color: #7a8796; font-size: 0.95rem; font-style: italic;}
-.cmp-confirmar {background: #FFF4D6; border-radius: 50px; color: #7A5A00; display: inline-block; font-size: 0.85rem; font-weight: 600; padding: 0.35rem 0.75rem;}
-.cmp-links {display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin: 2rem 0 1.25rem;}
-.cmp-links .btn-primary-custom {text-decoration: none;}
-.cmp-aclaracion {color: #3d4d5e; font-size: 1rem; margin: 0 auto; max-width: 760px; text-align: center;}
+.cmp-tabla tr.cmp-tema th {background: #EAF2F8; padding: 0;}
+.cmp-tema button {align-items: center; background: none; border: none; color: #1a3c5e; cursor: pointer; display: flex; font-family: 'Hind', sans-serif; font-size: 0.95rem; font-weight: 700; justify-content: space-between; letter-spacing: 0.06em; min-height: 52px; padding: 0.7rem 0.9rem; text-align: left; text-transform: uppercase; width: 100%;}
+.cmp-tema button:hover {background: #DCE9F3;}
+.cmp-tema button:focus-visible {outline: 3px solid #6F8DB3; outline-offset: -3px;}
+.cmp-tema button i {font-size: 0.85rem; transition: transform 0.2s ease;}
+.cmp-tema button[aria-expanded="true"] i {transform: rotate(180deg);}
+.cmp-tabla td .cob-nota {display: block; white-space: normal;}
+.cmp-nofigura {color: #8a96a3;}
+.cmp-confirmar {color: #7A5A00; font-style: italic;}
+.cmp-aclaracion {color: #3d4d5e; margin-top: 1.25rem;}
 @media (max-width: 767px) {
-  .cmp-section {padding: 2.75rem 0;}
-  .cmp-selectores {grid-template-columns: 1fr 1fr;}
-  .cmp-solo-compu {display: none;}
-  .cmp-select {font-size: 1rem;}
-  .cmp-temas .accordion-button {font-size: 1.1rem; padding: 1rem;}
-  .cmp-tabla {font-size: 1rem;}
-  .cmp-tabla thead th:first-child {display: none;}
-  .cmp-tabla thead th {font-size: 0.95rem; padding: 0.6rem 0.75rem; width: 50%;}
-  .cmp-tabla tbody tr {display: grid; grid-template-columns: 1fr 1fr;}
-  .cmp-tabla tbody th {background: #F4F8FB; border-bottom: none; grid-column: 1 / -1; padding: 0.6rem 0.75rem 0.4rem;}
-  .cmp-tabla td {padding: 0.6rem 0.75rem 0.8rem;}
-  .cmp-tabla thead tr {display: grid; grid-template-columns: 1fr 1fr;}
-  .cmp-tabla thead th {width: auto;}
+  .tabla-cobertura .cob {font-size: 0.95rem; margin: 0; padding: 0;}
+  .tabla-cobertura .cob-st, .tabla-cobertura .cob-ct, .tabla-cobertura .cob-nota {font-size: 0.85rem;}
+  .cmp-section {padding: 2.5rem 0;}
+  .cmp-selectores {gap: 0.6rem; grid-template-columns: 1fr;}
+  .cmp-tabla {font-size: 0.9rem;}
+  .cmp-tabla thead th:first-child {width: 31%;}
+  .cmp-tabla th, .cmp-tabla td {overflow-wrap: anywhere; padding: 0.6rem 0.45rem;}
+  .cmp-tabla thead th {font-size: 0.95rem;}
+  .cmp-tabla .cob-st, .cmp-tabla .cob-ct, .cmp-tabla .cob-nota {font-size: 0.8rem;}
+  .cmp-tema button {padding: 0.6rem 0.6rem;}
 }
