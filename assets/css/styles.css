@@ -1592,3 +1592,91 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .nota-caso {padding-left: 1rem;}
   .nota .nota-bajada {font-size: 1.15rem;}
 }
+
+
+/* ===== Emergencias, turnos y lectura más cómoda (25/10) ===== */
+/* Número de emergencias más visible arriba */
+.nav-top {font-size: 15px;}
+.nav-top-numero {font-size: 18px; font-weight: 700; letter-spacing: 0.3px; margin-left: 0.35rem;}
+
+/* Pedir turno: tercer acceso debajo del banner y botón en el menú del celu */
+.accesos-banner {grid-template-columns: repeat(3, 1fr);}
+.offcanvas-turno {border: 2px solid #1E7A4C; border-radius: 50px; color: #1E7A4C; display: block; font-weight: 700; margin-top: 0.6rem; padding: 0.7rem 1rem 0.55rem; text-align: center; text-decoration: none;}
+.offcanvas-turno:hover {background: #1E7A4C; color: #ffffff;}
+
+/* Contraste: el gris claro y el verde quedaban algo pálidos */
+.centro-migas, .centro-navegacion small, .opinion-autor small {color: #56636f;}
+.wapp-globo a span {color: #1E7A4C;}
+.footer-copyright {background-color: #4E7093;}
+.blog-cat {font-size: 14px;}
+footer .footer-label, footer .footer-legal, footer .footer-legal-link, .footer-emergencias small, .opinion-autor small {font-size: 14px;}
+.footer-desarrollo {font-size: 14px;}
+
+/* Renglones más cortos en las páginas de cada plan */
+.plan-section > .container > p {max-width: 75ch;}
+.afiliar-section > p {margin-left: auto; margin-right: auto; max-width: 60ch;}
+
+/* Botones chicos para el dedo */
+.footer-social {align-items: center; display: inline-flex; justify-content: center; min-height: 44px; min-width: 44px;}
+.navbar-toggler {min-height: 44px; min-width: 48px;}
+.cmp-tabla thead th a {display: inline-block; padding: 0.35rem 0;}
+
+/* ¿Qué plan me conviene? */
+.que-plan-section {background: #EAF2F8; padding: 3rem 0;}
+.que-plan {background: #ffffff; border: 1px solid #c9d6e2; border-radius: 0.75rem; margin: 0 auto; max-width: 860px; padding: 2rem 2.25rem;}
+.que-plan h2 {margin-bottom: 0.4rem;}
+.que-plan-bajada {color: #33475b; font-size: 1.1rem; margin-bottom: 1.5rem;}
+.que-plan-pregunta {border: 0; margin: 0 0 1.5rem; padding: 0;}
+.que-plan-pregunta[hidden] {display: none;}
+.que-plan-pregunta legend {color: #1a3c5e; float: none; font-family: 'Hind', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; width: auto;}
+.que-plan-opciones {display: flex; flex-wrap: wrap; gap: 0.6rem;}
+.que-plan-opciones button {background: #ffffff; border: 1.5px solid #8fa6bd; border-radius: 6px; color: #1a3c5e; cursor: pointer; font-family: 'Hind', sans-serif; font-size: 1.05rem; font-weight: 600; line-height: 1.25; min-height: 48px; padding: 0.6rem 1rem 0.45rem; text-align: left;}
+.que-plan-opciones button[hidden] {display: none;}
+.que-plan-opciones button:hover {border-color: #2C5786; background: #f4f8fb;}
+.que-plan-opciones button[aria-pressed="true"] {background: #1a3c5e; border-color: #1a3c5e; color: #ffffff;}
+.que-plan-opciones button:focus-visible {outline: 3px solid #6F8DB3; outline-offset: 2px;}
+.que-plan-resultado {border-top: 2px solid #1a3c5e; margin-top: 0.5rem; padding-top: 1.25rem;}
+.que-plan-resultado p {color: #33475b; font-size: 1.1rem; line-height: 1.55;}
+.que-plan-reco {color: #1a3c5e !important; font-size: 1.35rem !important; margin-bottom: 0.4rem;}
+.que-plan-nota {background: #FFF4E5; border-left: 4px solid #A35F00; padding: 0.7rem 1rem;}
+.que-plan-acciones {display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem;}
+.que-plan-acciones a {text-decoration: none;}
+.que-plan-reiniciar {background: none; border: 0; color: #2C5786; font-weight: 700; margin-top: 1rem; min-height: 44px; padding: 0; text-decoration: underline;}
+
+@media (max-width: 767px) {
+  .nav-top {font-size: 14px; padding: 6px 12px;}
+  .nav-top-numero {font-size: 16px;}
+  .acceso-banner {font-size: 14px; letter-spacing: 0.2px; padding: 0.6rem 0.35rem;}
+  .tabla-cobertura td.bg-grey, .cob-leyenda li, .cmp-tabla th {font-size: 14px;}
+  .cob-leyenda .cob {font-size: 14px;}
+  a.planes-btn.rounded-5 {font-size: 15px; min-height: 44px;}
+  /* Ninguna letra por debajo de 14 px en el celu */
+  .servicio-label, .numero-texto, .plan-info {font-size: 14px;}
+  .tabla-cobertura td, .tabla-cobertura th, .tabla-cobertura .fw-bold, .tabla-cobertura .cob, .tabla-cobertura .cob-nota {font-size: 14px;}
+  .tabla-cobertura .cob-sc, .tabla-cobertura .cob-cc {font-size: 15px;}
+  .cmp-para, .cmp-tabla .cob-st, .cmp-tabla .cob-ct, .cmp-tabla .cob-nota {font-size: 14px;}
+  .footer-label, .footer-legal, .footer-legal-link, .footer-copyright p, .footer-emergencias small {font-size: 14px;}
+  .centro-navegacion small, .centro-grilla-card .centro-foto-texto small, .banner-subtitulo {font-size: 14px;}
+  .que-plan-section {padding: 2rem 0;}
+  .que-plan {padding: 1.4rem 1.1rem;}
+  .que-plan-opciones button {width: 100%;}
+  .que-plan-acciones a {text-align: center; width: 100%;}
+}
+
+/* Títulos: los h4 y h5 pasaron a h3 para que el orden de títulos sea correcto (Google); se ven igual que antes */
+.titulo-h4 {font-size: calc(1.275rem + 0.3vw);}
+.titulo-h5 {color: #1a3c5e; font-size: 1.25rem; font-weight: normal; line-height: 2rem;}
+@media (min-width: 1200px) {.titulo-h4 {font-size: 1.5rem;}}
+.afiliar-section .titulo-h4, .primer-dia .titulo-h4 {font-family: 'Alike-Regular', sans-serif; font-size: 1.6rem;}
+.afiliar-section .titulo-h5 {font-family: 'Hind', sans-serif; font-weight: 600; font-size: 1.4rem;}
+.crecimos .titulo-h5 {font-size: 1.2rem; font-weight: bold; margin-bottom: 1.5rem;}
+.historia-cierre .titulo-h5 {font-family: 'Hind', sans-serif; font-weight: 600; font-size: 1.4rem;}
+.primer-dia .titulo-h5 {font-family: 'Hind', sans-serif; font-weight: 600; font-size: 1.4rem;}
+.instituto-card .titulo-h5 {color: inherit;}
+.titulo-h5.titular-h5 {font-family: 'Hind', sans-serif; font-weight: 600; font-size: 1.6rem;}
+.afiliar-section .titulo-h4 + p {margin-top: 0.75rem;}
+@media (min-width: 768px) {.afiliar-section .titulo-h4, .primer-dia .titulo-h4 {font-size: 2rem;}}
+@media (max-width: 767px) {
+  .afiliar-section .titulo-h4 {font-size: 1.3rem;}
+  .crecimos .titulo-h5 {margin-bottom: 0.6rem;}
+}

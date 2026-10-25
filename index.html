@@ -45,6 +45,45 @@
   </script>
   -->
 
+  <!-- Datos del centro para Google (cuando el sitio pase a centromedicomg.com.ar, cambiar url y logo) -->
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Centro Médico Monte Grande",
+    "url": "https://valenpl.github.io/centro-medico-web/",
+    "logo": "https://valenpl.github.io/centro-medico-web/assets/img/brand.webp",
+    "telephone": "+54 11 4290-4432",
+    "email": "info@centromedicomg.com.ar",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Arana 228",
+      "addressLocality": "Monte Grande",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+54 810 220 6060",
+        "contactType": "emergency",
+        "areaServed": "AR",
+        "availableLanguage": "es"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+54 11 4367-6800",
+        "contactType": "customer service",
+        "areaServed": "AR",
+        "availableLanguage": "es"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/centromedicomg/",
+      "https://www.facebook.com/share/1CtcWzMoZP/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -53,7 +92,7 @@
   
   <header>  
     <div class="nav-top" style="">
-      <p class="text-white text-end mb-0"><a href="tel:08102206060">Línea de emergencias 24 hs - 0810 220 6060 <i class="fas fa-phone ms-2"></i></a></p> 
+      <p class="text-white text-end mb-0"><a href="tel:08102206060">Línea de emergencias 24 hs <strong class="nav-top-numero">0810 220 6060</strong> <i class="fas fa-phone ms-2" aria-hidden="true"></i></a></p> 
     </div>
 
     <nav class="navbar navbar-expand-xl bg-white border-bottom">
@@ -155,6 +194,7 @@
             <div class="mt-4">
               <a href="afiliarse.html" class="btn-primary-custom rounded-5 btn-secondary-nav">Afiliarme</a>
               <a href="https://miportalcm.com.ar/" class="btn-outline-primary-custom rounded-5 btn-secondary-nav mr-4">Iniciar sesión</a>
+              <a href="https://wa.me/541163929296?text=Hola%2C%20quiero%20pedir%20un%20turno." target="_blank" rel="noopener" class="offcanvas-turno">Pedir turno por WhatsApp</a>
             </div>
           </div>
         </div>
@@ -164,6 +204,7 @@
   </header>
   
   <main>
+    <h1 class="visually-hidden">Centro Médico Monte Grande: planes de salud con el respaldo de Clínica Monte Grande y Canning Health Institute</h1>
 <div id="miCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false"> 
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -201,6 +242,7 @@
 <div class="accesos-banner">
   <a href="afiliarse.html" class="acceso-banner">Quiero afiliarme</a>
   <a href="https://miportalcm.com.ar/" target="_blank" rel="noopener" class="acceso-banner">Soy afiliado</a>
+  <a href="https://wa.me/541163929296?text=Hola%2C%20quiero%20pedir%20un%20turno." target="_blank" rel="noopener" class="acceso-banner">Pedir turno</a>
 </div>
 
 <!-- Nuestros Servicios -->
@@ -253,7 +295,7 @@
 <!-- Planes -->
 <section class="planes-section p-3 p-lg-5">
   <h2 class="text-center">Planes</h2>
-  <h5 class="text-center mb-4">Encontrá el plan que mejor se adapta a vos y a tu familia</h5>
+  <h3 class="titulo-h5 text-center mb-4">Encontrá el plan que mejor se adapta a vos y a tu familia</h3>
    <div class="planes-bg">
     <div class="container-fluid h-100">
       <div class="row g-0 h-100">
@@ -565,7 +607,7 @@
       <div class="row">
         <div class="col-12">
           <p class="footer-legal">
-            Superintendencia de Servicios de Salud - Órgano de Control de Obras Sociales y Entidades de Medicina Prepaga · 0800-222-SALUD (72583) · <a href="http://www.sssalud.gov.ar/" target="_blank" class="footer-legal-link">www.sssalud.gov.ar</a> · R.N.E.M.P. (Prov.) 1-1315-1 | <a class="footer-legal-link" target="_blank" href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf">Valores Coseguros</a>
+            Superintendencia de Servicios de Salud - Órgano de Control de Obras Sociales y Entidades de Medicina Prepaga · <a href="tel:080022272583" class="footer-legal-link">0800-222-SALUD (72583)</a> · <a href="http://www.sssalud.gov.ar/" target="_blank" class="footer-legal-link">www.sssalud.gov.ar</a> · R.N.E.M.P. (Prov.) 1-1315-1 | <a class="footer-legal-link" target="_blank" href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf">Valores Coseguros</a>
           </p>
         </div>
       </div>
@@ -574,7 +616,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <p class="mb-0 text-white">© 2026 Clínica Monte Grande. Todos los derechos reservados.</p>
         <div class="d-flex align-items-center gap-2">
-          <span class="text-white" style="font-size: 0.75rem;">Desarrollo</span>
+          <span class="text-white footer-desarrollo">Desarrollo</span>
           <a href="https://trixsoluciones.com/" target="_blank">
             <img src="assets/img/trix.webp" alt="Trix Soluciones" class="footer-dev-logo">
           </a>
