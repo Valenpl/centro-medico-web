@@ -1599,10 +1599,6 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 .nav-top {font-size: 15px;}
 .nav-top-numero {font-size: 18px; font-weight: 700; letter-spacing: 0.3px; margin-left: 0.35rem;}
 
-/* Pedir turno en el menú del celu */
-.offcanvas-turno {border: 2px solid #1E7A4C; border-radius: 50px; color: #1E7A4C; display: block; font-weight: 700; margin-top: 0.6rem; padding: 0.7rem 1rem 0.55rem; text-align: center; text-decoration: none;}
-.offcanvas-turno:hover {background: #1E7A4C; color: #ffffff;}
-
 /* Contraste: el gris claro y el verde quedaban algo pálidos */
 .centro-migas, .centro-navegacion small, .opinion-autor small {color: #56636f;}
 .wapp-globo a span {color: #1E7A4C;}
