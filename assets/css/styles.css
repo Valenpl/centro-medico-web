@@ -1599,8 +1599,7 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 .nav-top {font-size: 15px;}
 .nav-top-numero {font-size: 18px; font-weight: 700; letter-spacing: 0.3px; margin-left: 0.35rem;}
 
-/* Pedir turno: tercer acceso debajo del banner y botón en el menú del celu */
-.accesos-banner {grid-template-columns: repeat(3, 1fr);}
+/* Pedir turno en el menú del celu */
 .offcanvas-turno {border: 2px solid #1E7A4C; border-radius: 50px; color: #1E7A4C; display: block; font-weight: 700; margin-top: 0.6rem; padding: 0.7rem 1rem 0.55rem; text-align: center; text-decoration: none;}
 .offcanvas-turno:hover {background: #1E7A4C; color: #ffffff;}
 
@@ -1646,7 +1645,6 @@ footer .footer-label, footer .footer-legal, footer .footer-legal-link, .footer-e
 @media (max-width: 767px) {
   .nav-top {font-size: 14px; padding: 6px 12px;}
   .nav-top-numero {font-size: 16px;}
-  .acceso-banner {font-size: 14px; letter-spacing: 0.2px; padding: 0.6rem 0.35rem;}
   .tabla-cobertura td.bg-grey, .cob-leyenda li, .cmp-tabla th {font-size: 14px;}
   .cob-leyenda .cob {font-size: 14px;}
   a.planes-btn.rounded-5 {font-size: 15px; min-height: 44px;}
