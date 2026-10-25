@@ -53,7 +53,7 @@
   
   <header>  
     <div class="nav-top" style="">
-      <p class="text-white text-end mb-0"><a href="tel:08102206060">Línea de emergencias 24 hs - 0810 220 6060 <i class="fas fa-phone ms-2"></i></a></p> 
+      <p class="text-white text-end mb-0"><a href="tel:08102206060">Línea de emergencias 24 hs <strong class="nav-top-numero">0810 220 6060</strong> <i class="fas fa-phone ms-2" aria-hidden="true"></i></a></p> 
     </div>
 
     <nav class="navbar navbar-expand-xl bg-white border-bottom">
@@ -325,6 +325,42 @@
     });
   })();
 </script>
+<section class="que-plan-section" id="que-plan" aria-labelledby="quePlanTitulo">
+  <div class="container">
+    <div class="que-plan" id="quePlan">
+      <h2 id="quePlanTitulo">¿Qué plan me conviene?</h2>
+      <p class="que-plan-bajada">Respondé estas preguntas y te decimos qué plan mirar primero.</p>
+      <fieldset class="que-plan-pregunta" data-pregunta="para">
+        <legend><span class="que-plan-num">1.</span> ¿Para quién es?</legend>
+        <div class="que-plan-opciones">
+          <button type="button" data-valor="mi">Para mí</button>
+          <button type="button" data-valor="familia">Para mi familia</button>
+          <button type="button" data-valor="hijos">Solo para mis hijos</button>
+          <button type="button" data-valor="embarazada">Estoy embarazada</button>
+          <button type="button" data-valor="empresa">Para mi empresa</button>
+        </div>
+      </fieldset>
+      <fieldset class="que-plan-pregunta" data-pregunta="edad" hidden>
+        <legend><span class="que-plan-num">2.</span> ¿Qué edad tenés?</legend>
+        <div class="que-plan-opciones">
+          <button type="button" data-valor="menos38">Menos de 38</button>
+          <button type="button" data-valor="38a64">De 38 a 64</button>
+          <button type="button" data-valor="65mas">65 o más</button>
+        </div>
+      </fieldset>
+      <fieldset class="que-plan-pregunta" data-pregunta="busca" hidden>
+        <legend><span class="que-plan-num">3.</span> ¿Qué buscás?</legend>
+        <div class="que-plan-opciones">
+          <button type="button" data-valor="promedam">Consultas y guardia, sin internación</button>
+          <button type="button" data-valor="plata">Internación, pagando lo menos posible</button>
+          <button type="button" data-valor="oro">Habitación individual y consultas sin bono</button>
+          <button type="button" data-valor="first">La cobertura más completa</button>
+        </div>
+      </fieldset>
+      <div class="que-plan-resultado" id="quePlanResultado" aria-live="polite" hidden></div>
+    </div>
+  </div>
+</section>
 <section class="cmp-section" id="comparar" aria-labelledby="cmpTitulo">
   <div class="container" id="comparador">
     <h2 id="cmpTitulo" class="mb-3">Compará los planes</h2>
@@ -432,7 +468,7 @@
       <div class="row">
         <div class="col-12">
           <p class="footer-legal">
-            Superintendencia de Servicios de Salud - Órgano de Control de Obras Sociales y Entidades de Medicina Prepaga · 0800-222-SALUD (72583) · <a href="http://www.sssalud.gov.ar/" target="_blank" class="footer-legal-link">www.sssalud.gov.ar</a> · R.N.E.M.P. (Prov.) 1-1315-1 | <a class="footer-legal-link" target="_blank" href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf">Valores Coseguros</a>
+            Superintendencia de Servicios de Salud - Órgano de Control de Obras Sociales y Entidades de Medicina Prepaga · <a href="tel:080022272583" class="footer-legal-link">0800-222-SALUD (72583)</a> · <a href="http://www.sssalud.gov.ar/" target="_blank" class="footer-legal-link">www.sssalud.gov.ar</a> · R.N.E.M.P. (Prov.) 1-1315-1 | <a class="footer-legal-link" target="_blank" href="https://centromedicomg.com.ar/descargas/coseguros-06-2026.pdf">Valores Coseguros</a>
           </p>
         </div>
       </div>
@@ -441,7 +477,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <p class="mb-0 text-white">© 2026 Clínica Monte Grande. Todos los derechos reservados.</p>
         <div class="d-flex align-items-center gap-2">
-          <span class="text-white" style="font-size: 0.75rem;">Desarrollo</span>
+          <span class="text-white footer-desarrollo">Desarrollo</span>
           <a href="https://trixsoluciones.com/" target="_blank">
             <img src="assets/img/trix.webp" alt="Trix Soluciones" class="footer-dev-logo">
           </a>
@@ -471,6 +507,6 @@
     </div>
   </div>
   
-  <script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/header.js">"></script><script src="assets/js/animaciones.js"></script><script src="assets/js/comparar.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script><script src="assets/js/header.js"></script><script src="assets/js/animaciones.js"></script><script src="assets/js/comparar.js"></script><script src="assets/js/que-plan.js"></script>
 
 </body></html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valenpl.github.io/centro-medico-web/sitemap.xml
