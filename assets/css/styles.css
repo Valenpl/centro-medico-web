@@ -110,7 +110,7 @@ section {padding: 0 1rem;}
 .centros-separador {margin:2rem;}
 .cobertura-salud {background: linear-gradient(to bottom, #ffffff 50%, #EAEDF2 50%);overflow: visible;padding: 3rem 0;}
 .cobertura-salud h2 {font-size: 1.4rem}
-.cobertura-card {background-color: #6E8AB1;background-image:url('https://centromedicomg.com.ar/assets/img/bg-qs.jpg');background-size: cover;background-position: center;border-radius: 2rem;overflow: visible;position: relative;}
+.cobertura-card {background-color: #6E8AB1;background-image:url('../img/bg-qs.jpg');background-size: cover;background-position: center;border-radius: 2rem;overflow: visible;position: relative;}
 .cobertura-img-col {align-items: flex-end;display: flex;justify-content: center;position: relative;}
 .cobertura-img-float {display: none;}
 
@@ -273,7 +273,7 @@ letter-spacing: .5px;
 
 .planes-section {background-color: #EAEDF2;}
 .planes-bg {
-  background-image: url('https://centromedicomg.com.ar/assets/img/planes-bg.jpg');
+  background-image: url('../img/planes-bg.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 2rem;
