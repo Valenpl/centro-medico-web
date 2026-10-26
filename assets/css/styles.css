@@ -181,7 +181,6 @@ letter-spacing: .5px;
 .footer-legal {border-top: 1px solid rgba(255, 255, 255, 0.15);color: rgba(255, 255, 255, 0.6);font-size: 0.75rem;margin: 0;padding-top: 1rem;}
 .footer-legal-link {color: rgba(255, 255, 255, 0.6);text-decoration: underline;}
 .footer-legal-link:hover {color: #ffffff;}
-.footer-dev-logo {width: 20px}
 .form-control {border-radius: 2rem}
 .historia-cierre h5 {font-family: 'Hind', sans-serif; font-weight: 600;font-size: 1.4rem;}
 .institutos .card-body {width: 100%}
@@ -1292,9 +1291,8 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 .banner-plan .banner-titulo {color: #ffffff; filter: none; font-family: 'Alike-Regular', serif; font-size: 3.5rem; font-weight: normal; letter-spacing: 0; line-height: 1.1; margin: 0 0 0.6rem; text-align: left; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);}
 .banner-plan .banner-subtitulo {color: #ffffff; font-family: 'Hind', sans-serif; font-size: 1.375rem; font-weight: 400; letter-spacing: 0; line-height: 1.4; margin: 0 0 1.4rem; text-align: left; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);}
 /* Datos clave del plan */
-.banner-plan-datos {display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; margin: 0 0 1.75rem; padding: 0;}
-.banner-plan-datos li {align-items: center; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 50px; color: #ffffff; display: inline-flex; font-family: 'Hind', sans-serif; font-size: 1.1rem; font-weight: 600; gap: 0.5rem; line-height: 1.2; padding: 0.5rem 1rem 0.4rem;}
-.banner-plan-datos li i {color: #EAF2F8; font-size: 0.95em;}
+.banner-plan-datos {list-style: none; margin: 0 0 1.75rem; padding: 0;}
+.banner-plan-datos li {color: #ffffff; font-family: 'Hind', sans-serif; font-size: 1.15rem; font-weight: 600; line-height: 1.3; padding: 0.15rem 0;}
 /* Botones del banner */
 .banner-plan-botones {display: flex; flex-wrap: wrap; gap: 0.75rem 1rem;}
 .banner-plan-botones a {font-size: 1.1rem; gap: 0.5rem; min-height: 50px; padding: 0.7rem 1.8rem 0.55rem;}
@@ -1315,8 +1313,8 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
   .banner-plan .container {padding-left: 1.25rem; padding-right: 1.25rem;}
   .banner-plan .banner-titulo {font-size: 1.9rem; margin-bottom: 0.3rem;}
   .banner-plan .banner-subtitulo {font-size: 1.1rem; line-height: 1.35; margin-bottom: 0.8rem;}
-  .banner-plan-datos {gap: 0.4rem; margin-bottom: 1rem;}
-  .banner-plan-datos li {font-size: 1.07rem; padding: 0.35rem 0.75rem 0.28rem;}
+  .banner-plan-datos {margin-bottom: 1rem;}
+  .banner-plan-datos li {font-size: 1.07rem; padding: 0.1rem 0;}
   .banner-plan-botones {flex-wrap: nowrap; gap: 0.5rem;}
   .banner-plan-botones a {flex: 1 1 auto; font-size: 1.07rem; min-height: 48px; min-width: 0; padding: 0.55rem 1rem 0.45rem; text-align: center; white-space: nowrap;}
   .banner-plan-botones .btn-primary-custom {flex-grow: 1.4;}
@@ -1605,7 +1603,6 @@ p.frase-cierre {color: #1a3c5e; font-family: 'Alike-Regular', serif; font-size: 
 .footer-copyright {background-color: #4E7093;}
 .blog-cat {font-size: 14px;}
 footer .footer-label, footer .footer-legal, footer .footer-legal-link, .footer-emergencias small, .opinion-autor small {font-size: 14px;}
-.footer-desarrollo {font-size: 14px;}
 
 /* Renglones más cortos en las páginas de cada plan */
 .plan-section > .container > p {max-width: 75ch;}
