@@ -1606,6 +1606,9 @@ footer .footer-label, footer .footer-legal, footer .footer-legal-link, .footer-e
 
 /* Renglones más cortos en las páginas de cada plan */
 .plan-section > .container > p {max-width: 75ch;}
+/* Resumen del plan en una oración, arriba de todo */
+.plan-section .plan-resumen {color: #1a3c5e; font-size: 1.2rem; font-weight: 600; line-height: 1.45; margin-bottom: 1rem;}
+@media (max-width: 767px) {.plan-section .plan-resumen {font-size: 1.07rem;}}
 .afiliar-section > p {margin-left: auto; margin-right: auto; max-width: 60ch;}
 
 /* Botones chicos para el dedo */
